@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bcc-navy: #0D1B2A;
+  --bcc-red: #CC2200;
+  --bcc-gold: #B8924A;
+  --bcc-light: #F5F5F5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bcc-light);
+  color: var(--bcc-navy);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: var(--bcc-navy);
+}
+
+.btn-primary {
+  background: var(--bcc-navy);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #1a2e45; }
+.btn-primary:disabled { background: #999; cursor: not-allowed; }
+
+.btn-red {
+  background: var(--bcc-red);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.15s;
+}
+.btn-red:hover { background: #a81c00; }
+
+.btn-outline {
+  background: white;
+  color: var(--bcc-navy);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid var(--bcc-navy);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-outline:hover { background: var(--bcc-navy); color: white; }
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  color: var(--bcc-navy);
+  transition: border-color 0.15s;
+}
+.input-field:focus { border-color: var(--bcc-navy); }
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  width: 100%;
+}
+
+.badge-open { background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.badge-closed { background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.badge-done { background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+.badge-pass { background: #dcfce7; color: #166534; padding: 6px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; }
+.badge-fail { background: #fee2e2; color: #991b1b; padding: 6px 16px; border-radius: 20px; font-size: 15px; font-weight: bold; }
+
+table { width: 100%; border-collapse: collapse; }
+th { background: var(--bcc-navy); color: white; padding: 12px 14px; text-align: left; font-size: 14px; }
+td { padding: 12px 14px; border-bottom: 1px solid #e5e7eb; font-size: 15px; vertical-align: middle; }
+tr:hover td { background: #f9fafb; }
