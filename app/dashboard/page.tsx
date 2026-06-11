@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { getMember, getAllClasses, getMemberAttempts } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
+import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, BccClass, Attempt } from '@/lib/types';
 
 const CLASS_LABELS: Record<string, string> = {
@@ -19,27 +20,27 @@ function getBestAttempt(attempts: Attempt[], classId: string): Attempt | null {
 }
 
 function ClassCard({
-  cls, attempts, lang, onTake,
+  cls, attempts, lang, isOpen, onTake,
 }: {
-  cls: BccClass; attempts: Attempt[]; lang: Lang; onTake: () => void;
+  cls: BccClass; attempts: Attempt[]; lang: Lang; isOpen: boolean; onTake: () => void;
 }) {
   const best = getBestAttempt(attempts, cls.id);
   const count = attempts.filter(a => a.classId === cls.id).length;
   const pct = best ? Math.round((best.score / best.maxScore) * 100) : 0;
   const passed = best ? pct >= 60 : false;
 
-  if (!cls.isOpen && !best) return null;
+  if (!isOpen && !best) return null;
 
   return (
-    <div className="card mb-4" style={{ borderLeft: `5px solid ${cls.isOpen ? 'var(--bcc-red)' : '#9ca3af'}` }}>
+    <div className="card mb-4" style={{ borderLeft: `5px solid ${isOpen ? 'var(--bcc-red)' : '#9ca3af'}` }}>
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1 flex-wrap">
             <h2 className="text-xl font-bold" style={{ color: 'var(--bcc-navy)' }}>
               {CLASS_LABELS[cls.id] ?? cls.title}
             </h2>
-            {cls.isOpen && <span className="badge-open">{T.open[lang]}</span>}
-            {!cls.isOpen && best && <span className="badge-closed">{T.closed[lang]}</span>}
+            {isOpen && <span className="badge-open">{T.open[lang]}</span>}
+            {!isOpen && best && <span className="badge-closed">{T.closed[lang]}</span>}
           </div>
           {best && (
             <div className="mt-2">
@@ -55,16 +56,16 @@ function ClassCard({
               </p>
             </div>
           )}
-          {!best && cls.isOpen && (
+          {!best && isOpen && (
             <p className="text-gray-500 text-sm mt-1">{T.notStarted[lang]}</p>
           )}
         </div>
-        {cls.isOpen && (
+        {isOpen && (
           <button onClick={onTake} className="btn-primary" style={{ width: 'auto', minWidth: 140 }}>
             {best ? T.retakeExam[lang] : T.takeExam[lang]} →
           </button>
         )}
-        {!cls.isOpen && best && (
+        {!isOpen && best && (
           <a
             href={`/results/${best.id}`}
             className="btn-outline"
@@ -119,7 +120,10 @@ export default function DashboardPage() {
     );
   }
 
-  const visibleClasses = classes.filter(c => c.isOpen || attempts.some(a => a.classId === c.id));
+  const memberGroup = getMemberGroup(member!);
+  const visibleClasses = classes.filter(c =>
+    isClassOpenForGroup(c, memberGroup) || attempts.some(a => a.classId === c.id)
+  );
   const completedCount = classes.filter(c => {
     const best = getBestAttempt(attempts, c.id);
     return best && Math.round((best.score / best.maxScore) * 100) >= 60;
@@ -164,6 +168,7 @@ export default function DashboardPage() {
               cls={cls}
               attempts={attempts}
               lang={lang}
+              isOpen={isClassOpenForGroup(cls, memberGroup)}
               onTake={() => router.push(`/exam/${cls.id}`)}
             />
           ))

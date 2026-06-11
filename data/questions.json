@@ -1,0 +1,4368 @@
+{
+  "CLASS 1": {
+    "max_score": {
+      "en": 21,
+      "fr": 21,
+      "rw": 21
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. What is the purpose of the teachings to strengthen Christians? Choose the wrong answer",
+          "fr": "1. Quel est le but des enseignements pour fortifier les chrétiens ? Choisis la mauvaise réponse",
+          "rw": "1. Kuki habaho inyigisho zo gukomeza abakristu? Hitamo igisubizo kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A. For the Christian to know who he is in Christ Jesus",
+            "B. For the Christian to know his rights",
+            "C. For a Christian to understand his or her responsibilities",
+            "D. For the Christian to know the secret of spiritual growth",
+            "E. For the Christian to know how to perform miracles."
+          ],
+          "fr": [
+            "A. Pour que le chrétien sache qui il est en Jésus-Christ",
+            "B.  Pour que le chrétien connaisse ses droits",
+            "C. Pour qu'un chrétien comprenne ses responsabilités",
+            "D. Pour que le chrétien connaisse le secret de la croissance spirituelle",
+            "E. Pour que le chrétien puisse faire des miracles."
+          ],
+          "rw": [
+            "A. kugira ngo umukristo amenye icyo ari muri Kristo Yesu",
+            "B. kugira ngo umukristo amenye uburenganzira bwe",
+            "C. Kugira ngo umukristo amenye inshingano ze",
+            "D. Kugira ngo umukristo amenye ibanga ryo gukura mu Mwuka",
+            "E. Kugira ngo umukristo amenye uburyo yakora ibitangaza."
+          ]
+        },
+        "correct": {
+          "en": "E. For the Christian to know how to perform miracles.",
+          "fr": "E. Pour que le chrétien puisse faire des miracles.",
+          "rw": "E. Kugira ngo umukristo amenye uburyo yakora ibitangaza."
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. When a person receives Jesus Christ in his life, what happens to him?  Choose the wrong answer",
+          "fr": "2. Quand une personne reçoit Jésus-Christ dans sa vie, que lui arrive-t-il? Choisissez la mauvaise réponse.",
+          "rw": "2. Iyo umuntu yakiriye Yesu Kristo mu buzima bwe, n’iki kimubaho. Hitamo igisubizo  kitari cyo"
+        },
+        "options": {
+          "en": [
+            "A. He was freed from the power of Satan",
+            "B. He will find eternal life if he prays a lot",
+            "C. Forgiveness of all of his sins",
+            "D. He becomes a child of God",
+            "E. B and C are incorrect answers."
+          ],
+          "fr": [
+            "A. Il a été libéré du pouvoir de Satan",
+            "B. Il trouvera la vie éternelle s'il prie beaucoup",
+            "C. Le pardon de tous ses péchés",
+            "D. Il devient enfant de Dieu",
+            "E. B et C sont des réponses incorrectes."
+          ],
+          "rw": [
+            "A. Yabatuwe  ku mbaraga za satani",
+            "B. Azabona ubugingo buhoraho nasenga cyane",
+            "C. Ababarirwa ibyaha bye byose",
+            "D. Aba umwana w’Imana",
+            "E. B na C n’ibyo bisubizo batari byo."
+          ]
+        },
+        "correct": {
+          "en": "B. He will find eternal life if he prays a lot",
+          "fr": "B. Il trouvera la vie éternelle s'il prie beaucoup",
+          "rw": "B. Azabona ubugingo buhoraho nasenga cyane"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3.  According to John 1: 12-13, how does one receive the right to become a child of God? Choose the right (True) answer.",
+          "fr": "3.  Selon Jean 1: 12-13, comment reçoit-on le droit de devenir enfant de Dieu? Choisissez la bonne réponse (Vrai).",
+          "rw": "3.  Dukurikije ijambo ryanditswe muri Yohana 1: 12-13, nigute umuntu ahabwa ububasha bwo kuba umwana w’Imana? Hitamo igisubizo cyiza (Nyacyo)."
+        },
+        "options": {
+          "en": [
+            "A. When he is born",
+            "B. When he receives Jesus Christ",
+            "C. When he changes religion",
+            "D. When he believes in the name of Jesus Christ",
+            "E. B and D are the correct answers",
+            "F. All answers are correct"
+          ],
+          "fr": [
+            "A. Quand il est né",
+            "B. Quand il reçoit Jésus-Christ",
+            "C. Quand il change de religion",
+            "D. Quand il croit au nom de Jésus-Christ",
+            "E. B et D sont les bonnes réponses",
+            "F. Toutes les réponses sont correctes"
+          ],
+          "rw": [
+            "A. Iyo avutse",
+            "B. Iyo yakiriye Yesu Kristo",
+            "C. Iyo ahinduye idini",
+            "D. Iyo yizeye izina rya Yesu Kristo",
+            "E. B na D n’ibyo bisubizo nyabyo",
+            "F. Ibisubizo byose nibyo"
+          ]
+        },
+        "correct": {
+          "en": "E. B and D are the correct answers",
+          "fr": "E. B et D sont les bonnes réponses",
+          "rw": "E. B na D n’ibyo bisubizo nyabyo"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. We learnt what sin is. Choose the wrong answer",
+          "fr": "4. Nous avons appris ce qu'est le péché. Choisissez la mauvaise réponse",
+          "rw": "4. Twize icyaha icyo ari cyo. Hitamo igisubizo kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A. Sin is knowing the good you ought to do and not do it",
+            "B. Sin is disobedience to God's laws",
+            "C. Sin is any act that violates God's commands",
+            "D. Sin is not fasting once a week",
+            "E. Sin is to lie for the sake of the Kingdom of God"
+          ],
+          "fr": [
+            "A. Le péché, c'est savoir le bien que vous devez faire et ne pas le faire",
+            "B. Le péché est la désobéissance aux lois de Dieu",
+            "C. Le péché est tout acte qui viole les commandements de Dieu",
+            "D. Le péché c’est ne pas jeûner une fois la semaine",
+            "E. Le péché c’est mentir pour les bénéfices du royaume de Dieu"
+          ],
+          "rw": [
+            "A. Icyaha ni ukudakora neza kandi ubishoboye",
+            "B. Icyaha ni ukutumvira amategeko y’Imana",
+            "C. Icyaha ni igikorwa cyose gihabanye n’amahame y’Imana",
+            "D. Icyaha ni ukutiyiriza ubusa rimwe mu cyumweru",
+            "E. Icyaha ni ukubeshya kubw’inyungu z’ubwami bw’Imana"
+          ]
+        },
+        "correct": {
+          "en": "D. Sin is not fasting once a week",
+          "fr": "D. Le péché c’est ne pas jeûner une fois la semaine",
+          "rw": "D. Icyaha ni ukutiyiriza ubusa rimwe mu cyumweru"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. Amy is praying for school fees for her Neighbor’s kids; what kind of prayer is this?",
+          "fr": "5. Immaculée prie pour le minerval des enfants de sa voisine ; quel genre de prière est-ce?",
+          "rw": "5. Mutesi ari gusengera abana b’umuturanyi we ngo babone amafaranga y’ishuri (Minerval); iryo sengesho ryitwa irihe?"
+        },
+        "options": {
+          "en": [
+            "A. Thanksgiving",
+            "B. Confession",
+            "C. Praise and worship",
+            "D. Intercession",
+            "E. Request"
+          ],
+          "fr": [
+            "A. Action de grâces",
+            "B. Confession",
+            "C. Louange et adoration",
+            "D. Intercession",
+            "E. Demande"
+          ],
+          "rw": [
+            "A. Gushima",
+            "B. Kwatura",
+            "C. Guhimbaza no kuramya",
+            "D. Kwinginga",
+            "E. Gusaba"
+          ]
+        },
+        "correct": {
+          "en": "D. Intercession",
+          "fr": "D. Intercession",
+          "rw": "D. Kwinginga"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. We have learned the steps of confession. Choose the wrong step?",
+          "fr": "6. Nous avons appris les étapes de la confession. Choisissez la mauvaise étape?",
+          "rw": "6. Twize intambwe zo kwatura. Hitamo intambwe itari yo?"
+        },
+        "options": {
+          "en": [
+            "A. Confessing sins stating them by name",
+            "B. Asking for forgiveness for those sins",
+            "C. Deciding before God to forsake sin (Repentance)",
+            "D. Asking the power of the Holy Spirit not to fall into sin again",
+            "E. Thanking God that you will never sin again."
+          ],
+          "fr": [
+            "A. Confesser les péchés en les énonçant par leur nom",
+            "B. Demander pardon pour ces péchés",
+            "C. Décider devant Dieu d'abandonner le péché (Se Repentir)",
+            "D. Demander la puissance du Saint-Esprit pour ne plus retomber dans le péché",
+            "E. Remercier Dieu de ne plus jamais pécher."
+          ],
+          "rw": [
+            "A. Kwemera ibyaha ubivuga mu izina",
+            "B. Gusaba imbabazi",
+            "C. Gufata icyemezo imbere y’Imana cyo kureka icyaha (Kwihana)",
+            "D. Gusaba imbaraga z’Umwuka Wera ngo utongera kugwa mu cyaha",
+            "E. Gushimira Imana Ko utazongera gukora ibyaha."
+          ]
+        },
+        "correct": {
+          "en": "E. Thanking God that you will never sin again.",
+          "fr": "E. Remercier Dieu de ne plus jamais pécher.",
+          "rw": "E. Gushimira Imana Ko utazongera gukora ibyaha."
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. The Bible is the word of God, inspired by God. Choose the right answer",
+          "fr": "7. La Bible est la parole de Dieu, inspirée par Dieu. Choisissez la bonne réponse:",
+          "rw": "7. Bibliya n’ijambo ry’Imana kandi ryahumetswe nayo. Hitamo igisubizo nyacyo:"
+        },
+        "options": {
+          "en": [
+            "A. The Bible consists of 37 books in the Old Testament and 29 in the New Testament, making up 66 books in total",
+            "B. In the Bible these six books follow each other: Genesis - Exodus - Leviticus - Numbers - Joshua - Deuteronomy",
+            "C. Jesus had 12 disciples including Zechariah",
+            "D. The Bible was inspired by God and written by men",
+            "E. There is no correct answer"
+          ],
+          "fr": [
+            "A. La Bible se compose de 37 livres dans l'Ancien Testament et 29 dans le Nouveau Testament, soit 66 livres au total",
+            "B. Dans la Bible ces six livres se succèdent : Genèse - Exode - Lévitique - Nombres - Josué - Deutéronome",
+            "C. Jésus avait 12 disciples dont Zacharie",
+            "D. La Bible a été inspiré par Dieu et écrite par des hommes",
+            "E. Il n'y a pas de bonne réponse"
+          ],
+          "rw": [
+            "A. Bibliya igizwe n'ibitabo 37 mw'isezerano rya kera na 29 mw'isezerano rishya, byose hamwe n'ibitabo 66.",
+            "B. Muri Bibliya ibi bitabo bitandatu birakurikirana: Itangiriro – Kuva – Abalewi – Kubara – Yoshuwa – Gutegeka kwa Kabiri",
+            "C. Yesu yari afite abigishwa 12 harimo na Zakariya",
+            "D. Bibiliya n’ijambo ryahumetswe n’Imana, rikandikwa n’abantu",
+            "E. Nta gisubizo nyacyo kirimo"
+          ]
+        },
+        "correct": {
+          "en": "D. The Bible was inspired by God and written by men",
+          "fr": "D. La Bible a été inspiré par Dieu et écrite par des hommes",
+          "rw": "D. Bibiliya n’ijambo ryahumetswe n’Imana, rikandikwa n’abantu"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "mcq",
+        "text": {
+          "en": "8. Choose the right answer.",
+          "fr": "8. Choisissez la bonne réponse.",
+          "rw": "8. Hitamo igisubizo nyacyo."
+        },
+        "options": {
+          "en": [
+            "A. The animal/natural man has communion with God.",
+            "B. The carnal man and the animal man have a relationship with God",
+            "C. A Spiritual man has a relationship with God just as the animal man does.",
+            "D. The carnal man often loses fellowship with God because of his sinful life.",
+            "E. The Spiritual Person does not enjoy prayer."
+          ],
+          "fr": [
+            "A. L'homme animal/naturel est en communion avec Dieu.",
+            "B. L'homme charnel et l'homme animal ont une relation avec Dieu",
+            "C. Un homme spirituel a une relation avec Dieu tout comme l'homme animal.",
+            "D. L'homme Charnel perd souvent la communion avec Dieu à cause de sa vie pécheresse.",
+            "E. L'homme spirituel n'apprécie pas la prière."
+          ],
+          "rw": [
+            "A. Umuntu nyamaswa (usanzwe) afite ubusabane n'Imana.",
+            "B. Umuntu wa kamere n'umuntu nyamaswa bafite isano n'Imana",
+            "C. Umuntu w'Umwuka afite isano n'Imana nk'uko umuntu nyamaswa ayifite.",
+            "D. Umuntu wa kamere ajya abura ubusabane n’Imana kubera ubuzima bw’icyaha.",
+            "E. Umuntu w'Umwuka ntabwo yishimira gusenga."
+          ]
+        },
+        "correct": {
+          "en": "D. The carnal man often loses fellowship with God because of his sinful life.",
+          "fr": "D. L'homme Charnel perd souvent la communion avec Dieu à cause de sa vie pécheresse.",
+          "rw": "D. Umuntu wa kamere ajya abura ubusabane n’Imana kubera ubuzima bw’icyaha."
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "mcq",
+        "text": {
+          "en": "9. What might a Christian do to avoid the works of the flesh? Choose the right answer.",
+          "fr": "9. Que peut faire un chrétien pour éviter les œuvres de la chair? Choisissez la bonne réponse.",
+          "rw": "9. Ni iki Umukristo yakora kugira ngo adakora imirimo ya kamere? Hitamo igisubizo nyacyo."
+        },
+        "options": {
+          "en": [
+            "A. He must be delivered",
+            "B. He must speak in tongues.",
+            "C. He should pray a lot and fast at least twice a week.",
+            "D. He must always be filled with the Holy Spirit",
+            "E. He must always serve God in the church.",
+            "F. All the above"
+          ],
+          "fr": [
+            "A. Il doit être délivré",
+            "B. Il doit parler en langues.",
+            "C. Il doit prier beaucoup et jeûner au moins deux fois par semaine.",
+            "D. Il doit toujours être rempli du Saint-Esprit",
+            "E. Il doit toujours servir Dieu dans l'église.",
+            "F. Tout ce qui précède"
+          ],
+          "rw": [
+            "A. Agomba gukorerwa deliverance",
+            "B. Agomba kuvuga mu ndimi.",
+            "C. Agomba gusenga cyane akiyiriza nibura kabiri mu cyumweru.",
+            "D. Agomba guhora yuzuye Umwuka Wera",
+            "E. Ibi bisubizo byose ni byo.",
+            "F. Agomba guhora akorera Imana mu itorero (commission)."
+          ]
+        },
+        "correct": {
+          "en": "D. He must always be filled with the Holy Spirit",
+          "fr": "D. Il doit toujours être rempli du Saint-Esprit",
+          "rw": "D. Agomba guhora yuzuye Umwuka Wera"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "mcq",
+        "text": {
+          "en": "10. We have learned the characteristics of the Church as shown in the Bible. Choose the wrong answer.",
+          "fr": "10. Nous avons appris les caractéristiques de l'Église telles qu'elles sont présentées dans la Bible. Choisissez la mauvaise réponse.",
+          "rw": "10. Twize ibiranga Itorero nk’uko Bibiliya itwereka. Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. Jesus Christ is the sole supreme leader of the Church.",
+            "B. The Bible is the source of our truth and faith.",
+            "C. Jesus Christ is the Son of God and God.",
+            "D. Man is saved by his good deeds.",
+            "E. There is no salvation after death."
+          ],
+          "fr": [
+            "A. Jésus-Christ est le seul chef suprême de l'Église.",
+            "B. La Bible est la source de notre vérité et de notre foi.",
+            "C. Jésus-Christ est le Fils de Dieu et Dieu.",
+            "D. L'homme est sauvé par ses bonnes actions.",
+            "E. Il n'y a pas de salut après la mort."
+          ],
+          "rw": [
+            "A. Yesu Kristo niwe wenyine umutware w’ikirenga w’Itorero.",
+            "B. Bibiliya ni isoko y’ukuri no kwizera kwacu.",
+            "C. Yesu Kristo ni umwana w’Imana kandi ni Imana.",
+            "D. Umuntu akizwa kubw’ibikorwa bye byiza.",
+            "E. Nta kandi gakiza nyuma y’urupfu."
+          ]
+        },
+        "correct": {
+          "en": "D. Man is saved by his good deeds.",
+          "fr": "D. L'homme est sauvé par ses bonnes actions.",
+          "rw": "D. Umuntu akizwa kubw’ibikorwa bye byiza."
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "mcq",
+        "text": {
+          "en": "11. We learned a lesson about \"Love\". Choose the best answer.",
+          "fr": "11. Nous avons appris une leçon sur \"l'amour\". Choisissez la meilleure réponse.",
+          "rw": "11. Twize isomo ku « Rukundo ». Hitamo igisubizo cyiza."
+        },
+        "options": {
+          "en": [
+            "A. True love is characterized by good communication with all people.",
+            "B. We must love those who love us and hate those who hate us.",
+            "C. A good way to love is in action (not in words only)",
+            "D. A mother's love for her children is called \"EROS\"",
+            "E. There is no good answer.",
+            "F. C and D are the best answers."
+          ],
+          "fr": [
+            "A. Le véritable amour se caractérise par une bonne communication avec tout le monde.",
+            "B. Nous devons aimer ceux qui nous aiment et haïr ceux qui nous haïssent.",
+            "C. Une bonne façon d'aimer est au travers des actions (et non pas en parole seulement)",
+            "D. L'amour d'une mère pour ses enfants s'appelle \"EROS\".",
+            "E. Il n'y a pas de bonne réponse.",
+            "F. C et D sont les meilleures réponses."
+          ],
+          "rw": [
+            "A. Urukundo nyakuri rurangwa no kuvugana n'abantu bose neza.",
+            "B. Tugomba gukunda abadukunda no kwanga abatwanga.",
+            "C. Uburyo bwiza bwo gukunda ni mu bikorwa",
+            "D. Urukundo umubyeyi akunda abana be rwitwa \"EROS\".",
+            "E. Nta gisubizo cyiza gihari.",
+            "F. C na D ni byo bisubizo byiza."
+          ]
+        },
+        "correct": {
+          "en": "C. A good way to love is in action (not in words only)",
+          "fr": "C. Une bonne façon d'aimer est au travers des actions (et non pas en parole seulement)",
+          "rw": "C. Uburyo bwiza bwo gukunda ni mu bikorwa"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "mcq",
+        "text": {
+          "en": "12. We have learned in which spirit we ought to be as we bring our offering to God. Choose the wrong answer.",
+          "fr": "12. Nous avons appris dans quel esprit nous devons être lorsque nous apportons notre offrande à Dieu. Choisissez la mauvaise réponse.",
+          "rw": "12. Twize umwuka dukwiriye gutangiramo Imana. Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. We should give according to our means.",
+            "B. We should give in all truth and joy.",
+            "C. We should give so that people might see our generosity",
+            "D. We should give what we decided in our heart without feeling compelled"
+          ],
+          "fr": [
+            "A. Nous devons donner selon nos moyens.",
+            "B. Nous devons donner en toute vérité et joie.",
+            "C. Nous devons donner pour que les gens voient notre générosité",
+            "D. Nous devons donner ce que nous avons décidé dans notre cœur sans nous sentir obligés"
+          ],
+          "rw": [
+            "A. Tugomba gutanga bijyanye n’ubushobozi bwacu",
+            "B. Tugomba gutanga mu kuri kose n’umunezero.",
+            "C. Tugomba gutanga kugira ngo babone ko tugira ubuntu",
+            "D. Tugomba gutanga nyuma yo gufata icyemezo."
+          ]
+        },
+        "correct": {
+          "en": "C. We should give so that people might see our generosity",
+          "fr": "C. Nous devons donner pour que les gens voient notre générosité",
+          "rw": "C. Tugomba gutanga kugira ngo babone ko tugira ubuntu"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "mcq",
+        "text": {
+          "en": "13. We learned a lesson on the “Holy Communion”. Choose the right answer.",
+          "fr": "13. Nous avons appris une leçon sur la « Sainte Cène ». Choisissez la bonne réponse.",
+          "rw": "13. Twize isomo ku “Ifunguro Ryera”. Hitamo igisubizo nyacyo."
+        },
+        "options": {
+          "en": [
+            "A. When we take the Holy Communion, we proclaim the death of the Lord Jesus until we die.",
+            "B. In the Holy Communion, the bread signifies the body of Christ, and the cup symbolizes our blood.",
+            "C. The Holy Communion consists of two parts: bread and blood.",
+            "D. Eating Holy Communion can have a positive effect on our health when we get baptized",
+            "E. There is no correct answer."
+          ],
+          "fr": [
+            "A. Lorsque nous prenons la Sainte Cène, nous proclamons la mort du Seigneur Jésus jusqu'à notre mort.",
+            "B. Dans la Sainte Cène, le pain signifie le corps du Christ, et la coupe symbolise notre sang.",
+            "C. La Sainte Cène se compose de deux parties: le pain et le sang.",
+            "D. Manger la Sainte Cène peut avoir un effet positif sur notre santé lorsque nous nous faisons baptiser",
+            "E. Il n'y a pas de bonne réponse."
+          ],
+          "rw": [
+            "A. Igihe cyose dufata Ifunguro Ryera twerekana urupfu rw’ Umwami Yesu kugeza igihe tuzapfa.",
+            "B. Mu Ifunguro Ryera, umutsima usobanura umubiri wa Kristo n' igikombe kigasobanura amaraso yacu.",
+            "C. Ifunguro Ryera rigizwe n’ibice bibiri: umutsima n’amaraso.",
+            "D. Gufata Ifunguro Ryera gushobora kuzana ingaruka nziza ku buzima bwacu mu gihe twabatijwe",
+            "E. Nta gisubizo nyacyo gihari."
+          ]
+        },
+        "correct": {
+          "en": "C. The Holy Communion consists of two parts: bread and blood.",
+          "fr": "C. La Sainte Cène se compose de deux parties: le pain et le sang.",
+          "rw": "C. Ifunguro Ryera rigizwe n’ibice bibiri: umutsima n’amaraso."
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "mcq",
+        "text": {
+          "en": "14. This is the characteristic of a true servant of God. Choose the wrong answer.",
+          "fr": "14. Ceci sont les caractéristiques d'un vrai serviteur de Dieu. Choisissez la mauvaise réponse.",
+          "rw": "14. Ibi ni byo biranga umukristo ukora umurimo w’Imana. Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. Persistence",
+            "B. Speaking the Word of Truth.",
+            "C. Sincere love.",
+            "D. Possessing the power of God and the weapon of the flesh.",
+            "E. There is no wrong answer"
+          ],
+          "fr": [
+            "A. Perseverance",
+            "B. Proclamer la Parole de Vérité.",
+            "C. Amour sincère.",
+            "D. Posséder la puissance de Dieu et les armes de la chair.",
+            "E. Il n'y a pas de mauvaise réponse"
+          ],
+          "rw": [
+            "A. Kutarambirwa.",
+            "B. Kuvuga Ijambo ry’ukuri.",
+            "C. Kugira urukundo rutaryarya.",
+            "D. Kugira imbaraga z’Imana n’intwaro za kamere.",
+            "E. Nta gisubizo kitari cyo kirimo"
+          ]
+        },
+        "correct": {
+          "en": "D. Possessing the power of God and the weapon of the flesh.",
+          "fr": "D. Posséder la puissance de Dieu et les armes de la chair.",
+          "rw": "D. Kugira imbaraga z’Imana n’intwaro za kamere."
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "15. Answer YES or NO: Highlight the right answer. A. When a child of God sins, his relationship with God is broken",
+          "fr": "15.  Répondez OUI ou NON : Mettez en surbrillance la bonne réponse.  A. Quand un enfant de Dieu pèche, sa relation avec Dieu est brisée",
+          "rw": "15. Subiza na Yego cyangwa Oya A. Mu gihe umwana w’Imana acumuye, isano ye n’Imana ikurwaho"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "15. B. The carnal man has the fruit of the Holy Spirit in him",
+          "fr": "15. B.  L'homme charnel a le fruit du Saint-Esprit en lui",
+          "rw": "15. B. Umuntu wa kamere afite imbuto z’Umwuka Wera muri we"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "16": {
+        "index": 16,
+        "type": "yesno",
+        "text": {
+          "en": "15. C. One of the reasons a Christian prays is because it is a church program",
+          "fr": "15. C. L'une des raisons pour lesquelles un chrétien prie est parce que c'est un plan d'église",
+          "rw": "15. C. Imwe mu mpamvu zatuma umukristo asenga ni uko ari gahunda y’ itorero"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "17": {
+        "index": 17,
+        "type": "yesno",
+        "text": {
+          "en": "15. D. One can belong to Christ without the Spirit of Christ",
+          "fr": "15. D. Personne ne peut appartenir à Christ sans l'Esprit de Christ",
+          "rw": "15. D. Umuntu ashobora kuba uwa Kristo adafite Umwuka wa Kristo"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "18": {
+        "index": 18,
+        "type": "yesno",
+        "text": {
+          "en": "15.  E. A Christian who is always filled with the Holy Spirit is empowered to witness Jesus Christ in his life",
+          "fr": "15.  E. Un chrétien qui est toujours rempli du Saint-Esprit a la puissance de témoigner de Jésus-Christ dans sa vie",
+          "rw": "15.  E. Umukristo uhora yuzuye Umwuka Wera agira imbaraga mu guhamya Yesu Kristo mu buzima bwe"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Oui",
+          "rw": "Yego"
+        }
+      },
+      "19": {
+        "index": 19,
+        "type": "yesno",
+        "text": {
+          "en": "15.  F. When a child of God accepts a bribe, his relationship with God is broken",
+          "fr": "15.  F. Lorsqu'un enfant de Dieu accepte une corruption, sa relation avec Dieu est rompue",
+          "rw": "15.  F. Mu gihe umwana w’Imana ariye ruswa, isano ye n’Imana ikurwaho"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "20": {
+        "index": 20,
+        "type": "mcq",
+        "text": {
+          "en": "16. To grow spiritually, what must a Christian do? Choose the wrong answer.",
+          "fr": "16. Pour grandir spirituellement, que doit faire un chrétien? Choisissez la mauvaise réponse.",
+          "rw": "16. Kugira ngo umukristo akure mu Mwuka, agomba gukora iki ? Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. Witnessing Christ in His Life and His words",
+            "B. Pray daily.",
+            "C. Dedicate/consecrate his life and possessions to God.",
+            "D. Obedience to God always.",
+            "E. Occasional meditation on the Word of God."
+          ],
+          "fr": [
+            "A. Témoigner de Christ dans sa vie et ses paroles",
+            "B. Priez quotidiennement.",
+            "C. Consacrer sa vie et ses biens à Dieu.",
+            "D. Toujours obéir à Dieu.",
+            "E. Méditation occasionnelle sur la Parole de Dieu."
+          ],
+          "rw": [
+            "A. Guhamya Kristo mu mibereho no mu magambo ye.",
+            "B. Gusenga iminsi yose.",
+            "C. Kwiragiza Imana we n'ibye byose.",
+            "D. Kumvira Imana igihe cyose.",
+            "E. Gutekereza kw’Ijambo ry’Imana rimwe na rimwe."
+          ]
+        },
+        "correct": {
+          "en": "E. Occasional meditation on the Word of God.",
+          "fr": "E. Méditation occasionnelle sur la Parole de Dieu.",
+          "rw": "E. Gutekereza kw’Ijambo ry’Imana rimwe na rimwe."
+        }
+      }
+    }
+  },
+  "CLASS 2": {
+    "max_score": {
+      "en": 17,
+      "fr": 17,
+      "rw": 17
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. God wants us to grow spiritually in a balanced way. What does that mean?",
+          "fr": "1. Dieu veut que nous puissions grandir spirituellement d’une manière équilibrée. Que cela veut-il dire?",
+          "rw": "1. Imana irashaka ko dukura mu mwuka mu buryo buringaniye. Ibyo birashaka kuvuga iki?"
+        },
+        "options": {
+          "en": [
+            "A.It means we must be Christlike and manifest the fruits of the Holy Spirit",
+            "B.It means we have to do a lot of good works in church",
+            "C.It means we need to make more and more disciples of Christ",
+            "D.It means we need to know a lot of Bible verse",
+            "E.A and C are the correct answers"
+          ],
+          "fr": [
+            "A.Cela veut dire que nous devons ressembler à Christ et manifester les fruits du Saint-Esprit",
+            "B.Cela veut dire que nous devons accomplir beaucoup de bonnes œuvres à l'église",
+            "C.Cela veut dire que nous devons faire de plus en plus des disciples de Christ",
+            "D.Cela veut dire que nous devons connaitre beaucoup de verset Biblique",
+            "E.A et C sont les bonnes réponses"
+          ],
+          "rw": [
+            "A.Birashaka kuvuga ko tugomba gusa na Kristo tugaragaza imbuto za Mwuka Wera",
+            "B. Birashaka kuvuga ko tugomba gukora imirimo myinshi mu rusengero",
+            "C.Birashaka kuvuga ko tugomba kurushaho guhindura abantu kuba abigishwa ba Kristo",
+            "D.Birashaka kuvuga ko tugomba kumenya ibyanditswe byinshi",
+            "E.A na C ni byo bisubizo byiza"
+          ]
+        },
+        "correct": {
+          "en": "E.A and C are the correct answers",
+          "fr": "E.A et C sont les bonnes réponses",
+          "rw": "E.A na C ni byo bisubizo byiza"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. How to define in a simple way “salvation” and the way to acquire it?",
+          "fr": "2. Comment définir d’une manière simple « le salut » et la manière de l’acquérir?",
+          "rw": "2. Ni gute twasobanura mu buryo bworoshye “Agakiza” icyo ari cyo n’ukuntu twakabona."
+        },
+        "options": {
+          "en": [
+            "A.Salvation is Christ in our midst, we have it by giving many offerings",
+            "B.Salvation is Emmanuel God with us. We have it by doing good works",
+            "C.Salvation is walking in righteousness even if you don’t have Jesus in your life",
+            "D.Salvation is Jesus in us. To have it, we must first receive Jesus as our Lord and Personal Savior, starting with repentance and accepting to be led by the Holy Spirit.",
+            "E.A and B are the correct answers"
+          ],
+          "fr": [
+            "A.Le Salut, c’est Christ au milieu de nous, nous l’avons en donnant beaucoup d’offrandes",
+            "B.Le Salut, c’est Emmanuel Dieu avec nous. Nous l’avons en accomplissant de bonnes œuvres",
+            "C.Le Salut, c’est marcher dans la droiture même si on n’a pas Jésus dans notre vie",
+            "D.Le salut, c’est Jésus en nous. Pour l’avoir, il faut d’abord recevoir Jésus comme notre Seigneur et sauveur personnel en commençant par se repentir et par accepter d’être conduit par le Saint-Esprit",
+            "E.A et B sont les bonnes réponses"
+          ],
+          "rw": [
+            "A. Agakiza ni Kristo hagati yacu. Kukabona ni ugutanga ibitambo byinshi",
+            "B. Agakiza ni Emmanuel Imana iri kumwe natwe. Kukageraho ni ugukora imirimo myiza",
+            "C. Agakiza n'ukugenda mu bugingo bwejejwe nubwo udafite Kristo. Kukabona ntacyo bisabwa",
+            "D.Agakiza ni Yesu Kristo muri jye. Kukabona ni ukumwakira nk’Umwami n’Umukiza wanjye nabanje kwihana no kwemera kuyoborwa n’Umwuka Wera",
+            "E.A na B nibyo ibisubizo byiza"
+          ]
+        },
+        "correct": {
+          "en": "D.Salvation is Jesus in us. To have it, we must first receive Jesus as our Lord and Personal Savior, starting with repentance and accepting to be led by the Holy Spirit.",
+          "fr": "D.Le salut, c’est Jésus en nous. Pour l’avoir, il faut d’abord recevoir Jésus comme notre Seigneur et sauveur personnel en commençant par se repentir et par accepter d’être conduit par le Saint-Esprit",
+          "rw": "D.Agakiza ni Yesu Kristo muri jye. Kukabona ni ukumwakira nk’Umwami n’Umukiza wanjye nabanje kwihana no kwemera kuyoborwa n’Umwuka Wera"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3. The act by which two people, initially separated by a wall of enmity, re-associate or come together in heart to walk together is called:",
+          "fr": "3. L’acte par lequel deux personnes, initialement séparés par un mur d’inimitié, se réassocient ou se remettent ensemble de cœur pour marcher de commun accord s’appelle :",
+          "rw": "3. Igikorwa gituma abantu babiri batandukanyijwe n’urwango biyemeza kongera kubana cyitwa"
+        },
+        "options": {
+          "en": [
+            "A.Forgiveness",
+            "B.Return",
+            "C.Sanctification",
+            "D.Reconciliation",
+            "E.Reparation"
+          ],
+          "fr": [
+            "A.Le pardon",
+            "B.La restitution",
+            "C.La sanctification",
+            "D.La réconciliation",
+            "E.La réparation"
+          ],
+          "rw": [
+            "A.Kubabarira",
+            "B.Gusubiza",
+            "C.Kwezwa",
+            "D.Kwiyunga",
+            "E.Gutunganya"
+          ]
+        },
+        "correct": {
+          "en": "D.Reconciliation",
+          "fr": "D.La réconciliation",
+          "rw": "D.Kwiyunga"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. The Bible gives us several examples of people who were baptized by immersion. Choose the wrong example:",
+          "fr": "4. La Bible nous donne plusieurs exemples des personnes qui ont été baptisés par immersion. Choisit le mauvais exemple :",
+          "rw": "4. Dufite ingero nyinshi z’abantu babatijwe mu mazi menshi muri Bibiliya. Hitamo urugero rutari rwo:"
+        },
+        "options": {
+          "en": [
+            "A.The Ethiopian eunuch",
+            "B.Jesus Christ",
+            "C.Jonas",
+            "D.Lydia",
+            "E.Cornelius",
+            "F.There are no bad examples"
+          ],
+          "fr": [
+            "A.L’eunuque éthiopien",
+            "B. Jésus-Christ",
+            "C.Jonas",
+            "D.Lydie",
+            "E.Corneille",
+            "F.Il n’y aucun mauvais exemple"
+          ],
+          "rw": [
+            "A.Inkone y’Umunyetiyopiya",
+            "B.Yesu Kristo",
+            "C.Yona",
+            "D.Ludiya",
+            "E.Koruneliyo",
+            "F.Nta rugero rutari rwo ruhari"
+          ]
+        },
+        "correct": {
+          "en": "C.Jonas",
+          "fr": "C.Jonas",
+          "rw": "C.Yona"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. Here are the reasons why the children of God are reconciled. Check the wrong reason:",
+          "fr": "5. Voici les raisons qui font que les enfants de Dieu se réconcilient. Cochez la mauvaise raison:",
+          "rw": "5. Izi nizo mpamvu zatuma abana b’Imana biyunga. Hitamo impamvu itari yo"
+        },
+        "options": {
+          "en": [
+            "A.Reconciliation is a command from God.",
+            "B.Reconciliation helps us live in harmony with God.",
+            "C.Reconciliation is our weapon to defeat sorcerers.",
+            "D.Reconciliation brings us blessing and well-being.",
+            "E.Reconciliation is our honor as ambassadors of Christ"
+          ],
+          "fr": [
+            "A.La réconciliation est un ordre de Dieu.",
+            "B.La réconciliation nous aide à vivre en harmonie avec Dieu.",
+            "C.La réconciliation est notre arme pour vaincre les sorciers.",
+            "D.La réconciliation nous procure la bénédiction et le bien-être.",
+            "E.La réconciliation est notre honneur en tant qu'ambassadeurs de Christ."
+          ],
+          "rw": [
+            "A.Kwiyunga n’itegeko ry’imana.",
+            "B.Kwiyunga kudufasha kubana neza n’Imana",
+            "C.Kwiyunga n’intwaro yacu yo kunesha abarozi.",
+            "D.Kwiyunga kuduhesha umugisha no kubaho neza.",
+            "E.Kwiyunga kuduhesha icyubahiro nk’abahagarariye Kristo."
+          ]
+        },
+        "correct": {
+          "en": "C.Reconciliation is our weapon to defeat sorcerers.",
+          "fr": "C.La réconciliation est notre arme pour vaincre les sorciers.",
+          "rw": "C.Kwiyunga n’intwaro yacu yo kunesha abarozi."
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. The Bible shows us four (4) ways in which men cohabit with the Holy Spirit. Check the wrong answer.",
+          "fr": "6.  La Bible nous montre quatre (4) manières selon lesquelles les hommes cohabitent avec le Saint-Esprit. Cochez la mauvaise réponse.",
+          "rw": "6. Bibiliya itwereka uburyo bune (4) abantu baturana n’Umwuka Wera. Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A.The Holy Spirit upon us",
+            "B.The Holy Spirit in us",
+            "C.The Holy Spirit to serve us",
+            "D.The fullness of the Holy Spirit (being filled)",
+            "E.The Baptism of the Holy Spirit"
+          ],
+          "fr": [
+            "A.Le Saint-Esprit sur nous",
+            "B.Le Saint-Esprit en nous",
+            "C.Le Saint-Esprit pour nous servir",
+            "D.La plénitude du Saint-Esprit (être rempli)",
+            "E.Le baptême du Saint-Esprit"
+          ],
+          "rw": [
+            "A.Umwuka Wera kuri twe",
+            "B.Umwuka Wera muri twe",
+            "C.Umwuka Wera udukorera",
+            "D.Kuzuzwa Umwuka Wera",
+            "E.Umubatizo w’Umwuka Wera"
+          ]
+        },
+        "correct": {
+          "en": "C.The Holy Spirit to serve us",
+          "fr": "C.Le Saint-Esprit pour nous servir",
+          "rw": "C.Umwuka Wera udukorera"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. Praying according to the pattern of the Tabernacle, what do we do when we come to the brazen altar?",
+          "fr": "7. En priant selon le modèle du Tabernacle, que faisons-nous quand nous arrivons à l’autel d’airain?",
+          "rw": "7.  Mu gihe dusenga dukurikije isengesho ry’Ihema ry’ibonaniro, iyo tugeze ku gicaniro cy’umuringa, dusengera iki?"
+        },
+        "options": {
+          "en": [
+            "A.We worship God.",
+            "B.We pray for our families",
+            "C.We remember Jesus' sacrifice and give thanks.",
+            "D.We ask for the guidance of the Holy Spirit.",
+            "E.We remember and believe God's promises."
+          ],
+          "fr": [
+            "A.Nous adorons Dieu.",
+            "B.Nous prions pour nos familles",
+            "C.Nous nous rappelons du sacrifice de Jésus et nous lui rendons grâces",
+            "D.Nous demandons la direction du Saint-Esprit.",
+            "E.Nous nous rappelons des promesses de Dieu et nous y croyons."
+          ],
+          "rw": [
+            "A.Turamya Imana",
+            "B.Dusengera imiryango yacu",
+            "C.Twibuka igitambo cya Kristo ku musaraba tukamushima",
+            "D.Dusaba kuyoborwa n’Umwuka Wera",
+            "E.Twibuka amasezerano y’Imana tukayizera"
+          ]
+        },
+        "correct": {
+          "en": "C.We remember Jesus' sacrifice and give thanks.",
+          "fr": "C.Nous nous rappelons du sacrifice de Jésus et nous lui rendons grâces",
+          "rw": "C.Twibuka igitambo cya Kristo ku musaraba tukamushima"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "mcq",
+        "text": {
+          "en": "8. We have studied seven (7) models of prayer. There is a pattern that helps 8 people pray for 2 hours while taking turns after 15 minutes each. What is this model called?",
+          "fr": "8. Nous avons étudié sept (7) modèles de prière. Il y a un modèle qui aide 8 personnes à prier pendant 2 heures tout en se relayant après 15 minutes chacune. Comment s’appelle ce modèle?",
+          "rw": "8. Twize ibyiciro birindwi by’amasengesho. Hari amasengesho adufasha gusenga turi abantu 8 mu masaha abiri buri muntu agafata iminota 15. Ayo masengesho yitwa gute?"
+        },
+        "options": {
+          "en": [
+            "A.Free prayer model",
+            "B.Pattern of prayer by progression",
+            "C.Pattern of prayer according to the constitution of man",
+            "D.Model prayer according to the prayer Our Father",
+            "E.Tabernacle Pattern Prayer",
+            "F.Clock circle model"
+          ],
+          "fr": [
+            "A.Modèle de prière libre",
+            "B.Modèle de prière par progression",
+            "C.Modèle de prière selon la constitution de l’homme",
+            "D.Modèle de prière selon le Notre Père",
+            "E.Modèle de prière selon le tabernacle",
+            "F.Modèle du cercle de l’horloge"
+          ],
+          "rw": [
+            "A.Amasengesho ashingiye ku miterere y’umuntu",
+            "B.Amasengesho yo mw’Ihema ry’ibonaniro",
+            "C.Kuba mbere y’Imana nta gahunda yateguwe",
+            "D.Amasengesho y’uruhererekane",
+            "E.Gusenga uva ku kibazo ujya ku kindi",
+            "F.Amasengesho ya Data wa twese uri mw' ijuru"
+          ]
+        },
+        "correct": {
+          "en": "F.Clock circle model",
+          "fr": "F.Modèle du cercle de l’horloge",
+          "rw": "D.Amasengesho y’uruhererekane"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "mcq",
+        "text": {
+          "en": "9. What questions should we ask ourselves before we join a new congregation (church)? Check the wrong answer",
+          "fr": "9. Quelles sont les questions que nous devons nous poser avant de nous réunir dans une nouvelle assemblée (église)? Cochez la mauvaise réponse",
+          "rw": "9. N’iki tugomba kumenya cyangwa gusuzuma mbere yo gutangira guterana n’abandi mu itorero rishya? Hitamo igisubizo kitari cyo"
+        },
+        "options": {
+          "en": [
+            "A.Is Jesus announced there as the only Lord and Savior of everyone?",
+            "B.Is the Bible the supreme authority that settles all disputes?",
+            "C.Is hatred of evil, fear of God, sanctification taught as a standard of life?",
+            "D.Do we find our family members (blood relatives) there?",
+            "E.Is this a true family of God's children?"
+          ],
+          "fr": [
+            "A.Est-ce que Jésus y est annoncé comme seul Seigneur et Sauveur de tout un chacun?",
+            "B.La Bible est-elle l'autorité suprême qui règle toutes les disputes?",
+            "C.Enseigne-t-on la haine du mal, la crainte de Dieu, la sanctification comme standard de vie?",
+            "D.Y trouvons-nous nos membres de famille ?",
+            "E.Est-ce une vraie famille des enfants de Dieu?"
+          ],
+          "rw": [
+            "A.Yesu n’Umwami umwe n’Umukiza wa buri muntu",
+            "B.Bibiliya ni we muyobozi mukuru",
+            "C.Kwanga ikibi no kwiyeza birigishwa nk’urugero rw’ubuzima butunganye",
+            "D.Ko turifitemo bene wacu cg abavandimwe bacu",
+            "E.Ko ari umuryango w’abana b’Imana by’ukuri"
+          ]
+        },
+        "correct": {
+          "en": "D.Do we find our family members (blood relatives) there?",
+          "fr": "D.Y trouvons-nous nos membres de famille ?",
+          "rw": "D.Ko turifitemo bene wacu cg abavandimwe bacu"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "mcq",
+        "text": {
+          "en": "10. We have studied how a child of God can receive the baptism of the Holy Spirit. Choose the wrong way:",
+          "fr": "10. Nous avons étudié comment un enfant de Dieu peut recevoir le baptême du Saint-Esprit. Choisissez la mauvaise manière:",
+          "rw": "10. Twize inzira umwana w’Imana ashobora kwakira umubatizo wa mwuka wera. Hitamo inzira itari yo:"
+        },
+        "options": {
+          "en": [
+            "A.Having or Manifesting hunger and thirst for the Holy Spirit.",
+            "B.Repeating what we heard others say while they pray in tongues",
+            "C.Believe in God who promised his children to baptize them in the Holy Spirit.",
+            "D.Asking God for the visitation and baptism of the Holy Spirit.",
+            "E.Receive the laying on of hands from God's servants."
+          ],
+          "fr": [
+            "A.Avoir ou Manifester la faim et la soif du Saint Esprit.",
+            "B.Répéter souvent ce que nous avons entendu les autres dire quand ils priaient en langues",
+            "C.Croire en Dieu qui a promis à ses enfants de les baptiser dans le Saint-Esprit.",
+            "D.Demander à Dieu la visitation et le baptême du Saint-Esprit.",
+            "E.Recevoir l'imposition des mains des serviteurs de Dieu."
+          ],
+          "rw": [
+            "A.Kugaragaza inzara n’inyota by’Umwuka Wera",
+            "B.Gusubiramo/kwigana ibyo twumvise abanda bavuga igihe basengaga mu ndimi",
+            "C.Kwizera Imana yemereye abana be kubabatiza mu Mwuka",
+            "D.Gusaba Imana gusurwa no kubatizwa mu Mwuka Wera.",
+            "E.Kurambikwaho ibiganza by’abakozi b’Imana."
+          ]
+        },
+        "correct": {
+          "en": "B.Repeating what we heard others say while they pray in tongues",
+          "fr": "B.Répéter souvent ce que nous avons entendu les autres dire quand ils priaient en langues",
+          "rw": "B.Gusubiramo/kwigana ibyo twumvise abanda bavuga igihe basengaga mu ndimi"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "mcq",
+        "text": {
+          "en": "11. These are the conditions necessary to approach the table of the Lord (Sacrament). Check the wrong condition:",
+          "fr": "11. Voici les conditions nécessaires pour s’approcher de la table du Seigneur (Sainte Cène). Cochez la mauvaise condition:",
+          "rw": "11. Ibi ni byo bisabwa kugira ngo umuntu yemerwe gusangira Ifunguro ryera n’abandi. Hitamo igisabwa kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A.Being saved and being baptized by immersion",
+            "B.Living in harmony with the rest of the body of Christ",
+            "C.Commitment as a Member of the Assembly of Saints",
+            "D.Be baptized in the Holy Spirit",
+            "E.Not to be under ecclesiastical (church) discipline."
+          ],
+          "fr": [
+            "A.Etre sauvé et être baptisé par immersion",
+            "B.Vivre en harmonie avec le reste du corps du Christ",
+            "C.Etre engagé comme membre dans l’assemblée des saints",
+            "D.Avoir été baptisé du Saint-Esprit",
+            "E.Ne pas être sous discipline ecclésiastique (de l’église)."
+          ],
+          "rw": [
+            "A.Gukizwa no kubatizwa mu mazi menshi",
+            "B.Kubana neza n’abagize umubiri wa Kristo",
+            "C.Kwemerwa mu muryango w’iteraniro ry’abera",
+            "D.Kubatizwa mu Mwuka Wera",
+            "E.Kuba nta gihano yaciriwe n’itorero rye"
+          ]
+        },
+        "correct": {
+          "en": "D.Be baptized in the Holy Spirit",
+          "fr": "D.Avoir été baptisé du Saint-Esprit",
+          "rw": "D.Kubatizwa mu Mwuka Wera"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "mcq",
+        "text": {
+          "en": "12. We have studied several reasons which should prompt a Christian to commit himself financially and materially to the work of God. Check the wrong answer:",
+          "fr": "12. Nous avons étudié plusieurs raisons qui doivent pousser un chrétien à s’engager financièrement et matériellement à l’œuvre de Dieu. Cochez la mauvaise réponse:",
+          "rw": "12. Hari impamvu nyinshi twize zatuma Umukristo atanga ibintu bye cyangwa amafaranga ye mu murimo w’Imana. Hitamo impamvu itari yo:"
+        },
+        "options": {
+          "en": [
+            "A.It is his new nature to lay down his life, to walk in love, joy and peace.",
+            "B.It is evidence of our love and dedication to the Lord and His house",
+            "C.To overcome the curse.",
+            "D.Because the church authorities ask him to",
+            "E.It is our blessing now and for generations to come."
+          ],
+          "fr": [
+            "A.C’est sa nouvelle nature de donner sa vie, marcher dans l’amour.",
+            "B.C’est la preuve de notre amour et notre consécration au Seigneur et à Sa maison",
+            "C.Pour vaincre la malédiction.",
+            "D.Parce que les autorités de l’église le lui demandent",
+            "E.C’est notre bénédiction actuelle et celle des générations à venir."
+          ],
+          "rw": [
+            "A.Niyo kamere ye nshyashya yo gutanga ubuzima bwe no kugaragaza urukundo",
+            "B.Nicyo gihamya urukundo rwe no kwiyegurira Umwami ni inzu ye",
+            "C.Kugira ngo atsinde umuvumo",
+            "D.Kuko ubuyobozi bw’itorero bubimusaba",
+            "E.Ni umugisha wacu uy’umunsi no mu bazadukomukaho"
+          ]
+        },
+        "correct": {
+          "en": "D.Because the church authorities ask him to",
+          "fr": "D.Parce que les autorités de l’église le lui demandent",
+          "rw": "D.Kuko ubuyobozi bw’itorero bubimusaba"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "13. Answer YES or NO: Highlight the right answer. A. God wants to create a race that has only one image, that of Abraham",
+          "fr": "13.  Répondez OUI ou NON : Mettez en surbrillance la bonne réponse. A. Dieu veut se créer une race qui a une seule image, celle d’Abraham",
+          "rw": "13. Subiza na Yego cyangwa Oya A.Imana irashaka kwiremera ubwoko bufite ishusho imwe ya Aburahamu"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "yesno",
+        "text": {
+          "en": "13. B.  Once dead unsaved, a man with good works will be saved",
+          "fr": "13. B. Une fois mort sans être sauvé, l’homme qui avait de  bonnes œuvres sera sauvé",
+          "rw": "13. B.  Aramutse apfuye atarakizwa, umunyangeso nziza azakizwa"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Non",
+          "rw": "Oya"
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "13. C. One of the benefits of salvation in Jesus is being called holy",
+          "fr": "13. C. Un des avantages que le salut en Jésus nous a accordé est celui d’être appelé saint",
+          "rw": "13. C. Imwe mu nyungu y’Agakiza twahawe muri Yesu Kristo ni ukwitwa uwera"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Oui",
+          "rw": "Yego"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "13. D. The Christian is baptized by immersion because it is God’s command",
+          "fr": "13. D. Le chrétien est baptisé par immersion car c’est un commandement de Dieu",
+          "rw": "13. D. Umukristo abatizwa mu mazi menshi kuko ari itegeko ry’Imana"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Oui",
+          "rw": "Yego"
+        }
+      },
+      "16": {
+        "index": 16,
+        "type": "yesno",
+        "text": {
+          "en": "13.  E. The baptism of the Holy Spirit enables us to bear witness to Jesus Christ in our lives",
+          "fr": "13.  E. Le baptême du Saint-Esprit nous permet être rempli de la capacité de témoigner de Jésus-Christ dans notre vie",
+          "rw": "13.  E. Umubatizo w’Umwuka Wera uduhesha ubushobozi bwo guhamya Kristo mu buzima bwacu"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Non",
+            "Oui"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Oui",
+          "rw": "Yego"
+        }
+      }
+    }
+  },
+  "CLASS 3A": {
+    "max_score": {
+      "en": 19,
+      "fr": 20,
+      "rw": 19
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. We have learned that God's Love is our refuge. What does that mean?",
+          "fr": "1. Nous avons appris que l'Amour de Dieu est notre refuge. Qu'est-ce que cela signifie?",
+          "rw": "1. Twize ko Urukundo rw’Imana ari ubuhungiro bwacu. Ibyo birashaka kuvuga iki?"
+        },
+        "options": {
+          "en": [
+            "A. It means that God helps us when we suffer",
+            "B. It means that when we sin we can believe in the mercy of our God because He is Love",
+            "C. It means that God loves us only when we are righteous",
+            "D. It means that God is our refuge in times of war",
+            "E. Everything said above is true"
+          ],
+          "fr": [
+            "A. Cela veut dire que Dieu nous aide quand nous souffrons",
+            "B. Cela veut dire lorsque nous péchons, nous pouvons croire en la miséricorde de notre Dieu car Il est Amour",
+            "C. Cela veut dire que Dieu nous aime seulement quand nous sommes justes",
+            "D. Cela veut dire que Dieu est notre refuge au temps de guerre",
+            "E. Tout ce qui est dit ci-dessus est vrai"
+          ],
+          "rw": [
+            "A. Birashaka kuvuga ko Imana idufasha iyo tubabaye",
+            "B. Birashaka kuvuga ko iyo ducumuye dushobora kwizera imbabazi z’Imana yacu kuko ari Urukundo",
+            "C. Birashaka kuvuga ko Imana idukunda iyo turi abakiranutsi gusa",
+            "D. Birashaka kuvuga ko twahungira mu Mana mu gihe cy’intambara",
+            "E. Ibi byose bivuzwe haruguru ni byo."
+          ]
+        },
+        "correct": {
+          "en": "B. It means that when we sin we can believe in the mercy of our God because He is Love",
+          "fr": "B. Cela veut dire lorsque nous péchons, nous pouvons croire en la miséricorde de notre Dieu car Il est Amour",
+          "rw": "B. Birashaka kuvuga ko iyo ducumuye dushobora kwizera imbabazi z’Imana yacu kuko ari Urukundo"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. In John 10:17-18, what did Jesus say he was laying down his life for? Select the correct answer",
+          "fr": "2. En Jean 10:17-18, pour quelle raison Jésus dit-il qu’il donne sa vie? Cochez la bonne réponse",
+          "rw": "2. Muri Yohana 10:17-18, Yesu aravuga ko atanga ubugingo bwe kubera iki? Hitamo igisubizo nyacyo."
+        },
+        "options": {
+          "en": [
+            "A. To die for sinners",
+            "B. To overcome the sins of those who live in the world",
+            "C. To forgive harlots and sorcerers",
+            "D. Out of obedience to His Father",
+            "E. All of these answers are good"
+          ],
+          "fr": [
+            "A. Pour mourir pour les pécheurs",
+            "B. Pour vaincre les péchés de ceux qui vivent sur la terre",
+            "C. Pour pardonner les impudiques et les sorciers",
+            "D. Par obéissance à Son Père",
+            "E. Toutes ces réponses sont bonnes"
+          ],
+          "rw": [
+            "A. Kubwo gupfira abanyabyaha",
+            "B. Kubwo kunesha ibyaha by’abari mu isi",
+            "C. Kubwo kubabarira abasambanyi n’abarozi",
+            "D. Kubwo kumvira Se",
+            "E. Ibi bisubizo byose ni byiza"
+          ]
+        },
+        "correct": {
+          "en": "D. Out of obedience to His Father",
+          "fr": "D. Par obéissance à Son Père",
+          "rw": "D. Kubwo kumvira Se"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3. In 1 John 5:6-8, new birth is defined as a fact confirmed by the testimony of the water, the blood, and the Spirit, a testimony of true conversion. What is the meaning of water?",
+          "fr": "3. Dans 1 Jean 5:6-8, la nouvelle naissance est définie comme un fait confirmé par le témoignage de l’eau, du sang et de l’Esprit, témoignage d’une conversion authentique. Quelle est la signification de l’eau?",
+          "rw": "3. Muri 1 Yohana 5:6-8, kuvuka ubwa kabiri ni igikorwa cyemejwe n’ubuhamya bw’amazi, amaraso n’umwuka, aribwo buhamya bwo guhinduka nyakuri. Amazi asobanura iki?"
+        },
+        "options": {
+          "en": [
+            "A. Water symbolizes the world and its lust",
+            "B. Water symbolizes all the tears we shed when we were pagans",
+            "C. Water symbolizes repentance i.e. the recognition of one's state of sin and of one's dead works",
+            "D. Water symbolizes regret and resolve to change religion",
+            "E. Water Symbolizes the Power of the Holy Spirit in Us"
+          ],
+          "fr": [
+            "A. L’eau symbolise le monde et sa convoitise",
+            "B. L’eau symbolise toutes les larmes que nous avons versées lorsque nous étions païens",
+            "C. L’eau symbolise la repentance c'est-à-dire la reconnaissance de son état de péché et de ses œuvres mortes",
+            "D. L’eau symbolise le regret et la résolution de changer de religion",
+            "E. L’eau symbolise la Puissance du Saint-Esprit en nous"
+          ],
+          "rw": [
+            "A. Amazi asobanura isi n’irari ryayo",
+            "B. Amazi asobanura amarira menshi twarize tukiri abapagani",
+            "C. Amazi asobanura kwihana ni ukuvuga kwemera ibyaha byacu n’imirimo yacu ipfuye",
+            "D. Amazi asobanura kwicuza no gufata icyemezo cyo guhindura idini",
+            "E. Amazi asobanura imbaraga z’Umwuka Wera muri twe"
+          ]
+        },
+        "correct": {
+          "en": "C. Water symbolizes repentance i.e. the recognition of one's state of sin and of one's dead works",
+          "fr": "C. L’eau symbolise la repentance c'est-à-dire la reconnaissance de son état de péché et de ses œuvres mortes",
+          "rw": "C. Amazi asobanura kwihana ni ukuvuga kwemera ibyaha byacu n’imirimo yacu ipfuye"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. During the fourth week we studied “The Holy Spirit and internal freedom”. Check the assertion that does not correspond to week four:",
+          "fr": "4. Pendant la quatrième semaine nous avons étudié “Le Saint-Esprit et la libération interne”. Cochez l’assertion qui ne correspond pas à ladite semaine:",
+          "rw": "4. Mu cyumweru cya kane twize “Umwuka Wera no kubohoka kw’imbere”. Hitamo igisubizo kitajyanye n’icyo cyumweru:"
+        },
+        "options": {
+          "en": [
+            "A. There is therefore no condemnation for those who are in Christ Jesus.",
+            "B. Where the Spirit of God is, there is revival.",
+            "C. In the eyes of God, I am a wonderful creature.",
+            "D. By the Spirit, walk in victory."
+          ],
+          "fr": [
+            "Aux yeux de Dieu, je suis une créature merveilleuse.",
+            "Il n’y a donc aucune condamnation pour ceux qui sont en Jésus-Christ.",
+            "Là où est l’Esprit de Dieu, là est le réveil.",
+            "Par l’Esprit, marche en vainqueur."
+          ],
+          "rw": [
+            "A. None ku bari muri Kristo nta teka bazacirwaho.",
+            "B. Aho Umwuka w’Imana ari, niho haba ububyutse.",
+            "C. Imbere y’Imana ndi ikiremwa gihebuje.",
+            "D. Gendana n’intsinzi kubw’Umwuka."
+          ]
+        },
+        "correct": {
+          "en": "B. Where the Spirit of God is, there is revival.",
+          "fr": "Là où est l’Esprit de Dieu, là est le réveil.",
+          "rw": "B. Aho Umwuka w’Imana ari, niho haba ububyutse."
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. In \"The overflow of the Holy Spirit\", you ought to aim high with the Lord. What does that mean?",
+          "fr": "5. Dans « Le Débordement de l’Esprit », il faut viser haut avec le Seigneur. Que cela veut-il dire ?",
+          "rw": "5. Mu « Gusendera kw’Umwuka Wera », ugomba kureba kure n’Umwami. Ibyo birashaka kuvuga iki?"
+        },
+        "options": {
+          "en": [
+            "A. It means: Aspire to great plans with a view to destroying the works of Satan",
+            "B. It means: To have the revelation of the Word of God",
+            "C. It means: Possessing the gift of discerning spirits",
+            "D. It means: Going to distant lands to evangelize",
+            "E. It means: Plant a new church"
+          ],
+          "fr": [
+            "A. Cela veut dire : Aspirer à des grands projets avec en vue de détruire les œuvres de Satan",
+            "B. Cela veut dire : Avoir la révélation de la Parole de Dieu",
+            "C. Cela veut dire : Posséder le don du discernement des esprits",
+            "D. Cela veut dire : Aller dans les pays lointains pour évangéliser",
+            "E. Cela veut dire : Implanter une nouvelle église"
+          ],
+          "rw": [
+            "A. Birashaka kuvuga kwifuza gukorana n’Imana ibintu bikomeye kugira ngo usenye imirimo ya Satani n’abarozi",
+            "B. Birashaka kuvuga kugira ihishurirwa mu Ijambo ry’Imana",
+            "C. Birashaka kuvuga kugira impano yo kurobanura imyuka",
+            "D. Birashaka kuvuga kujya kuvuga ubutumwa mu bihugu bya kure",
+            "E. Birashaka kuvuga gutangiza itorero rishya"
+          ]
+        },
+        "correct": {
+          "en": "B. It means: To have the revelation of the Word of God",
+          "fr": "B. Cela veut dire : Avoir la révélation de la Parole de Dieu",
+          "rw": "B. Birashaka kuvuga kugira ihishurirwa mu Ijambo ry’Imana"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. Why is it important to walk in obedience in our intimacy with the Holy Spirit? Choose the wrong answer:",
+          "fr": "6. Pourquoi est-il important de marcher dans l’obéissance dans notre intimité avec le Saint-Esprit ? Choisissez la mauvaise réponse:",
+          "rw": "6. Ni kuki ari ngombwa kugendera mu kumvira mu busabane bwacu n’Umwuka Wera? Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. Perfect obedience saves us from so much pain",
+            "B. Obedience is the source of glory",
+            "C. Obedience is evidence of our love for God's children",
+            "D. Obedience is the best sacrifice to God"
+          ],
+          "fr": [
+            "A. L’obéissance parfaite nous met à l’abri de tant de peines",
+            "B. L’obéissance est la source de gloire",
+            "C. L’obéissance est la preuve de notre amour pour les enfants de Dieu",
+            "D. L’obéissance est le meilleur sacrifice à Dieu"
+          ],
+          "rw": [
+            "A. Kuko kumvira kuzuye kuturinda imibabaro myinshi",
+            "B. Kuko kumvira ari isoko y’imigisha",
+            "C. Kuko kumvira ni ikimenyetso cyerekana ko dukunda abana b’Imana",
+            "D. Kuko kumvira n’igitambo kiruta ibindi ku Mana"
+          ]
+        },
+        "correct": {
+          "en": "A. Perfect obedience saves us from so much pain",
+          "fr": "A. L’obéissance parfaite nous met à l’abri de tant de peines",
+          "rw": "A. Kuko kumvira kuzuye kuturinda imibabaro myinshi"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. We have studied three (3) fundamental elements which intervene in the progressive manifestation of the gifts of the spirit in the life of a Christian. Choose the right answer.",
+          "fr": "7. Nous avons étudié trois (3) éléments fondamentaux qui interviennent dans la manifestation progressive des dons dans la vie d’un chrétien. Choisissez la bonne réponse.",
+          "rw": "7. Ibintu bitatu (3) by’ingenzi mu kugaragazwa kw’impano z’Umwuka Wera mu buzima bw’umukristo. Hitamo igisubizo cyiza."
+        },
+        "options": {
+          "en": [
+            "A. Meditation on the Word of God, Overflow of the Holy Spirit, Listening attentively to the voice of the Holy Spirit",
+            "B. Consecration in our Work, A Significant Space of Time for the Holy Spirit to Speak in Tongues, Prophecy",
+            "C. The Power which the Holy Spirit gives us, Consecration to God in worship services, giving enough time to the Holy Spirit to grow spiritually and use the gifts He has given us",
+            "D. The Power which the Holy Spirit gives him, The Consecration to God in our work, giving enough time to the Holy Spirit to grow spiritually and use the gifts He has given us",
+            "E. The Baptism of the Holy Spirit, Having time in prayer retreat, Performing miracles"
+          ],
+          "fr": [
+            "A. La Méditation de la Parole de Dieu, le Débordement du Saint-Esprit, l’Ecoute attentive à la voix du Saint-Esprit",
+            "B. La Consécration dans notre travail, Un Espace appréciable du temps accordé au Saint Esprit pour parler en langues, La Prophétie",
+            "C. La Puissance que le Saint-Esprit nous donne, La Consécration à Dieu dans les cultes, donner suffisamment de temps au Saint-Esprit pour grandir spirituellement et utiliser les dons qu'il nous a donnés",
+            "D. La Puissance que le Saint-Esprit nous donne, La Consécration à Dieu dans notre travail, donner suffisamment de temps au Saint-Esprit pour grandir spirituellement et utiliser les dons qu'il nous a donnés",
+            "E. Le Baptême du Saint Esprit, Avoir du temps dans la retraite de prière, Faire des miracles"
+          ],
+          "rw": [
+            "A. Gutekereza kw’Ijambo ry’Imana, Gusinda Umwuka Wera, Gutega ugutwi ijwi ry’Umwuka Wera",
+            "B. Kwiyegurira Imana mu murimo wayo, Umwanya uhagije wo guha Umwuka Wera ngo tuvuge mu ndimi, Guhanura",
+            "C. Ubushobozi Umwuka Wera aduha, Kwiyegurira Imana mu materaniro, Umwanya uhagije wo guha Umwuka Wera ngo dukure mu mwuka kandi dukoresha impano yaduhaye.",
+            "D. Ubushobozi Umwuka Wera aduha, Kwiyegurira Imana mu murimo wayo, Umwanya uhagije wo guha Umwuka Wera ngo dukure mu mwuka kandi dukoreshe impano yaduhaye.",
+            "E. Umubatizo w’Umwuka Wera, Kugira umwanya mu mwiherero w’amasengesho, Gukora ibitangaza."
+          ]
+        },
+        "correct": {
+          "en": "D. The Power which the Holy Spirit gives him, The Consecration to God in our work, giving enough time to the Holy Spirit to grow spiritually and use the gifts He has given us",
+          "fr": "D. La Puissance que le Saint-Esprit nous donne, La Consécration à Dieu dans notre travail, donner suffisamment de temps au Saint-Esprit pour grandir spirituellement et utiliser les dons qu'il nous a donnés",
+          "rw": "D. Ubushobozi Umwuka Wera aduha, Kwiyegurira Imana mu murimo wayo, Umwanya uhagije wo guha Umwuka Wera ngo dukure mu mwuka kandi dukoreshe impano yaduhaye."
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "mcq",
+        "text": {
+          "en": "8. How can we define “the Overflow of the Holy Spirit” in the life of a disciple of Christ?",
+          "fr": "8. Comment pouvons-nous définir “le Débordement du Saint Esprit” dans la vie du disciple du Christ?",
+          "rw": "8. Ni gute wasobanura “Gusendera k’Umwuka Wera” mu buzima bw’umwigishwa wa Kristo?"
+        },
+        "options": {
+          "en": [
+            "A. It is receiving the gifts of the Holy Spirit to be famous in the church.",
+            "B. It is receiving the character of God into him to be a life giving spirit through the gifts of the Holy Spirit.",
+            "C. It is receiving God's ability within him to be a life giving soul through the gifts of the Holy Spirit.",
+            "D. It is receiving God's ability within him to be a life giving spirit through the gifts of the Holy Spirit.",
+            "E. All of these answers are good."
+          ],
+          "fr": [
+            "A. C’est le fait de recevoir les dons du Saint-Esprit pour être une vedette dans l’église.",
+            "B. C’est le fait de recevoir la caractère de Dieu en lui pour être un esprit vivifiant par les dons du Saint-Esprit.",
+            "C. C’est le fait de recevoir la capacité de Dieu en lui pour être une âme vivifiante par les dons du Saint-Esprit.",
+            "D. C’est le fait de recevoir la capacité de Dieu en lui pour être un esprit vivifiant par les dons du Saint-Esprit.",
+            "E. Toutes ces réponses sont bonnes."
+          ],
+          "rw": [
+            "A. Gusendera k’Umwuka Wera ni uguhabwa impano z’Umwuka Wera kugira ngo abe icyamamare mu Itorero.",
+            "B. Gusendera k’Umwuka Wera ni uguhabwa umutima w’Imana muri we kugira ngo abe umwuka utanga ubugingo binyuze mu mpano z’Umwuka Wera.",
+            "C. Gusendera k’Umwuka Wera ni uguhabwa ubushobozi bw’Imana muri we kugira ngo abe ubugingo butanga umwuka binyuze mu mpano z’Umwuka Wera.",
+            "D. Gusendera k’Umwuka Wera ni uguhabwa ubushobozi bw’Imana muri we kugira ngo abe umwuka utanga ubuzima  binyuze mu mbaraga z’Umwuka Wera.",
+            "E. Ibi bisobanuro byose ni byo."
+          ]
+        },
+        "correct": {
+          "en": "D. It is receiving God's ability within him to be a life giving spirit through the gifts of the Holy Spirit.",
+          "fr": "D. C’est le fait de recevoir la capacité de Dieu en lui pour être un esprit vivifiant par les dons du Saint-Esprit.",
+          "rw": "D. Gusendera k’Umwuka Wera ni uguhabwa ubushobozi bw’Imana muri we kugira ngo abe umwuka utanga ubuzima  binyuze mu mbaraga z’Umwuka Wera."
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "mcq",
+        "text": {
+          "en": "9. There are four (4) requirements for one who wants to be led by the Holy Spirit. Choose the wrong answer:",
+          "fr": "9. Il y a quatre (4) conditions requises à celui qui veut marcher avec le Saint-Esprit. Choisissez la mauvaise réponse:",
+          "rw": "9. Hari ibintu bine (4) bisabwa k’umuntu wese wifuza kuyoborwa n’Umwuka Wera. Hitamo igisubizo kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A. Listening attentively to the recommendations of the Holy Spirit",
+            "B. Faith in the Prophecies of all God's Servants",
+            "C. Holiness",
+            "D. Obedience to the Word of God",
+            "E. There are no wrong answers"
+          ],
+          "fr": [
+            "A. L’écoute attentive des recommendations du Saint-Esprit",
+            "B. La foi aux prophéties des tous serviteurs de Dieu",
+            "C. La sainteté",
+            "D. L’obéissance à la Parole de Dieu",
+            "E. Il n’y a aucune mauvaise réponse"
+          ],
+          "rw": [
+            "A. Gutega ugutwi ijwi ry’Umwuka",
+            "B. Kwizera ubuhanuzi bw’abakozi b’Imana bose",
+            "C. Kwezwa",
+            "D. Kumvira Ijambo ry’Imana",
+            "E. Nta gisubizo kitariyo"
+          ]
+        },
+        "correct": {
+          "en": "E. There are no wrong answers",
+          "fr": "B. La foi aux prophéties des tous serviteurs de Dieu",
+          "rw": "B. Kwizera ubuhanuzi bw’abakozi b’Imana bose"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "mcq",
+        "text": {
+          "en": "10. There is a consequent attitude that a Christian must adopt if he wants to give up any practice that does not conform to the Word of God. Choose the wrong answer:",
+          "fr": "10. Il y a une attitude conséquente qu’un chrétien doit adopter s’il veut renoncer à toute pratique non conforme à la Parole de Dieu. Choisissez la mauvaise réponse :",
+          "rw": "10. Hari imyifatire ikwiriye umukristo agomba kugaragaza iyo ashatse kureka (gusinyura) ibikorwa byose bitajyane n’Ijambo ry’Imana. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. Burn any document or throw to the bottom of the sea any object used for occult purposes",
+            "B. Seize the deliverance that Jesus has won for us through faith and prayer",
+            "C. Break up with all bad company",
+            "D. Training in prayer and meditation on the Bible",
+            "E. Disposing oneself to the service of God for the salvation of others.",
+            "F. A and D are the wrong answers"
+          ],
+          "fr": [
+            "A. Mettre au feu tout document ou jeter au fond de la mer tout objet ayant servi à des fins occultes",
+            "B. Saisir la délivrance que Jésus nous a acquis par la foi et la prière",
+            "C. Rompre avec toute mauvaise compagnie",
+            "D. S’affermir dans la prière et la méditation de la Bible",
+            "E. Se disposer au service de Dieu pour le salut des autres",
+            "F. A et D sont les mauvaises réponses"
+          ],
+          "rw": [
+            "A. Gutwika ibikoresho, ibitabo byakoreshejwe mu mihango y’umwijima. Ibidashobora gutwikwa byajugunywa mu ruzi",
+            "B. Kwakira kubohorwa Yesu aduha mu kwizera no mu masengesho",
+            "C. Kureka kwifatanya n’inshuti mbi",
+            "D. Kwihugura mu masengesho no gutekereza kuri Bibiliya",
+            "E. Kwitangira umurimo w’Imana ku bw’agakiza  kw’abandi",
+            "F. A na D ni byo bisubizo bitari byo"
+          ]
+        },
+        "correct": {
+          "en": "F. A and D are the wrong answers",
+          "fr": "F. A et D sont les mauvaises réponses",
+          "rw": "F. A na D ni byo bisubizo bitari byo"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "yesno",
+        "text": {
+          "en": "11. A.  God loves you with a love that nothing can change or disturb",
+          "fr": "11. A. Dieu t’aime d’un amour que rien ne peut changer ni troubler.",
+          "rw": "11.  A. Nta kintu na kimwe cyahungabanya urukundo Imana idufitiye"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "yesno",
+        "text": {
+          "en": "11. B. God expects from you relationships based on all your good works",
+          "fr": "11.  B. Dieu attend de toi des relations basées sur toutes tes bonnes œuvres",
+          "rw": "11. B. Ubusabane bwacu n’ Imana  bushingiye ku mirimo myiza dukora yose"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "11. C. In 1 Samuel 15:22 we are told that obedience is the best sacrifice to God",
+          "fr": "11. C. Dans 1 Samuel 15;22, il nous est dit que l’obéissance est le meilleur sacrifice à Dieu",
+          "rw": "11. C. Muri 1 Samweli 15;22, hatubwira ko ku Mana yacu, kumvira ni cyo gitambo gisumba ibindi byose"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "yesno",
+        "text": {
+          "en": "11. D. Fear can be an obstacle to the work that the Holy Spirit wants us to do",
+          "fr": "11. D. La peur peut constituer un obstacle à l’œuvre que le Saint-Esprit veut que nous fassions",
+          "rw": "11. D. Ubwoba bushobora kutubera inzitizi mu murimo  Umwuka Wera ashaka ko dukora"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "11.  E. Spiritual gifts are for character change and the fruit of the spirit is for service",
+          "fr": "11.  E. Les dons spirituels sont pour le changement de caractère et le fruit de l’esprit est pour le service",
+          "rw": "11. E. Impano z’Umwuka ni izo guhindura imico  naho imbuto z’Umwuka ni izo gukora Imirimo ya Mwuka wera"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "11. F. A fruitful work for God is the work of the Holy Spirit through us",
+          "fr": "11.  F. Un travail pour Dieu et qui porte des fruits est l’œuvre du Saint-Esprit à travers nous",
+          "rw": "11. F. Umurimo dukorera Imana kandi wera imbuto ni wawundi ukozwe n’Umwuka  Wera Muri twe"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "16": {
+        "index": 16,
+        "type": "yesno",
+        "text": {
+          "en": "11.  G. In 1 Corinthians 13:1-2, we are told that “without love, the manifestation of the gifts is vain. »",
+          "fr": "11. G. Dans 1 Corinthiens 13;1-2, il nous est dit qu’ « en dehors de l’amour, la manifestation des dons est vaine. »",
+          "rw": "11. G. Muri 1 Abakorinto 13;1-2, haratubwira ko “Hatari urukundo, ibimenyetso by’impano, ntacyo bivuze.”"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "17": {
+        "index": 17,
+        "type": "yesno",
+        "text": {
+          "en": "11. H. It is a duty for us to exercise our gift by respecting the authority of the Church",
+          "fr": "11. H. C’est un devoir pour nous d’exercer notre don  dans le respect de l’autorité de l’Eglise",
+          "rw": "11. H. Tugomba gukoresha impano z’Umwuka twahawe n’Imana mu kubaha abayobozi mw’Itorero"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "18": {
+        "index": 18,
+        "type": "yesno",
+        "text": {
+          "en": "11. I. Without personal discipline, one cannot experience the joy of walking in the Spirit fully",
+          "fr": "11. I. Sans discipline personnelle, on ne peut expérimenter pleinement la joie de la marche par l’Esprit",
+          "rw": "11.  I. Iyo umuntu atagaragaje muri rusange ubuzima bufite gahunda, ntazabasha kunezerwa mu kugendana n’Umwuka Wera  mu buryo bwuzuye"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Oya"
+        }
+      },
+      "19": {
+        "index": 19,
+        "type": "yesno",
+        "text": {
+          "en": "11. J. Your consecration to God is a major asset in your walk with the Holy Spirit",
+          "fr": "11. J. Ta consécration à Dieu est un atout majeur dans  ta marche avec le Saint-Esprit",
+          "rw": "11. J. Kwiyegurira Imana kwawe ni ingenzi mu kuyoborwa n’Umwuka Wera"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      }
+    }
+  },
+  "CLASS 3B": {
+    "max_score": {
+      "en": 13,
+      "fr": 13,
+      "rw": 13
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. We have studied that “consecration is the biblical pattern of marriage; Marriage is an alliance where each person finds advantages”. Choose the wrong answer:",
+          "fr": "1. Nous avons étudié que “ la consécration est le modèle de mariage biblique; Le mariage est une alliance où chaque personne trouve des avantages”. Choisissez la mauvaise réponse:",
+          "rw": "1. Twize ko “Kwiyegurira Imana ni urugero rw’urushako Bibiliya yemera; Urushako ni igihango aho buri muntu afite inyungu”. Hitamo inyungu itari yo:"
+        },
+        "options": {
+          "en": [
+            "A. The legal right to the spouse",
+            "B. Social consideration or the honor of sharing in the partner's blessings",
+            "C. The right to possession, to the enjoyment of what belongs to the other because of the covenant",
+            "D. The advantage of being together is better than being alone in the face of life's challenges",
+            "E. The blessing of being prayed for by your spouse while you sleep"
+          ],
+          "fr": [
+            "A. Le droit légal sur le (la) conjoint (e)",
+            "B. La considération sociale ou l’honneur d’avoir part aux bénédictions du partenaire",
+            "C. Le droit à la possession, à la jouissance de ce qui est à l'autre à cause de l'alliance",
+            "D. L’avantage d’être à deux qui vaut mieux que d’être seul face aux défis de la vie",
+            "E. La bénédiction d'être prié par votre conjoint pendant que vous dormez"
+          ],
+          "rw": [
+            "A. Uburenganzira buhabwa n’amategeko kuri mugenzi we.",
+            "B. Icyubahiro mu bandi kandi ishema yo gufata imigisha y’uwo mwashakanye na we",
+            "C. Uburenganzira bwo guhabwa no gukoresha umutungo w’undi kubera igihango.",
+            "D. Icyiza cyo kuba muri babiri kiruta kuba umwe mu biduhinyuza mu buzima",
+            "E. Umugisha wo gusengerwa nuwo mwashakanye wowe wiryamiye"
+          ]
+        },
+        "correct": {
+          "en": "E. The blessing of being prayed for by your spouse while you sleep",
+          "fr": "E. La bénédiction d'être prié par votre conjoint pendant que vous dormez",
+          "rw": "E. Umugisha wo gusengerwa nuwo mwashakanye wowe wiryamiye"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. One of the benefits of our consecration “is that it is a necessary and sufficient condition for unlimited blessing.” What does that mean?",
+          "fr": "2. Un des bénéfices de notre consécration “c’est qu’elle est une condition nécessaire et suffisante pour une bénédiction illimitée”. Qu’est-ce que cela veut-il dire?",
+          "rw": "2. Imwe mu nyungu zo kwiyegurira Imana ni uko “ni inzira zo kubona imigisha ishyitse y’Imana”. Ibyo birashaka kuvuga iki?"
+        },
+        "options": {
+          "en": [
+            "A. The one who consecrates himself to God agrees to be prepared by God, enabling him to receive the inheritance of the father.",
+            "B. If we make a request to God through fasting, God has mercy on us and gives us whatever we want",
+            "C. When we surrender our lives to God, we are weak to protect what God has given us",
+            "D. Taking cities is more important than having self control",
+            "E. All of the above are correct"
+          ],
+          "fr": [
+            "A. Celui qui se consacre à Dieu accepte d'être préparé par Dieu, lui permettant de recevoir l'héritage du père.",
+            "B. Si nous exposons une requête à Dieu par le jeûne, Dieu a pitié de nous et nous donne tout ce que nous voulons",
+            "C. Quand nous nous consacrons à Dieu, nous sommes faibles pour protéger ce que Dieu nous a donné",
+            "D. Prendre des villes est plus important que d'avoir la maîtrise de soi",
+            "E. Toutes ces réponses sont exactes"
+          ],
+          "rw": [
+            "A. Uwiyeguriye Imana yemera gutegurwa nayo, bityo bikamuhesha umurage utangwa na se.",
+            "B. Iyo twiyirije cyane dusengera icyifuzo, Imana itugirira imbabazi ikaduha ibyo dushaka byose",
+            "C. Iyo twiyeguriye Imana, tuba dufite intege nke zo kurinda icyo twahawe n’Imana",
+            "D. Gutwara amahanga ni cyo kintu cya ngombwa nubwo tutashoboye kwirinda ubwacu",
+            "E. Ibi bisubizo byose ni byo"
+          ]
+        },
+        "correct": {
+          "en": "A. The one who consecrates himself to God agrees to be prepared by God, enabling him to receive the inheritance of the father.",
+          "fr": "A. Celui qui se consacre à Dieu accepte d'être préparé par Dieu, lui permettant de recevoir l'héritage du père.",
+          "rw": "A. Uwiyeguriye Imana yemera gutegurwa nayo, bityo bikamuhesha umurage utangwa na se."
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3. \"A person who is not consecrated to God, loves the things of the world (the lust of the eyes, the lust of the flesh and the pride of life)\" In which bible verse do we find this?",
+          "fr": "3. \"Une personne qui n’est pas consacrée à Dieu aime les choses du monde (la convoitise des yeux, la convoitise de la chair et l'orgueil de la vie)\" Dans quel verset biblique trouve-t-on cela ?",
+          "rw": "3.  “Umuntu utiyeguriye Imana, akunda iby’ isi ( irari ry’ amaso, irari ry’ umubiri n’ ubwibone bw’ ubugingo)” Ibyo tubibona mu kihe cyanditswe ?"
+        },
+        "options": {
+          "en": [
+            "A. Romans 8:11-14",
+            "B. Romans 1:1-5",
+            "C. Galatians 2:20",
+            "D. 1 John 2:15-17",
+            "E. Revelation 12:11"
+          ],
+          "fr": [
+            "A. Romains 8:11-14",
+            "B. Romains 1:1-5",
+            "C. Galates 2: 20",
+            "D. 1 Jean 2:15-17",
+            "E. Apocalypse 12:11"
+          ],
+          "rw": [
+            "A. Abaroma 8:11-14",
+            "B. Abaroma 1:1-5",
+            "C. Abagalatiya 2: 20",
+            "D. 1 Yohana 2:15-17",
+            "E. Ibyahishuwe 12:11"
+          ]
+        },
+        "correct": {
+          "en": "D. 1 John 2:15-17",
+          "fr": "D. 1 Jean 2:15-17",
+          "rw": "D. 1 Yohana 2:15-17"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. The world and its desires are an obstacle to our consecration to the Lord. What should we do to overcome this obstacle?",
+          "fr": "4. Le monde et ses convoitises constituent un obstacle à notre consécration au Seigneur. Que devons-nous faire pour vaincre cet obstacle?",
+          "rw": "4. Isi n’irari ryayo n’umwanzi bitubuza kwiyegurira Imana. N’iki tugomba gukora kugira ngo tuyineshe?"
+        },
+        "options": {
+          "en": [
+            "A. We must ask God to live in poverty while seeking only the things above",
+            "B. We need to be sober and stay awake",
+            "C. We are to rejoice in earthly things for all is ours",
+            "D. We should behave like strangers and travelers on earth",
+            "E. B and D are the correct answers"
+          ],
+          "fr": [
+            "A. Nous devons demander à Dieu de vivre dans la pauvreté tout en cherchant seulement les choses d’en haut",
+            "B. Nous devons être sobres et restés éveillés",
+            "C. Nous devons nous réjouir aux choses terrestres car tout est à nous",
+            "D. Nous devons nous comporter comme des étrangers et des voyageurs sur la terre",
+            "E. B et D sont les bonnes réponses"
+          ],
+          "rw": [
+            "A. Tugomba gusaba Imana kubaho mu bukene dushaka ibyo mw’ijuru gusa",
+            "B. Tugomba kwirinda ibisindisha tukaba maso",
+            "C. Tugomba kwinezeza mu by'isi kuko byose ari ibyacu",
+            "D. Tugomba kwifata nk’abasuhuke n’abimukira kw’isi",
+            "E. B na D ni byo bisubizo nyabyo"
+          ]
+        },
+        "correct": {
+          "en": "E. B and D are the correct answers",
+          "fr": "E. B et D sont les bonnes réponses",
+          "rw": "E. B na D ni byo bisubizo nyabyo"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. Consecration is demonstrated by our zeal to serve our Lord. What does that mean?",
+          "fr": "5. La consécration est démontrée par notre zèle à servir notre Seigneur. Que cela veut-il dire ?",
+          "rw": "5. Kwiyegurira Imana kugaragara mu ishyaka dukorana dukorera Umwami wacu. Ibyo bisobanura iki ?"
+        },
+        "options": {
+          "en": [
+            "A. It means we need to evangelize lost souls",
+            "B. It means that we must make ourselves available to our personal interests and those of our family",
+            "C. It means we must make disciples of the church",
+            "D. It means that we have to choose carefully what we see, what we hear and where we go",
+            "E. All of these answers are true except B"
+          ],
+          "fr": [
+            "A. Cela veut dire que nous devons évangéliser les âmes perdues",
+            "B. Cela veut dire que nous devons nous rendre disponibles à nos intérêts personnels et à ceux de notre famille",
+            "C. Cela veut dire que nous devons faire des disciples de l'église",
+            "D. Cela veut dire  que nous devons choisir avec soin ce que nous voyons, ce que nous entendons et où nous allons",
+            "E. Toutes ces réponses sont vraies sauf B"
+          ],
+          "rw": [
+            "A. Bisobanura ko tugomba kuvuga ubutumwa bwiza ku barimbuka",
+            "B. Bisobanura ko tugomba kuboneka muri gahunda zose zifitiye umuryango wanjye inyungu",
+            "C. Bisobanura ko tugomba kurema abigishwa b'Itorero",
+            "D. Bisobanura ko tugomba guhitamo neza ibyo tureba, ibyo twumva naho tujya",
+            "E. Ibi bisubizo byose ni byo uretse B"
+          ]
+        },
+        "correct": {
+          "en": "E. All of these answers are true except B",
+          "fr": "E. Toutes ces réponses sont vraies sauf B",
+          "rw": "E. Ibi bisubizo byose ni byo uretse B"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. What should we do to overcome false miracles and the temptations of end-times? Choose the right answer.",
+          "fr": "6. Que devons-nous faire pour vaincre les miracles mensongers et les tentations du temps de la fin? Choisissez la bonne réponse.",
+          "rw": "6. Kugira ngo tuneshe ibitangaza by’ibinyoma n’ibishuko byo mu bihe bya nyuma tugomba gukora iki ? Hitamo igisubizo nyacyo."
+        },
+        "options": {
+          "en": [
+            "A. Not believing all servants of God who do not share our faith",
+            "B. Accept that the Holy Spirit reveals hidden things to us",
+            "C. Receiving the Love of Truth Within us",
+            "D. Going on a prayer retreat to receive the overflow of the Spirit",
+            "E. All of these answers are correct except A"
+          ],
+          "fr": [
+            "A. Ne pas croire à tous les serviteurs de Dieu qui ne partagent pas notre foi",
+            "B. Accepter que le Saint-Esprit nous révèle des choses cachées",
+            "C. Recevoir l’amour de la vérité en nous",
+            "D. Aller en retraite de prière pour recevoir le débordement de l’Esprit",
+            "E. Toutes ces réponses sont bonnes sauf A"
+          ],
+          "rw": [
+            "A. Gupinga abakozi bose b’Imana tudasengana",
+            "B. Kwemerera Umwuka Wera kuduhishurira ibihishwe",
+            "C. Kwakira gukunda ukuri muri twe",
+            "D. Kujya mu masengesho kugira ngo dusendere imbaraga z’Umwuka Wera",
+            "E. Ibi bisubizo byose ni byo uretse A"
+          ]
+        },
+        "correct": {
+          "en": "E. All of these answers are correct except A",
+          "fr": "E. Toutes ces réponses sont bonnes sauf A",
+          "rw": "E. Ibi bisubizo byose ni byo uretse A"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. One of the rare but essential virtues in the Kingdom of God is:",
+          "fr": "7. L’une des vertus rares mais essentielles dans le Royaume de Dieu est :",
+          "rw": "7. Twize ko indangagaciro ikomeye mu bwami bw’Imana kandi idakunze kuboneka ni :"
+        },
+        "options": {
+          "en": [
+            "A. The love of God",
+            "B. Joy of the Lord",
+            "C. Fear of God",
+            "D. Obedience",
+            "E. Faithfulness"
+          ],
+          "fr": [
+            "A. L’amour de Dieu",
+            "B. La joie de l’Eternel",
+            "C. La crainte de Dieu",
+            "D. L’obéissance",
+            "E. La fidélité"
+          ],
+          "rw": [
+            "A. Urukundo rw’Imana",
+            "B. Umunezero w’Uwiteka",
+            "C. Gutinya Imana",
+            "D. Kumvira",
+            "E. Gukiranuka"
+          ]
+        },
+        "correct": {
+          "en": "E. Faithfulness",
+          "fr": "E. La fidélité",
+          "rw": "E. Gukiranuka"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "yesno",
+        "text": {
+          "en": "8.  A.  It is possible to dedicate oneself to God without first loving Him",
+          "fr": "8.  A. Il est possible de se consacrer à Dieu sans l’aimer au préalable",
+          "rw": "8. A. Birashoboka kwiyegurira Imana tutabanje kuyikunda mbere"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "yesno",
+        "text": {
+          "en": "8. B. In 2 Corinthians 3:5 we understand that everyone consecrated to God is continually aware of his natural incapacity",
+          "fr": "8. B. Dans 2 Corinthiens 3:5, nous comprenons que tout celui qui est consacré à Dieu est continuellement conscient de son incapacité naturelle",
+          "rw": "8.  B. Mu 2 Abakorinto 3:5, twabonye ko uwiyegiye Imana wese amenya ko ubwe adashoboye"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "yesno",
+        "text": {
+          "en": "8. C. Consecration is demonstrated by our obedience to God",
+          "fr": "8. C. La consécration se démontre par notre obéissance à Dieu",
+          "rw": "8. C. Kwiyegurira Imana kugaragara mu kumvira  Imana"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "yesno",
+        "text": {
+          "en": "8. D. Patience is a diminishing virtue until we are perfect",
+          "fr": "8. D. La patience est une vertu qui diminue jusqu’à ce que nous soyons parfaits",
+          "rw": "8. D. Kwihangana ni indangagaciro igenda igabanuka kugeza dutunganye"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "yesno",
+        "text": {
+          "en": "8. E. Consecration is self-denial",
+          "fr": "8. E. La consécration, c’est le renoncement à soi",
+          "rw": "8. E. Kwiyegurira Imana ni ukwiyanga wowe ubwawe"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "8. F. Before our God, ability precedes faithfulness",
+          "fr": "8.  F. Devant notre Dieu, la capacité précède la fidélité",
+          "rw": "8. F. Ku Mana yacu, ubushobozi bubanziriza gukiranuka"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      }
+    }
+  },
+  "CLASS 4": {
+    "max_score": {
+      "en": 16,
+      "fr": 17,
+      "rw": 17
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. We learned about the act of deliverance. How would you explain it?",
+          "fr": "1. Nous avons appris le travail de la délivrance. Qu’est-ce que ça veut dire?",
+          "rw": "1. Twize ku gikorwa cyo kubohoza. Ese gisobonura iki?"
+        },
+        "options": {
+          "en": [
+            "A.It is an act done to take someone out of financial difficulties.",
+            "B. It is an act done by carrying a friend’s burden in prayer.",
+            "C.  This is a prayer that helps an intercessor to deliver those whom the devil has bound",
+            "D. It is an act done by an intercessor while being covered by God’s strength through the power of the holy spirit",
+            "E. C and D are right"
+          ],
+          "fr": [
+            "A. C’est l’acte de sortir quelqu’un d’un problème financier",
+            "B. C’est l’acte de soutenir par la prière la requête de ton prochain",
+            "C. C’est la prière qui aide l’intercesseur à libérer ceux qui sont liés par le diable",
+            "D. C’est l’acte dans laquelle l’intercesseur est revêtu de la puissance de Dieu par la grâce de Jésus au-travers la puissance du Saint-Esprit",
+            "E. C et D sont corrects"
+          ],
+          "rw": [
+            "A. Ni igikorwa cyo gukura umuntu mu kibazo yarafite kijyanye n’amafaranga",
+            "B. Ni igikorwa cyo guheka icyifuzo cya mugenzi wawe mu masengesho",
+            "C. Ni amasengesho afasha umwinginzi kubohoza abo satani yaboshye",
+            "D. Ni igikorwa aho umwinginzi yambara imbaraga z’Imana n'ubuntu bwa Yesu binyuze mu mbaraga za Mwuka Wera",
+            "E. C na D ni byo"
+          ]
+        },
+        "correct": {
+          "en": "E. C and D are right",
+          "fr": "E. C et D sont corrects",
+          "rw": "E. C na D ni byo"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. We have learned that an intercessor is a sanctified person and seeks sanctification. What does this mean? Pick the best explanation:",
+          "fr": "2. Nous avons appris qu'un intercesseur est une personne sanctifiée et qui s'efforce de se sanctifier. Qu'est-ce que ça veut dire? Choisissez la meilleure réponse:",
+          "rw": "2. Twize ko umwinginzi n’umuntu wejejwe kandi uharanira kwezwa. Bishatse kuvuga iki? Hitamo igisubizo cyiza:"
+        },
+        "options": {
+          "en": [
+            "A. He/she is sanctified and has been called to be sanctified only when he/she is locked in prayers.",
+            "B. He/she has been sanctified for the Father so that they might be a useful instrument.",
+            "C. He/she sanctifies themselves for the church and others.",
+            "D. Sanctification has power that allows one to fulfill God’s will",
+            "E. All answers are right expect for A"
+          ],
+          "fr": [
+            "A. Il est sanctifié et appelé à être sanctifié dans ses jours de retraite",
+            "B. Il a été sanctifié par le Père pour être un instrument pour les autres.",
+            "C. Il se sanctifie pour l’Église et les autres.",
+            "D. La sanctification est le pouvoir qui lui permet de faire ce que Dieu veut",
+            "E. Toutes les réponses sont correctes sauf A"
+          ],
+          "rw": [
+            "A. Arejejwe kandi yahamagariwe guhora yejejwe iminsi ari mu mwiherero",
+            "B. Yejejwe kubera Data kugira ngo abe igikoresho ku bandi.",
+            "C. Yiyeza kubera Itorero n’abandi.",
+            "D. Kwezwa ni imbaraga zimuhesha gukora ibyo Imana ishaka",
+            "E. Ibisubizo byose ni byiza uretse A"
+          ]
+        },
+        "correct": {
+          "en": "E. All answers are right expect for A",
+          "fr": "E. Toutes les réponses sont correctes sauf A",
+          "rw": "E. Ibisubizo byose ni byiza uretse A"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3. Mutoni is interceding for the church and is currently praying and fasting for 3 days with no food or drinks. How would we classify this type of fasting",
+          "fr": "3. Mutoni fait un jeûne sec de trois jours sans manger ni boire pour intercéder pour l'Église. Dans la classification des jeûnes, où placerions-nous ce jeûne:",
+          "rw": "3. Mutoni ari kwingingira Itorero yiyirije iminsi itatu atarya atanywa. Mu rutonde rwo kwiyiriza, twashyira he icyo gikorwa:"
+        },
+        "options": {
+          "en": [
+            "A. Fasting for a specific goal and time.",
+            "B. Fasting for other people who are also in fasting(AKA Back-up prayers)",
+            "C. Fasting for abstinence reasons.",
+            "D. All answers are correct expect for B"
+          ],
+          "fr": [
+            "A. Le jeûne selon le but",
+            "B. Le jeune selon l’auditoire et accompagnement",
+            "C. Le jeûne selon le mode d’abstinence",
+            "D. Toutes ces réponses sont correctes sauf B"
+          ],
+          "rw": [
+            "A. Kwiyiriza ku bijyanye n’intego hamwe n’igihe",
+            "B. Kwiyiriza ku bijyanye n’abantu bari muri icyo gikorwa",
+            "C. Kwiyiriza ku bijyanye no kwibuza",
+            "D. Ibi bisubizo byose ni byiza uretse B"
+          ]
+        },
+        "correct": {
+          "en": "B. Fasting for other people who are also in fasting(AKA Back-up prayers)",
+          "fr": "D. Toutes ces réponses sont correctes sauf B",
+          "rw": "D. Ibi bisubizo byose ni byiza uretse B"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. We have learned about the act of standing in the GAP or to cover. What does it mean?",
+          "fr": "4. Nous avons appris l'acte de soutenir ou de couvrir. Qu'est-ce que ça veut dire?",
+          "rw": "4. Twize ku gikorwa cyo gushyigikira cyangwa gutwikira. Ese bisobanuye iki?"
+        },
+        "options": {
+          "en": [
+            "A. It is an act of offering a seed in the church in order to support God’s work or ministry.",
+            "B. It is an act of standing in the Gap praying, either supporting a person or a ministry.",
+            "C. It is an act of supporting a brethren so that they might not face consequences of their sins.",
+            "D. It is an act to take up a brethren’s responsibilities while they also take care of what is important"
+          ],
+          "fr": [
+            "A. C’est l’acte de faire des offrandes dans le temple afin de soutenir l’œuvre de Dieu",
+            "B. C'est l'acte de se tenir à la brèche pour prier, soutenir une personne, une action ou un travail",
+            "C. C’est un acte de couvrir ton frère afin qu’il ne subisse pas les conséquences de ses erreurs",
+            "D. C’est l’acte de prendre les responsabilités de ton frère afin que lui s’occupe d’autres choses importantes."
+          ],
+          "rw": [
+            "A. Ni igikorwa cyo gutanga ituro mu rusengero mu rwego rwo gushyigikira umurimo w’Imana",
+            "B. Ni igikorwa cyo guhagarara mu cyuho usenga, ushyigikiye umuntu, igikorwa, cyangwa umurimo",
+            "C. Ni igikorwa cyo guhishira mwenedata ngo adahura n’ingaruko z’amakosa yakoze",
+            "D. Ni igikorwa cyo kwita ku nshingano za mwenedata mu gihe nawe yita ku bindi bifite akamaro"
+          ]
+        },
+        "correct": {
+          "en": "B. It is an act of standing in the Gap praying, either supporting a person or a ministry.",
+          "fr": "B. C'est l'acte de se tenir à la brèche pour prier, soutenir une personne, une action ou un travail",
+          "rw": "B. Ni igikorwa cyo guhagarara mu cyuho usenga, ushyigikiye umuntu, igikorwa, cyangwa umurimo"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. We have learned that one is capable of doing a contract(pact) with the kingdom of darkness.  Pick the WRONG answer:",
+          "fr": "5. Nous avons appris qu'une personne peut conclure un contrat personnel (direct) avec le monde des ténèbres. Choisissez la mauvaise réponse :",
+          "rw": "5. Twize ko umuntu ashobora gukorana ku giti cye amasezerano (yiziguye) n’isi y’umwijima. Hitamo igisubizo kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A. The pact of drinking blood",
+            "B. The pact done with words or vows.",
+            "C. Philosophic beliefs",
+            "D. The Pact that has to do with one’s name",
+            "E. Speaking to the dead"
+          ],
+          "fr": [
+            "A. Le pactes de sang",
+            "B. Les serments",
+            "C. La magie",
+            "D. Les promesses provenant de son nom",
+            "E. Communiquer avec les morts"
+          ],
+          "rw": [
+            "A. Amaserezerano yo kunywana (y’amaraso)",
+            "B. Amasezerano mu magambo n’indahiro",
+            "C. Imitekerereze y’ubukonikoni",
+            "D. Amasezerano ava mu izina rye",
+            "E. Kuvugana n’abapfuye"
+          ]
+        },
+        "correct": {
+          "en": "D. The Pact that has to do with one’s name",
+          "fr": "D. Les promesses provenant de son nom",
+          "rw": "D. Amasezerano ava mu izina rye"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. We have learned that the devils’s force/work might manifest in one’s soul. What does this mean?",
+          "fr": "6. Nous avons appris que la puissance de Satan peut être vue dans une personne à travers son âme. Qu'est-ce que ça veut dire?",
+          "rw": "6. Twize ko imbaraga za Satani zishobora kugaragara ku muntu zinyuze mu bugingo bwe. Bishatse kuvuga iki?"
+        },
+        "options": {
+          "en": [
+            "A. Demons can stop one to have faith",
+            "B. Demons can trouble ones thoughts to deviate them/distress them.",
+            "C. Demons can make one sick.",
+            "D. Demons can make one seek divination."
+          ],
+          "fr": [
+            "A. Que le démon empêche la personne de croire (sans aucune foi)",
+            "B. Que le le démon trouble les pensées de la personne pour la dévier, la dérouter",
+            "C. Que le démon rend la personne malade",
+            "D. Que le démon conduit la personne à la divination"
+          ],
+          "rw": [
+            "A. Ko umudayimoni abuza umuntu kwizera",
+            "B. Ko umudayimoni amuyobora mu kumuvangira ibitekerezo bye kugira ngo amuyobye",
+            "C. Ko umudayimoni atuma uwo muntu arwara",
+            "D. Ko umudayimoni amuyobora kujya kuraguza"
+          ]
+        },
+        "correct": {
+          "en": "B. Demons can trouble ones thoughts to deviate them/distress them.",
+          "fr": "B. Que le le démon trouble les pensées de la personne pour la dévier, la dérouter",
+          "rw": "B. Ko umudayimoni amuyobora mu kumuvangira ibitekerezo bye kugira ngo amuyobye"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. In the healing of one’s soul, there is eight(8) steps that an intercessor has to follow before the healing process. In the options bellow, chose what is done after giving them biblical foundation or basic lessons.",
+          "fr": "7. En libérant quelqu’un, il y a huit (8) étapes que l’intercesseur doit suivre avant de pouvoir faire une conclusion. Choisissez l'étape suivante après lui avoir donner les classes:",
+          "rw": "7. Mu komora umuntu wese, hari intambwe umunani (8) umwinginzi agomba gukurikiza mbere yuko akora ubushishozi. Hitamo intambwe ikurikira iyo umaze kumwigisha inyigisho z’ibanze:"
+        },
+        "options": {
+          "en": [
+            "A. Praying for them after agreeing on where you will meet",
+            "B. Giving them a set of questions that will help them in describing their life history",
+            "C. Giving them time to speak",
+            "D. Lend an ear and actively listen to them in a comfortable way.",
+            "E. To help them seek a christian doctor."
+          ],
+          "fr": [
+            "A. Priez pour la personne après avoir décidé où vous rencontrer",
+            "B. Lui donner des questions auxquelles il doit trouver des réponses, et répondre par écrit sur toute sa vie",
+            "C. Lui lasser le temps de parler",
+            "D. Écoutez et laissez-lui le temps de parler librement",
+            "E. Aidez-le à voir rendez-vous avec un médecin chrétien"
+          ],
+          "rw": [
+            "A. Kumusengera nyuma yuko mwemeje aho muzahurira",
+            "B. Kumuha ibibazo agomba kubonera ibisubizo, agasubiza mu nyandiko ivuga ubuzima bwe bwose",
+            "C. Guha uwomorwa umwanya wo kuvuga",
+            "D. Gutega amatwi no kumuha umwanya wo kuvuga mu bwisanzure",
+            "E. Kumufasha kubonana na muganga w’umukristo"
+          ]
+        },
+        "correct": {
+          "en": "B. Giving them a set of questions that will help them in describing their life history",
+          "fr": "B. Lui donner des questions auxquelles il doit trouver des réponses, et répondre par écrit sur toute sa vie",
+          "rw": "B. Kumuha ibibazo agomba kubonera ibisubizo, agasubiza mu nyandiko ivuga ubuzima bwe bwose"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "mcq",
+        "text": {
+          "en": "8. Each country has it’ s own spirit, soul, and body. Choose what answer demonstrates the body of a country",
+          "fr": "8. Chaque pays a son esprit, son âme et son corps. Sélectionnez ceux qui traduisent le corps d’un pays:",
+          "rw": "8. Buri gihugu gifite umwuka, ubugingo n’umubiri byacyo. Hitamo ibintu bigaragaza umubiri wacyo:"
+        },
+        "options": {
+          "en": [
+            "A. Security, Geography, and the Economy",
+            "B. Security, Traditions, and the Economy",
+            "C. Traditions, Culture and Sports",
+            "D. Governmental parties that lead politics and Traditions",
+            "E. Government parties that lead politics and Security."
+          ],
+          "fr": [
+            "A. La sécurité, la géographie et l’économie",
+            "B. la sécurité, les mœurs ou cultures, et économie",
+            "C. Les mœurs, cultures et sports",
+            "D. La domination qui détermine la ligne directive de la politique et culturelle",
+            "E. La domination qui détermine la ligne directive de la politique et la sécurité"
+          ],
+          "rw": [
+            "A. Umutekano, Ubumenyi bw’isi n’Ubukungu",
+            "B. Umutekano, Imigenzo n’Ubukungu",
+            "C. Imigenzo, Umuco na Siporo",
+            "D. Ubutegetsi buyobora imirongo migari ya politike n’Imigenzo",
+            "E. Ubutegetsi buyobora imirongo migari ya politike n’Umutekano"
+          ]
+        },
+        "correct": {
+          "en": "A. Security, Geography, and the Economy",
+          "fr": "A. La sécurité, la géographie et l’économie",
+          "rw": "A. Umutekano, Ubumenyi bw’isi n’Ubukungu"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "yesno",
+        "text": {
+          "en": "9. A) In the prayers of liberation, an intercessor is covered by God’s power in order to liberate those who are bound.",
+          "fr": "9. A) Dans la prière de soutien, l'intercesseur est revêtu de la puissance de Dieu pour libérer ceux qui sont liés",
+          "rw": "9. A) Mu masengesho yo gushyigikira, umwinginzi yambara imbaraga z’Imana kugira ngo abohore ababoshye"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "yesno",
+        "text": {
+          "en": "9. B) The word of God must be consumed or be a daily bread of intercessor .",
+          "fr": "9. B) La parole de Dieu devrait être la nourriture quotidienne de l’intercesseur",
+          "rw": "9. B) Ijambo ry’Imana rigomba kuba ifunguro rya buri munsi ry’umwinginzi"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "yesno",
+        "text": {
+          "en": "9. C) An intercessor is someone who is confidential and doesn’t restore in a careless manner",
+          "fr": "9. C) Un intercesseur est une personne qui garde les secrets et refuse la superficialité",
+          "rw": "9. C) Umwinginzi ni umuntu ubika ibanga kandi wanga komora aciye hejuru"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "yesno",
+        "text": {
+          "en": "9. D) An intercessor must also reconcile with those that she/he might have a conflict with after fasting",
+          "fr": "9. D) L’intercesseur doit se réconcilier avec les autres après avoir fait le jeûne",
+          "rw": "9. D) Umwinginzi agomba kwiyunga n’abantu bafite icyo bapfa nyuma yo kwiyiriza ubusa"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "9. E) We learned that the church and your family must be supported before you yourself have a prayerful life",
+          "fr": "9. E) Nous avons appris que votre famille et votre Église sont celles qui méritent d'être soutenues dans la prière avant d'avoir vous-même une vie de prière.",
+          "rw": "9. E) Twize ko umuryango wawe n’itorero ni byo bikwiye gushyigikirwa n'amasengesho mbere y’uko wowe ubwawe ugira ubuzima bw’amasengesho."
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "yesno",
+        "text": {
+          "en": "9. F) One’s soul is made of will, intellectual, and enjoyment",
+          "fr": "9. F) L'âme humaine est composée de la volonté, de l’intellect et la réjouissance",
+          "rw": "9. F) Ubugingo bw’umuntu bugizwe n’ubushake, ubwenge no kuryoherwa"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "9. G) In proverbs 24:11-12, We see the importance of support prayers.",
+          "fr": "9. G) Le Proverbes 24:11-12, nous montre que la prière de soutien est très importante",
+          "rw": "9. G) Mu Migani 24:11-12, hatwereka ko amasengesho yo gushyigikira ari ngombwa cyane"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "9. H) The spirit of modernity is one of the spirt used by the world in order to stop people from knowing God.",
+          "fr": "9. H) L'esprit de la mode est l'un des esprits qui combattent contre la connaissance de Dieu",
+          "rw": "9. H) Umwuka w’ibigezweho ni imwe mu myuka isi ifite ijya irwanya kumenya Imana"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "16": {
+        "index": 16,
+        "type": "yesno",
+        "text": {
+          "en": "9. I) Standing in the gap is standing before God on behalf of the family in order for God to bless the family",
+          "fr": "9. I) Se tenir à la brèche est représenter la famille devant Dieu afin de la bénir",
+          "rw": "9. I) Guhagarara mu cyuho ni uguhagararira umuryango imbere y’Imana kugira ngo iwuhe umugisha"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      }
+    }
+  },
+  "CLASS 5": {
+    "max_score": {
+      "en": 9,
+      "fr": 9,
+      "rw": 9
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. In general, the Gospel summarizes these four points. Choose the correct order.",
+          "fr": "1. En général, le Message d’Évangélisation résume ces quatre points. Choisissez comment les points se suivent.",
+          "rw": "1. Muri rusange, Ubutumwa Bwiza bugaragaza mu ncamake izi ngingo enye zibugize. Hitamo uko zikurikirana."
+        },
+        "options": {
+          "en": [
+            "A.God's Purpose  🡪  God's Providence  🡪  Man's Response  🡪  Man's Weakness",
+            "B. God's Purpose 🡪 Man's Weakness  🡪  God's Providence  🡪  Man's Response",
+            "C. God's Plan  🡪 Man's Response  🡪  God's Providence  🡪  Man's Weakness",
+            "D. Man's Purpose  🡪  God's Weakness  🡪  Man's Giving  🡪  God's Answer",
+            "E.  Human Weakness  🡪  God's Plan  🡪  God's Providence  🡪  Man's Response"
+          ],
+          "fr": [
+            "A. Le plan de Dieu 🡪 L’offre de Dieu 🡪 La réponse de l’homme 🡪 L’incapacité humaine",
+            "B.  Le plan de Dieu 🡪 L’incapacité humaine 🡪 L’offre de Dieu 🡪 La réponse de l’homme",
+            "C. Le plan de Dieu 🡪 La réponse de l’homme 🡪 L’offre de Dieu 🡪 L’incapacité humaine",
+            "D. Le pan de Dieu 🡪 L’incapacité humaine 🡪 L’offre de l’homme 🡪 La réponse de Dieu",
+            "E. L’incapacité humaine 🡪 Le plan de Dieu 🡪 L’offre de Dieu 🡪 La réponse de l’homme"
+          ],
+          "rw": [
+            "A. Umugambi w’Imana 🡪 Kwitanga kw’Imana 🡪Igisubizo cy’umuntu 🡪Intege nke z’umuntu",
+            "B. Umugambi w’Imana 🡪 Intege nke z’umuntu 🡪Kwitanga kw’Imana 🡪Igisubizo cy’umuntu",
+            "C. Umugambi w’Imana 🡪 Igisubizo cy’umuntu 🡪Kwitanga kw’Imana 🡪 Intege nke z’umuntu",
+            "D. Umugambi w’umuntu 🡪 Intege nke z’Imana 🡪Kwitanga k’umuntu 🡪 Igisubizo cy’Imana",
+            "E.  Intege nke z’umuntu 🡪 Umugambi w’Imana 🡪Kwitanga kw’Imana 🡪Igisubizo cy’umuntu"
+          ]
+        },
+        "correct": {
+          "en": "B. God's Purpose 🡪 Man's Weakness  🡪  God's Providence  🡪  Man's Response",
+          "fr": "B.  Le plan de Dieu 🡪 L’incapacité humaine 🡪 L’offre de Dieu 🡪 La réponse de l’homme",
+          "rw": "B. Umugambi w’Imana 🡪 Intege nke z’umuntu 🡪Kwitanga kw’Imana 🡪Igisubizo cy’umuntu"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. There are many obstacles to evangelism that we have learned. Some have to do with the resistance of satan and his allies. Choose the wrong answer.",
+          "fr": "2. Nous avons appris beaucoup d’obstacles à l’évangélisation. Certains obstacles sont les stratégies\\ mensonges du Diable et ses agents. Choisissez la mauvaise réponse",
+          "rw": "2.Hari inzitizi kw’ivugabutumwa nyinshi twize. Zimwe zijyanye no kwitambika ku mwanzi Satani n’abambari be. Hitamo igisubizo kitari cyo."
+        },
+        "options": {
+          "en": [
+            "A. Visa denials to God's servants",
+            "B. Distracting Evangelists",
+            "C. Not knowing the problems of the area where evangelism will be done",
+            "D. False doctrines and beliefs from the ancestors"
+          ],
+          "fr": [
+            "A. Le refus de permission de Visa pour les serviteurs de Dieu",
+            "B. Distraire les évangélistes.",
+            "C. L’ignorance des spécificités du terrain où l’on veut mener l’action",
+            "D. Les fausses doctrines et croyances venant des ancêtres."
+          ],
+          "rw": [
+            "A.Kwanga gutanga visa ku bakozi b’Imana",
+            "B.Kurangaza abavugabutumwa",
+            "C. Kutamenya ibibazo byaho ivugabutumwa rizakorerwa",
+            "D.Inyigisho n’imyizerere yubuyobe iva kubasekuruza"
+          ]
+        },
+        "correct": {
+          "en": "D. False doctrines and beliefs from the ancestors",
+          "fr": "D. Les fausses doctrines et croyances venant des ancêtres.",
+          "rw": "D.Inyigisho n’imyizerere yubuyobe iva kubasekuruza"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3.  In order for the work of Evangelism to achieve a satisfactory goal, preparation is essential. Choose the wrong preparation step:",
+          "fr": "3. La préparation à l’Évangélisation est essentielle afin que l’œuvre d’Évangélisation atteigne un but satisfaisant. Choisissez la mauvaise étape de préparation.",
+          "rw": "3. Kugira ngo igikorwa cy’Ivugabutumwa kigere ku ntego ishimishije, kwitegura ni ngombwa. Hitamo intambwe yo kwitegura itari yo:"
+        },
+        "options": {
+          "en": [
+            "A. Prayer",
+            "B. Awakening the hearts of evangelists",
+            "C. Planing for the equipments needed",
+            "D. Advertising the event on radio & television",
+            "E. budgeting"
+          ],
+          "fr": [
+            "A. La prière",
+            "B. La mobilisation\\ la motivation des cœurs",
+            "C. La préparation logistique et technique",
+            "D. Publier l’événement à la radio et à la télévision",
+            "E. La planification des ressources financières"
+          ],
+          "rw": [
+            "A. Gusenga",
+            "B. Gukangurira imitima y’abavugabutumwa",
+            "C. Gutegura gahunda y’ibikoresho bikenewe",
+            "D. Kwamamaza igikorwa kuri radiyo na television",
+            "E. Gutegura ingengo y’imali"
+          ]
+        },
+        "correct": {
+          "en": "D. Advertising the event on radio & television",
+          "fr": "D. Publier l’événement à la radio et à la télévision",
+          "rw": "D. Kwamamaza igikorwa kuri radiyo na television"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. There are 5 key arguments that cause confusion leading to false doctrines in the Church, choose the wrong one:",
+          "fr": "4. Il y a 5 points essentiels de divergence qui conduisent aux fausses doctrines, choisissez le mauvais point :",
+          "rw": "4. Hari ingingo 5 z'ingenzi zitera impaka zikazana ubuyobe, hitamo ingingo itariyo"
+        },
+        "options": {
+          "en": [
+            "A. The Nature of God and His works",
+            "B. Inspiration and authority of God's word: the Bible",
+            "C. Salvation by human works",
+            "D. ordaining women as pastors",
+            "E. The hope or destiny of believers"
+          ],
+          "fr": [
+            "A. L’œuvre et la personne de Dieu",
+            "B. L’inspiration et l’autorité de la Bible",
+            "C. Le salut et les œuvres",
+            "D. L’ordination des femmes en tant que pasteurs",
+            "E. L’espérance ou la finalité de notre foi"
+          ],
+          "rw": [
+            "A. Imiterere y'Imana n'imikorere yayo",
+            "B. Guhumekerwa n'ubutware bw'Ijambo ry'Imana: Bibiliya",
+            "C. Agakiza n'ibikorwa by'umuntu",
+            "D. Kwimika abagore nk'abashumba",
+            "E. Ibyiringiro cyangwa iherezo ry'abizera"
+          ]
+        },
+        "correct": {
+          "en": "D. ordaining women as pastors",
+          "fr": "D. L’ordination des femmes en tant que pasteurs",
+          "rw": "D. Kwimika abagore nk'abashumba"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "yesno",
+        "text": {
+          "en": "5. A) Evangelism is the reason why God's work exists",
+          "fr": "5. A) L’évangélisation est la raison de l’œuvre de Dieu",
+          "rw": "5. Subiza na YEGO cyangwa OYA A) Ivugabutumwa ni yo mpamvu umurimo w’Imana ubereyeho"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "yesno",
+        "text": {
+          "en": "5. B) We should go preach to people we are not in the same Church to bring them in our Church",
+          "fr": "5. B) Nous devrions évangéliser les autres personnes qui ne prient pas dans notre Église afin de les amener dans notre Église",
+          "rw": "5. B) Dukwiye kujya kuvuga ubutumwa kubandi bantu tudasengera mu itorero rimwe ngo tubazane Murusengero rwacu"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "yesno",
+        "text": {
+          "en": "5. C) The Rose-Croix Society is one of the societies with false doctrines",
+          "fr": "5. C) La secte Rose-Croix est une des sectes pernicieuses.",
+          "rw": "5. C) Umuryango Rose-Croix n’umwe mu miryango y’ubuyobe"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "yesno",
+        "text": {
+          "en": "5. D) When we preach the Gospel we must convince people of salvation",
+          "fr": "5. D) Quand nous évangélisons nous devons convaincre les personnes à propos du salut",
+          "rw": "5. D) Iyo tuvuga Ubutumwa Bwiza tugomba kwemeza abantu iby’agakiza"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "False",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "yesno",
+        "text": {
+          "en": "5. E) Proper planning of the process of discipling those who received salvation is important in evangelism",
+          "fr": "5. E) Préparer l’œuvre de suivi pour ceux qui ont reçu le salut est important dans l’évangélisation.",
+          "rw": "5. E) Gutegura neza igikorwa cyo gukurikana abakiriye agakiza ni ngombwa mu ivugabutumwa"
+        },
+        "options": {
+          "en": [
+            "False",
+            "True"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "True",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      }
+    }
+  },
+  "CLASS 6": {
+    "max_score": {
+      "en": 17,
+      "fr": 17,
+      "rw": 17
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. The Bible teaches us that God's calling in my life is manifested in five (5) ways. Choose the wrong answer:",
+          "fr": "1. La Bible nous enseigne que l'appel de Dieu dans ma vie se manifeste de cinq (5) façons. Choisissez la mauvaise réponse :",
+          "rw": "1. Bibiliya itwigisha ko umuhamagaro w’Imana mu buzima bwanjye ugaragara mu bintu bitanu (5). Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. God wants all people to know the Savior",
+            "B. God wants to create a new people in the image of Jesus",
+            "C. God wants all people to become disciples",
+            "D. God wants us to live for His glory",
+            "E. God wants us to grow spiritually and reach the example of a Church pastor"
+          ],
+          "fr": [
+            "A.  Dieu veut que tous connaissent le Sauveur",
+            "B. Dieu veut créer un nouveau peuple à l'image de Jésus",
+            "C. Dieu veut que tous les hommes deviennent des disciples",
+            "D. Dieu veut que nous vivions pour sa gloire",
+            "E. Dieu veut que nous grandissions spirituellement et atteignions l'exemple d'un pasteur d'église"
+          ],
+          "rw": [
+            "A. Imana irashaka ko abantu bose bamenya Umukiza",
+            "B. Imana irashaka kwiremera ubwoko bushya bufite ishusho ya Yesu",
+            "C. Imana irashaka ko abantu bose bahinduka abigishwa",
+            "D. Imana ishaka ko tubaho kubw'icyubahiro cyayo",
+            "E. Imana ishaka ko dukura mu mwuka tukagera kurugero rw'umushumba w’itorero"
+          ]
+        },
+        "correct": {
+          "en": "E. God wants us to grow spiritually and reach the example of a Church pastor",
+          "fr": "E. Dieu veut que nous grandissions spirituellement et atteignions l'exemple d'un pasteur d'église",
+          "rw": "E. Imana ishaka ko dukura mu mwuka tukagera kurugero rw'umushumba w’itorero"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. Through the following process, God prepares the character of the disciple. Choose the wrong answer:",
+          "fr": "2. Par le processus suivant, Dieu prépare le caractère du disciple. Choisissez la mauvaise réponse :",
+          "rw": "2. Binyuze mu buryo bukurikira, Imana itegura imico y’umwigishwa. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. Visitation",
+            "B. Being set apart",
+            "C. Breaking of self",
+            "D. Provision of wealth",
+            "E. Being converted into an instrument of value (respect)"
+          ],
+          "fr": [
+            "A. Visitation",
+            "B. Être mis à part",
+            "C. Brisement",
+            "D. Apport de richesse",
+            "E. Être converti en un instrument de valeur (respect)"
+          ],
+          "rw": [
+            "A. Kugendererwa",
+            "B. Gushyirwa iruhande",
+            "C.Kuvunagurwa",
+            "D. Guhabwa ubutunzi",
+            "E. Guhindurwa igikoresho cy’umumaro (icyubahiro)"
+          ]
+        },
+        "correct": {
+          "en": "D. Provision of wealth",
+          "fr": "D. Apport de richesse",
+          "rw": "D. Guhabwa ubutunzi"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3.  Spiritually, it is dangerous to remain a child forever. Choose the verse that best describes it:",
+          "fr": "3. Spirituellement, il est dangereux de rester un enfant pour toujours. Choisissez le verset qui le décrit le mieux :",
+          "rw": "3. Mu mwuka, ni akaga kuguma uruhinja by’iteka ryose. Hitamo icyanditswe kibyerekana neza"
+        },
+        "options": {
+          "en": [
+            "A. Ephesians 3 : 20",
+            "B. Galatians 4 : 1",
+            "C. John 1 : 12",
+            "D. 2 Corinthians 5 : 17",
+            "E. Romans 12 : 1-2"
+          ],
+          "fr": [
+            "A. Éphésiens 3 : 20",
+            "B. Galates 4 : 1",
+            "C. Jean 1 : 12",
+            "D. 2 Corinthiens 5 : 17",
+            "E. Romains 12 ; 1-2"
+          ],
+          "rw": [
+            "A. Abefeso 3 : 20",
+            "B.Abagalatiya 4 : 1",
+            "C.Yohana 1 : 12",
+            "D. 2 Abakorinto 5 : 17",
+            "E. Abaroma 12 ; 1-2"
+          ]
+        },
+        "correct": {
+          "en": "B. Galatians 4 : 1",
+          "fr": "B. Galates 4 : 1",
+          "rw": "B.Abagalatiya 4 : 1"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. There are seven (7) steps to glory for a servant of God. Choose the wrong answer:",
+          "fr": "4.  Il y a sept (7) étapes vers la gloire pour un serviteur de Dieu. Choisissez la mauvaise réponse :",
+          "rw": "4. Hari intambwe  zirindwi (7) ziganisha ku bwiza. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. Repentance",
+            "B. Revelation of Scripture",
+            "C. Having at least 2 days of fasting in a week",
+            "D. Conversion",
+            "E. Being Positioned and clothed"
+          ],
+          "fr": [
+            "A. Repentir",
+            "B.  Révélation de l'Écriture",
+            "C.  Avoir au moins 2 jours de jeûne par semaine",
+            "D. Conversion",
+            "E. Être positionné et équipé"
+          ],
+          "rw": [
+            "A. Kwihana",
+            "B. Guhishurirwa ibyanditswe",
+            "C. Kugira iminsi nibura 2 yo kwiyiriza mu cyumweru",
+            "D. Guhindurwa",
+            "E.Gushyirwa mu mwanya no kwambikwa"
+          ]
+        },
+        "correct": {
+          "en": "C. Having at least 2 days of fasting in a week",
+          "fr": "C.  Avoir au moins 2 jours de jeûne par semaine",
+          "rw": "C. Kugira iminsi nibura 2 yo kwiyiriza mu cyumweru"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. We learned the characteristics of a person who can dwell in the presence of God. Choose the correct answer:",
+          "fr": "5.  Nous avons appris les caractéristiques d'une personne qui peut demeurer dans la présence de Dieu. Choisissez la bonne réponse:",
+          "rw": "5. Twize ibiranga umuntu ushobora gutura mu kubaho kw’Imana. Hitamo igisubizo nyacyo :"
+        },
+        "options": {
+          "en": [
+            "A. He who is justified by his own good works",
+            "B. He who is self-sufficient, and seeks God in bad times",
+            "C. He who hates sin",
+            "D. He who tithes regularly",
+            "E. He who constantly practices prayer and meditation of the Word of God",
+            "F. C and E are the correct answers"
+          ],
+          "fr": [
+            "A. Celui qui est justifié par ses propres bonnes œuvres",
+            "B. Celui qui se suffit à lui-même et cherche Dieu dans les mauvais moments",
+            "C. Celui qui hait le péché",
+            "D. Celui qui dîme régulièrement",
+            "E. Celui qui pratique constamment la prière et la méditation de la parole Dieu",
+            "F. C et E sont les bonnes réponses"
+          ],
+          "rw": [
+            "A. Ni wawundi gusa watsindishirijwe n'imirimo ye myiza",
+            "B. Ni wawundi gusa wihagije, ushaka Imana mu bihe bibi",
+            "C. Ni wawundi gusa wanga icyaha",
+            "D. Ni wawundi gusa uzi gutanga icya cumi cye igihe cyose",
+            "E. Ni wawundi gusa witoza ubudasiba mu gusenga no gutekereza ku Ijambo ry’Imana",
+            "F. C na E ni byo bisubizo byiza"
+          ]
+        },
+        "correct": {
+          "en": "F. C and E are the correct answers",
+          "fr": "F. C et E sont les bonnes réponses",
+          "rw": "F. C na E ni byo bisubizo byiza"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. In Bible Communication, a message systematically developed and communicated through a messenger for the edification of God’s people is:",
+          "fr": "6. Dans la communication biblique, un message systématiquement développé et communiqué par un messager pour l'édification du peuple de Dieu est :",
+          "rw": "6. Mu ihererekanyamakuru rya Bibiliya, Ubutumwa bushingiye kuri Bibiliya buteguwe mu murongo runaka, bugatangwa binyuze mu muntu hagamijwe gufashwa k’ubwoko bw’Imana bwitwa :"
+        },
+        "options": {
+          "en": [
+            "A. A proverb",
+            "B. A biblical teaching",
+            "C. A preaching",
+            "D. A biblical Sharing",
+            "E. A prophesy"
+          ],
+          "fr": [
+            "A. Un proverbe",
+            "B. Un enseignement biblique",
+            "C. Une prédication",
+            "D. Un Partage Biblique",
+            "E. Une prophétie"
+          ],
+          "rw": [
+            "A. Umugani",
+            "B. Inyigisho ya Bibiliya",
+            "C. Kubwiriza",
+            "D. Gusangira Bibiliya",
+            "E.Ubuhanuzi"
+          ]
+        },
+        "correct": {
+          "en": "B. A biblical teaching",
+          "fr": "B. Un enseignement biblique",
+          "rw": "B. Inyigisho ya Bibiliya"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7.  An effective biblical message must fulfill some necessary conditions. Choose the wrong answer:",
+          "fr": "7. Un message biblique efficace doit remplir certaines conditions nécessaires. Choisissez la mauvaise réponse :",
+          "rw": "7. Kugira ubutumwa bwa Bibiliya bugire umusaruro bugomba kuba bwujujwe ibintu byangombwa. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. Must focus on the content taken out of another man’s book",
+            "B. Must be communicated with God-given authority",
+            "C.  Must include revision, emphasis of key points and reminders",
+            "D.  Must be truthful, challenging, and inviting people to take a decision",
+            "E. Must be concise, clear and on point"
+          ],
+          "fr": [
+            "A.  Doit se concentrer sur le contenu extrait du livre d'un autre homme de Dieu",
+            "B. Doit être communiqué avec l’autorité donnée par Dieu",
+            "C. Doit inclure la révision, l’emphase sur les points clés et les rappels",
+            "D. Doit être véridique, stimulant et invitant les gens à prendre une décision",
+            "E. Doit être concis, clair et précis"
+          ],
+          "rw": [
+            "A. Kwibanda kubyo wasomye mubitabo byabakozi b’Imana",
+            "B. Kuvugana ubutware nk’uwahawe inshingano n’Imana",
+            "C. Gusubiramo, gushimangira no kwibutsa",
+            "D. Gushyira mu kuri, guhinyuza, gufata icyemezo",
+            "E. Kuba ugufi, bicike kandi bugaragaze neza icyo ugamije"
+          ]
+        },
+        "correct": {
+          "en": "A. Must focus on the content taken out of another man’s book",
+          "fr": "A.  Doit se concentrer sur le contenu extrait du livre d'un autre homme de Dieu",
+          "rw": "A. Kwibanda kubyo wasomye mubitabo byabakozi b’Imana"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "yesno",
+        "text": {
+          "en": "8. Answer Yes or No A) Discipleship is the work of making disciples, not followers.",
+          "fr": "8. Répondez OUI ou NON A) Le discipolat est le travail de faire des disciples, pas des suiveurs.",
+          "rw": "8. Subiza na YEGO cyangwa na OYA A) Kurema abigishwa ni umurimo wo kurema abigishwa batari abogeza"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "yesno",
+        "text": {
+          "en": "8. B) The disciple is self-sufficient",
+          "fr": "8. B) Le disciple est autosuffisant",
+          "rw": "8. B) Umwigishwa ni umuntu wihagije ubwe."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "No",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "yesno",
+        "text": {
+          "en": "8. C) Levels of knowing the Master depends on the vision and what the disciple is actually looking for",
+          "fr": "8. C) Les niveaux de connaissance de l'enseignant (Maître) dépendent de la vision et de ce que le disciple recherche réellement.",
+          "rw": "8.  C) Inzego zo kumenya umwigisha ziterwa n’iyerekwa umuntu afite cyangwa n’icyo ashaka muby’ukuri"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "yesno",
+        "text": {
+          "en": "8. D) The most important requirement for discipleship is to die to yourself and serve in a department at Church.",
+          "fr": "8. D) La condition la plus importante pour devenir disciple est de mourir à soi-même et de servir dans un département à l'Église.",
+          "rw": "8. D) Icy’ingenzi gisabwa ngo ube umwigishwa ni ugupfa ku bwawe no kugira itsinda ubarizwamo mu rusengero (commission)."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "No",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "yesno",
+        "text": {
+          "en": "8. E) One of the ways to implement discipleship is to have moments between the teacher and the disciple",
+          "fr": "8. E) L'une des façons de mettre en œuvre le discipolat est d'avoir des moments entre l'enseignant et le disciple",
+          "rw": "8. E) Imwe mu nzira zo gushyira mu bikorwa kurerwa k’umwigishwa ni ukugira ibihe hagati y’umwigisha n’ umwigishwa."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "8. F) God regards preparation as an important part of our calling.",
+          "fr": "8. F) Dieu considère la préparation comme une partie importante de notre appel.",
+          "rw": "8. F) Imana ifata gutegurwa nk’ingingo y’ingenzi mu muhamagaro wacu."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "yesno",
+        "text": {
+          "en": "8. G) Positioning is the time our soul must go through to allow the life of God to flow through us",
+          "fr": "8. G) Le positionnement est le temps que notre âme doit traverser pour permettre la vie de Dieu de couler à travers nous",
+          "rw": "8. G) Gushyirwa mu mwanya ni igihe ubugingo bwacu bugomba kunyuramo kugira ngo twemerere ubuzima bw’Imana gutemba muri twe."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "No",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "8. H) Three (3) obstacles to our transformation are: our flesh, the world and the witches.",
+          "fr": "8. H) Trois (3) obstacles à notre transformation sont : notre chair, le monde et les sorciers.",
+          "rw": "8. H) Inzitizi  eshatu (3) ku guhinduka ni : kamere yacu, Isi, n’abarozi."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "No",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "8. I) One of the questions we must ask ourselves when evaluating our transformation is: « If I lost everything, would I be happy and satisfied by having only Jesus as my treasure? »",
+          "fr": "8. I) Une des questions que nous devons nous poser pour évaluer notre transformation est : « Si je perdais tout, serais-je heureux et satisfait de n'avoir que Jésus comme richesse ? \"",
+          "rw": "8. I) Kimwe mu bibazo tugomba kwibaza iyo tugiye gusuzuma guhinduka kwacu ni : « Ndamutse ntakaje byose, naba nishimye, mpagijwe no gutunga Yesu wenyine nk’ubutunzi bumpagije? »"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "16": {
+        "index": 16,
+        "type": "yesno",
+        "text": {
+          "en": "8. J) Visitation is one of the steps toward fulfilling your calling.",
+          "fr": "8. J) La visite est l'une des étapes vers l'accomplissement de votre appel.",
+          "rw": "8. J) Kugendererwa n’imwe mu ntambwe ziganisha ku gusohoza umuhamagaro wawe."
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      }
+    }
+  },
+  "CLASS 7": {
+    "max_score": {
+      "en": 15,
+      "fr": 16,
+      "rw": 16
+    },
+    "questions": {
+      "0": {
+        "index": 0,
+        "type": "mcq",
+        "text": {
+          "en": "1. We learned the meaning of the word « CHURCH ». Choose the wrong answer:",
+          "fr": "1. Nous avons appris la signification du mot « Église ». Choisissez la mauvaise réponse :",
+          "rw": "1. Twize ubusobanuro bw’ijambo « ITORERO ». Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. The church is the flock of God that was saved by the blood of Jesus",
+            "B. The church is a group of people who speak in tongues.",
+            "C. The church is the seat of God.",
+            "D. The church is an institution where people are transformed to be like Jesus"
+          ],
+          "fr": [
+            "A. L’Église est le troupeau que Dieu s’est acquis par le sang de Jésus.",
+            "B. L’Église est un groupe de personnes qui parlent en langues.",
+            "C. L’Église est l’adresse de Dieu.",
+            "D. L’Église est un laboratoire de transformation où les hommes sont transformés à la ressemblance de Jésus."
+          ],
+          "rw": [
+            "A. Itorero ni umukumbi w’Imana yironkeye kubw’amaraso ya Yesu",
+            "B. Itorero ni ihuriro ry’abantu bavuga mundimi",
+            "C. Itorero ni icyicaro cy’Imana",
+            "D. Itorero ni uruganda aho abantu bahindurwa gusa na Yesu"
+          ]
+        },
+        "correct": {
+          "en": "B. The church is a group of people who speak in tongues.",
+          "fr": "B. L’Église est un groupe de personnes qui parlent en langues.",
+          "rw": "B. Itorero ni ihuriro ry’abantu bavuga mundimi"
+        }
+      },
+      "1": {
+        "index": 1,
+        "type": "mcq",
+        "text": {
+          "en": "2. We studied the seven (7) levels of the Church. Select level five (5):",
+          "fr": "2. Nous avons appris les (7) niveaux successifs de l’Église. Choisissez le niveau cinq (5) :",
+          "rw": "2. Twize inzego indwi (7) z’Itorero. Hitamo urwego rwa gatanu (5) :"
+        },
+        "options": {
+          "en": [
+            "A. The church as the body of Christ in the country",
+            "B. Me as the church",
+            "C. The Church as a Nation under the leadership of an Apostle",
+            "D. The church as a union of local churches with a common purpose",
+            "E. The church as my spouse and I."
+          ],
+          "fr": [
+            "A. L’Église en tant que Corps du Christ dans un pays.",
+            "B. L’Église en tant que moi individuellement.",
+            "C. L’Église en tant qu’une Nation qui est sous le leadership d’un Apôtre.",
+            "D. L’Église en tant qu’ensemble des assemblées ayant une même vision.",
+            "E. L’Église en tant que moi et mon/ma conjoint/e."
+          ],
+          "rw": [
+            "A. Itorero nk’umubiri wa Kristo mu gihugu",
+            "B. Itorero ari ryo jyewe",
+            "C. Itorero nk’Igihugu kiri mu buyobozi bw’Intumwa",
+            "D. Itorero nk’ihuriro ry’amatorero y’ahantu  afite intumbero imwe",
+            "E. Itorero ari ro jyewe n’uwo twashakanye"
+          ]
+        },
+        "correct": {
+          "en": "D. The church as a union of local churches with a common purpose",
+          "fr": "D. L’Église en tant qu’ensemble des assemblées ayant une même vision.",
+          "rw": "D. Itorero nk’ihuriro ry’amatorero y’ahantu  afite intumbero imwe"
+        }
+      },
+      "2": {
+        "index": 2,
+        "type": "mcq",
+        "text": {
+          "en": "3. We have learned five (5) keys of a prosperous church. Choose the correct answer:",
+          "fr": "3. Nous avons appris les cinq (5) clés d’une Église prospère. Choisissez la bonne réponse :",
+          "rw": "3. Twize imfunguzo eshanu (5) z’itorero ritera imbere. Hitamo igisubizo nyacyo:"
+        },
+        "options": {
+          "en": [
+            "A. To establish a good program of services and prayers",
+            "B. To have a good building and consecrated members",
+            "C. To teach and train the Christian army",
+            "D. To evangelize in hospitals and in the streets",
+            "E. All of these answers are correct"
+          ],
+          "fr": [
+            "A. Établir un bon programme de service et de prières.",
+            "B. Avoir un beau bâtiment et des membres consacrés.",
+            "C. Former et Enseigner une armée de chrétiens.",
+            "D. Évangéliser dans les hôpitaux et dans les rues.",
+            "E. Toutes ces réponses sont correctes."
+          ],
+          "rw": [
+            "A. Gushyiraho gahunda inoze y’amateraniro n’amasengesho",
+            "B. Kugira inyubako nziza n’abakristo biyeguriye Imana",
+            "C. Gutoza no kwigisha ingabo z’abakristo",
+            "D. Kuvuga ubutumwa mu bitaro no mu mihanda",
+            "E. Ibi bisubizo byose ni byiza"
+          ]
+        },
+        "correct": {
+          "en": "C. To teach and train the Christian army",
+          "fr": "C. Former et Enseigner une armée de chrétiens.",
+          "rw": "C. Gutoza no kwigisha ingabo z’abakristo"
+        }
+      },
+      "3": {
+        "index": 3,
+        "type": "mcq",
+        "text": {
+          "en": "4. A true son in the Lord is like his father. This means that:",
+          "fr": "4.  Un vrai fils dans le Seigneur est comme son père. Cela veut dire que :",
+          "rw": "4.  Umwana w’umwuka  nyawe asa na se. Ibyo bishatse kuvuga ko:"
+        },
+        "options": {
+          "en": [
+            "A. He talks like his father and teaches like his father",
+            "B. He accompanies him everywhere he goes and helps him carry his Bible",
+            "C. He washes his father's clothes and gives him money",
+            "D. He has his DNA (his vision)",
+            "E. All of these answers are correct"
+          ],
+          "fr": [
+            "A. Il parle comme son père et enseigne comme son père.",
+            "B. Il l'accompagne partout où il va et l'aide à porter sa Bible.",
+            "C. Il lave les habits de son père et lui donne de l'argent.",
+            "D. Il a son ADN (sa vision).",
+            "E. Toutes ces réponses sont correctes."
+          ],
+          "rw": [
+            "A. Avuga nkawe  akigisha nkawe",
+            "B. Amuherekeza aho agana hose akamufasha gutwara Bibiliya ye",
+            "C. Asuka imyenda ya se nkawe akamuhera amafaranga",
+            "D. Afite DNA ye (iyerekwa rye)",
+            "E. Ibi bisubizo byose ni byo"
+          ]
+        },
+        "correct": {
+          "en": "D. He has his DNA (his vision)",
+          "fr": "D. Il a son ADN (sa vision).",
+          "rw": "D. Afite DNA ye (iyerekwa rye)"
+        }
+      },
+      "4": {
+        "index": 4,
+        "type": "mcq",
+        "text": {
+          "en": "5. We learned the four (4) responsibilities of a true son. Choose the wrong answer:",
+          "fr": "5. Nous avons appris les quatre (4) responsabilités d’un vrai fils. Choisissez la mauvaise réponse :",
+          "rw": "5. Twize inshingano enye (4) z’umwana nyawe. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. To please his parent",
+            "B. To defend his parent zealously and to reject those who do not believe in his parent",
+            "C. To protect the interests of the parent",
+            "D. Give gifts to his parent"
+          ],
+          "fr": [
+            "A. Plaire à son parent.",
+            "B. Défendre son parent avec zèle et haïr ceux qui ne croient pas en lui.",
+            "C. Protéger les intérêts de son parent.",
+            "D. Offrir des cadeaux à son parent."
+          ],
+          "rw": [
+            "A. Kunezeza umubyeyi",
+            "B. Kurwanirira umubyeyi ishyaka no kwanga abatamwemera",
+            "C. Kurinda inyungu z’umubyeyi",
+            "D. Guha umubyeyi impano"
+          ]
+        },
+        "correct": {
+          "en": "B. To defend his parent zealously and to reject those who do not believe in his parent",
+          "fr": "B. Défendre son parent avec zèle et haïr ceux qui ne croient pas en lui.",
+          "rw": "B. Kurwanirira umubyeyi ishyaka no kwanga abatamwemera"
+        }
+      },
+      "5": {
+        "index": 5,
+        "type": "mcq",
+        "text": {
+          "en": "6. We learned the obstacles to the growth of the church. Choose the wrong answer:",
+          "fr": "6. Nous avons appris les défis pour la promotion de l’Église. Choisissez la mauvaise réponse :",
+          "rw": "6. Twize inzitizi ku iterambere ry’itorero . Hitamo igisubizo kitaricyo :"
+        },
+        "options": {
+          "en": [
+            "A. Lack of clear vision or purpose;",
+            "B. Isolation and/or feeling self-sufficient in relation to the body of Christ",
+            "C. Lack of discipleship (training) or consecration",
+            "D. Lack of total freedom for church leaders",
+            "E. Lack of enough wealth for church members"
+          ],
+          "fr": [
+            "A. Manque de vision ou un objectif précis.",
+            "B. Isolement ou autosuffisance par rapport au Corps du Christ.",
+            "C. Manque de discipolat (formation) et de consécration.",
+            "D. Manque de libération totale chez les leaders des Églises.",
+            "E. Manque de richesse des membres de l’Église."
+          ],
+          "rw": [
+            "A. Kutagira iyerekwa cyangwa intumbero isobanutse;",
+            "B. Kwishyira ku ruhande cyangwa kumva ko wihagije kubirebana n’umubiri wa Kristo",
+            "C. Kubura ko gutozwa cyangwa ko kwiyegurira Imana",
+            "D. Kutabohoka kw’abayobozi bo mu itorero",
+            "E. Kutagira ubutunzi buhagije kw’abakristo"
+          ]
+        },
+        "correct": {
+          "en": "E. Lack of enough wealth for church members",
+          "fr": "E. Manque de richesse des membres de l’Église.",
+          "rw": "E. Kutagira ubutunzi buhagije kw’abakristo"
+        }
+      },
+      "6": {
+        "index": 6,
+        "type": "mcq",
+        "text": {
+          "en": "7. We learned 2 levels that characterize the spirit of servanthood as one of the characteristics of a true son, choose the correct answer:",
+          "fr": "7. Nous avons appris 2 niveaux qui caractérisent l’esprit de serviteur comme caractéristique d’un vrai fils. Choisissez la bonne réponse :",
+          "rw": "7. Twize inzego 2 ziranga umwuka w’ubugaragu nka kimwe mubiranga umwana nyawe, hitamo igisubizo nyacyo ;"
+        },
+        "options": {
+          "en": [
+            "A. The Ministry of Joshua",
+            "B. The Ministry of Aaron and Hur",
+            "C. The Ministry of Moses",
+            "D. The Ministry of Joseph",
+            "E. A and B are the correct answers"
+          ],
+          "fr": [
+            "A. Le ministère de Josué",
+            "B. Le ministère d’Aaron et de Hur",
+            "C. Le ministère de Moïse",
+            "D. Le ministère de Joseph",
+            "E. A et B sont les bonnes réponses."
+          ],
+          "rw": [
+            "A. Umurimo wa Yosuwa",
+            "B. Umurimo wa Aroni na Huri",
+            "C. Umurimo wa Mose",
+            "D. Umurimo wa Yosefu",
+            "E. A na B nibyo bisubizo nyabyo"
+          ]
+        },
+        "correct": {
+          "en": "E. A and B are the correct answers",
+          "fr": "E. A et B sont les bonnes réponses.",
+          "rw": "E. A na B nibyo bisubizo nyabyo"
+        }
+      },
+      "7": {
+        "index": 7,
+        "type": "mcq",
+        "text": {
+          "en": "8. We learned the power of revelation or spiritual understanding, choose the wrong answer",
+          "fr": "8. Nous avons appris la puissance de la vision et de la perception spirituelle. Choisissez la mauvaise réponse.",
+          "rw": "8. Twize imbaraga zihishurirwa cyangwa kumva mu mwuka, hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. We cannot be more than what we heard",
+            "B. We cannot possess more than what we are paid and what we inherit",
+            "C. We cannot endure hardship without the strength from past experience",
+            "D. We cannot possess more than what was revealed to us"
+          ],
+          "fr": [
+            "A. Nous ne pouvons pas être au-delà de ce que nous entendons.",
+            "B. Nous ne pouvons pas posséder au-delà de ce que nous sommes payés et avons été légués.o twatunga ibirenze ibyo duhembwa n’ibyo twarazwe",
+            "C. Nous ne pouvons jamais résister au-delà de ce que nous avons vu.",
+            "D. Nous ne pouvons posséder au-delà de ce que nous avons été révélé."
+          ],
+          "rw": [
+            "A. Ntabwo twaba ibirenze ibyo twumvise",
+            "B. Ntabwo twatunga ibirenze ibyo duhembwa n’ibyo twarazwe",
+            "C. Ntabwo twakwihanganira ingorane tutagize imbaraga zivuye mu byo twabonye",
+            "D. Ntabwo twatunga ibirenze ibyo twahishuriwe"
+          ]
+        },
+        "correct": {
+          "en": "B. We cannot possess more than what we are paid and what we inherit",
+          "fr": "B. Nous ne pouvons pas posséder au-delà de ce que nous sommes payés et avons été légués.o twatunga ibirenze ibyo duhembwa n’ibyo twarazwe",
+          "rw": "B. Ntabwo twatunga ibirenze ibyo duhembwa n’ibyo twarazwe"
+        }
+      },
+      "8": {
+        "index": 8,
+        "type": "mcq",
+        "text": {
+          "en": "9. We learned the obstacles to being sensitive in the spirit. Choose the wrong answer:",
+          "fr": "9. Nous avons appris les obstacles à la sensibilité spirituelle. Choisissez la mauvaise réponse :",
+          "rw": "9. Twize inzitizi mu kumva k’umwuka. Hitamo igisubizo kitari cyo:"
+        },
+        "options": {
+          "en": [
+            "A. Die to self",
+            "B. Lack of deliverance from the kingdom of darkness",
+            "C. A twisted heart",
+            "D. Lukewarm"
+          ],
+          "fr": [
+            "A. Mourir à soi-même.",
+            "B. Le manque de libération face à l’influence démoniaque.",
+            "C. Les mauvaises dispositions du cœur.",
+            "D. Les sollicitations multiples."
+          ],
+          "rw": [
+            "A. Gupfa kuri kamere",
+            "B. Kutabohoka ku bwami bw’umwijima",
+            "C. Umutima ugoramye",
+            "D. Kujarajara"
+          ]
+        },
+        "correct": {
+          "en": "A. Die to self",
+          "fr": "A. Mourir à soi-même.",
+          "rw": "A. Gupfa kuri kamere"
+        }
+      },
+      "9": {
+        "index": 9,
+        "type": "mcq",
+        "text": {
+          "en": "10. We learned strategies for being sensitive in the spirit. Choose the wrong answer:",
+          "fr": "10. Nous avons appris les dispositions pour une bonne écoute. Choisissez la mauvaise réponse:",
+          "rw": "10. Twize ingamba zo kumva neza mu mwuka. Hitamo igisubizo kitari cyo :"
+        },
+        "options": {
+          "en": [
+            "A. New birth",
+            "B. Freedom",
+            "C. Consecration to God",
+            "D. Retreat",
+            "E. Love and participate in all church programs"
+          ],
+          "fr": [
+            "A. La nouvelle naissance.",
+            "B. La libération.",
+            "C. La consécration à Dieu.",
+            "D. Retraite",
+            "E. Aimer et participer dans tous les programmes de l’Église."
+          ],
+          "rw": [
+            "A. Kuvuka ubwa kabiri",
+            "B. Kubohoka",
+            "C. Kwiyegurira Imana",
+            "D. Kwiherera",
+            "E. Gukunda no kuba muri gahunda zose zo kurusengero"
+          ]
+        },
+        "correct": {
+          "en": "E. Love and participate in all church programs",
+          "fr": "E. Aimer et participer dans tous les programmes de l’Église.",
+          "rw": "E. Gukunda no kuba muri gahunda zose zo kurusengero"
+        }
+      },
+      "10": {
+        "index": 10,
+        "type": "mcq",
+        "text": {
+          "en": "11. One of the goals of BCC that is achieved in the Missions Department is:",
+          "fr": "11. Une des missions de BCC est achevée à travers le département de Missions qui sert à:",
+          "rw": "11. Imwe mu ntego za BCC igerwa muri Ishami ryo gutanga inama (Missions) ni:"
+        },
+        "options": {
+          "en": [
+            "A. Establish a chain of prayers and supplications without ceasing 24 hours/7 days",
+            "B. Collecting, studying, and publishing/distributing Christian information",
+            "C. To establish a platform that provides continuous and effective training of disciples",
+            "D. Advise, follow or lead any evangelistic work",
+            "E. To act as a link between people with resources and those with God's vision"
+          ],
+          "fr": [
+            "A. Établir une chaîne de prière ou réseaux d’intercession 24h/7jours.",
+            "B. Collecter, traiter et diffuser / distribuer l'information chrétienne.",
+            "C. Mettre en place un cadre de formation continue et d’encadrement de disciples selon le portrait du disciple.",
+            "D. Conseiller, accompagner ou superviser toute mission évangélique.",
+            "E. Servir de cadre d’interconnexion entre ceux qui ont la provision et ceux qui ont la vision de Dieu et servir de facilitation."
+          ],
+          "rw": [
+            "A. Gushyiraho urunana rw’amasengesho no kwinginga bidahagarara amasaha 24/ iminsi 7",
+            "B. Gukusanya, kwiga no gutangaza / gutanga amakuru ya gikrisito",
+            "C. Gushyiraho urwego rutanga amahugurwa akomeza kandi anoze y’abigishwa",
+            "D. Gutanga inama, gukurikira cyangwa kuyobora umurimo wose w’ivugabutumwa",
+            "E. Gukora nk’urwego ruhuza abantu bafite umutungo n’abafite iyerekwa ry’Imana"
+          ]
+        },
+        "correct": {
+          "en": "C. To establish a platform that provides continuous and effective training of disciples",
+          "fr": "D. Conseiller, accompagner ou superviser toute mission évangélique.",
+          "rw": "D. Gutanga inama, gukurikira cyangwa kuyobora umurimo wose w’ivugabutumwa"
+        }
+      },
+      "11": {
+        "index": 11,
+        "type": "yesno",
+        "text": {
+          "en": "12. Answer with YES or NO  A) One of the responsibilities of a father in the Lord is to carry and give blessings.",
+          "fr": "12. Répondez par VRAI ou FAUX  A) Une des responsabilités d’un père dans le Seigneur est de soutenir et de donner la bénédiction",
+          "rw": "12. Subiza na YEGO cyangwa OYA  A) Imwe mu nshingano y’umubyeyi w’umwuka ni uguheka no gutanga umugisha"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "12": {
+        "index": 12,
+        "type": "yesno",
+        "text": {
+          "en": "12.  B) The most important characteristic of a true son in the Lord is a spirit of servanthood",
+          "fr": "12.  B) Ce qui caractérise le plus un vrai fils dans le Seigneur est l’esprit de serviteur",
+          "rw": "12.  B) Ikiranga cy’ingenzi cy’umwana w’umwuka nyawe ni umwuka w’ubugaragu"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "13": {
+        "index": 13,
+        "type": "yesno",
+        "text": {
+          "en": "12. C) Joshua's work is all the tasks a son does to take care of the parent's daily physical needs",
+          "fr": "12. C) L’œuvre de Josué est toutes les œuvres qu’un fils rend à son père concernant sa vie personnelle",
+          "rw": "12. C) Umurimo wa Yosuwa ni ibikorwa byose umwana akorera umubyeyi we \tbirebana n’ubuzima bwe mu buryo bufatika"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "No",
+          "fr": "Faux",
+          "rw": "Oya"
+        }
+      },
+      "14": {
+        "index": 14,
+        "type": "yesno",
+        "text": {
+          "en": "12. D) Accounting helps a leader to be audited",
+          "fr": "12. D) La gestion permet au leader d’être évalué",
+          "rw": "12. D) Icungamari rifasha umuyobozi kuba yagenzurwa"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      },
+      "15": {
+        "index": 15,
+        "type": "yesno",
+        "text": {
+          "en": "12. E) Evangelical Restoration Church is one of the churches in the vision of the BCC",
+          "fr": "12. E) Evangelical Restoration Church est une des Églises qui est dans la vision de BCC",
+          "rw": "12. E) Evangelical Restoration Church ni rimwe mu matorero ari mu iyerekwa rya BCC"
+        },
+        "options": {
+          "en": [
+            "No",
+            "Yes"
+          ],
+          "fr": [
+            "Faux",
+            "Vrai"
+          ],
+          "rw": [
+            "Oya",
+            "Yego"
+          ]
+        },
+        "correct": {
+          "en": "Yes",
+          "fr": "Vrai",
+          "rw": "Yego"
+        }
+      }
+    }
+  }
+}

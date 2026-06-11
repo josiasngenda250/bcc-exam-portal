@@ -1,9 +1,9 @@
 import {
-  collection, doc, getDoc, getDocs, addDoc, updateDoc,
+  collection, doc, getDoc, getDocs, addDoc, updateDoc, writeBatch,
   query, where,
 } from 'firebase/firestore';
 import { db } from './firebase';
-import type { Member, BccClass, Question, Attempt, Language } from './types';
+import type { Member, BccClass, Question, Attempt, Language, GroupId } from './types';
 
 function withTimeout<T>(promise: Promise<T>, ms = 10000): Promise<T> {
   return Promise.race([
@@ -119,11 +119,40 @@ export async function getClass(classId: string): Promise<BccClass | null> {
   return { id: snap.id, ...snap.data() } as BccClass;
 }
 
-export async function setClassOpen(classId: string, open: boolean): Promise<void> {
+/** Toggle a class open/closed for one specific group. */
+export async function setClassOpenForGroup(
+  classId: string,
+  group: GroupId,
+  open: boolean,
+): Promise<void> {
   await updateDoc(doc(db, 'classes', classId), {
-    isOpen: open,
-    ...(open ? { openedAt: new Date().toISOString() } : { closedAt: new Date().toISOString() }),
+    [`isOpenFor.${group}`]: open,
   });
+}
+
+/**
+ * One-time migration: converts all class documents from the legacy
+ * isOpen:boolean schema to isOpenFor:{in_person,online_east,online_west}.
+ * Safe to call multiple times (skips classes already migrated).
+ */
+export async function migrateClassSchema(): Promise<void> {
+  const snap = await getDocs(collection(db, 'classes'));
+  const batch = writeBatch(db);
+  let count = 0;
+  snap.docs.forEach(d => {
+    const data = d.data();
+    if (!data.isOpenFor) {
+      batch.update(doc(db, 'classes', d.id), {
+        isOpenFor: {
+          in_person:   data.isOpen ?? false,
+          online_east: data.isOpen ?? false,
+          online_west: data.isOpen ?? false,
+        },
+      });
+      count++;
+    }
+  });
+  if (count > 0) await batch.commit();
 }
 
 // ── Questions ──────────────────────────────────────────────────────────────

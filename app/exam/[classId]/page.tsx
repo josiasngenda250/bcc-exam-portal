@@ -4,6 +4,7 @@ import { useRouter, useParams } from 'next/navigation';
 import { getMember, getClass, getQuestions, getMemberClassAttempts, saveAttempt, scoreAttempt } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
+import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Question, BccClass, Language } from '@/lib/types';
 
 const CLASS_LABELS: Record<string, string> = {
@@ -41,7 +42,8 @@ export default function ExamPage() {
 
     Promise.all([getMember(id), getClass(classId), getQuestions(classId)]).then(([m, c, qs]) => {
       if (!m) { router.push('/'); return; }
-      if (!c || !c.isOpen) { router.push('/dashboard'); return; }
+      const memberGroup = getMemberGroup(m);
+      if (!c || !isClassOpenForGroup(c, memberGroup)) { router.push('/dashboard'); return; }
       setCls(c);
       setQuestions(qs);
       setLanguage(m.language ?? 'en');
