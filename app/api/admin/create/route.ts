@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createAdmin } from '@/lib/admin-auth';
 
+export const runtime = 'nodejs';
+
 export async function POST(req: NextRequest) {
   if (req.cookies.get('bcc_admin')?.value !== 'true') {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
