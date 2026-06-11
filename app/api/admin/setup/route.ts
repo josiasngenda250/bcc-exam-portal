@@ -1,44 +1,32 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createAdmin, countAdmins } from '@/lib/admin-auth';
+import { createAdminServer, countAdminsServer } from '@/lib/admin-auth-server';
 
-// Use Node.js runtime — bcryptjs requires it
 export const runtime = 'nodejs';
 
-function redirect(url: URL) {
-  // 303 See Other: browser follows redirect as GET (correct PRG pattern for forms)
+function r(url: URL) {
   return NextResponse.redirect(url, { status: 303 });
 }
 
 export async function POST(req: NextRequest) {
   const origin = req.nextUrl.origin;
+  const form   = await req.formData();
+  const email    = (form.get('email')    as string ?? '').trim();
+  const name     = (form.get('name')     as string ?? '').trim();
+  const password = (form.get('password') as string ?? '').trim();
+  const confirm  = (form.get('confirm')  as string ?? '').trim();
+
+  if (!email || !name || !password)    return r(new URL('/admin/setup?error=missing',  origin));
+  if (password.length < 8)             return r(new URL('/admin/setup?error=short',    origin));
+  if (password !== confirm)            return r(new URL('/admin/setup?error=mismatch', origin));
 
   try {
-    // Only allowed when no admins exist yet
-    const count = await countAdmins();
-    if (count > 0) {
-      return redirect(new URL('/admin', origin));
-    }
+    const count = await countAdminsServer();
+    if (count > 0) return r(new URL('/admin', origin));   // already set up
 
-    const formData = await req.formData();
-    const email    = (formData.get('email')    as string ?? '').trim();
-    const name     = (formData.get('name')     as string ?? '').trim();
-    const password = (formData.get('password') as string ?? '').trim();
-    const confirm  = (formData.get('confirm')  as string ?? '').trim();
-
-    if (!email || !name || !password) {
-      return redirect(new URL('/admin/setup?error=missing', origin));
-    }
-    if (password.length < 8) {
-      return redirect(new URL('/admin/setup?error=short', origin));
-    }
-    if (password !== confirm) {
-      return redirect(new URL('/admin/setup?error=mismatch', origin));
-    }
-
-    await createAdmin(email, name, password);
-    return redirect(new URL('/admin?setup=done', origin));
+    await createAdminServer(email, name, password);
+    return r(new URL('/admin?setup=done', origin));
   } catch (err) {
-    console.error('[admin/setup] error:', err);
-    return redirect(new URL('/admin/setup?error=failed', origin));
+    console.error('[setup]', err);
+    return r(new URL('/admin/setup?error=failed', origin));
   }
 }

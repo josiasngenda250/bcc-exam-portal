@@ -86,16 +86,11 @@ export function AdminHeader({ title }: { title: string }) {
           >
             Admins
           </a>
-          <button
-            onClick={() => {
-              document.cookie = 'bcc_admin=; max-age=0; path=/';
-              document.cookie = 'bcc_admin_name=; max-age=0; path=/';
-              window.location.href = '/admin';
-            }}
-            className="text-sm text-gray-300 hover:text-white border border-gray-500 rounded px-3 py-1"
-          >
-            Sign Out
-          </button>
+          <form action="/api/admin/logout" method="POST" style={{ display: 'inline' }}>
+            <button type="submit" className="text-sm text-gray-300 hover:text-white border border-gray-500 rounded px-3 py-1">
+              Sign Out
+            </button>
+          </form>
         </div>
       </div>
     </header>

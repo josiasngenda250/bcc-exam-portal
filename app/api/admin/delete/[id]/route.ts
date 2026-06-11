@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { deleteAdmin, countAdmins } from '@/lib/admin-auth';
+import { deleteAdminServer, countAdminsServer } from '@/lib/admin-auth-server';
 
 export const runtime = 'nodejs';
 
@@ -10,17 +10,11 @@ export async function POST(
   if (req.cookies.get('bcc_admin')?.value !== 'true') {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-
   const { id } = await params;
-
-  const count = await countAdmins();
+  const count = await countAdminsServer();
   if (count <= 1) {
-    return NextResponse.json(
-      { error: 'Cannot remove the last admin account.' },
-      { status: 400 },
-    );
+    return NextResponse.json({ error: 'Cannot remove the last admin.' }, { status: 400 });
   }
-
-  await deleteAdmin(id);
+  await deleteAdminServer(id);
   return NextResponse.json({ ok: true });
 }
