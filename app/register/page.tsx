@@ -56,6 +56,7 @@ function RegisterForm() {
   }, [prefill]);
 
   useEffect(() => { setProvince(''); }, [region]);
+  useEffect(() => { if (promotionType === 'in_person') { setRegion(''); setProvince(''); } }, [promotionType]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -65,11 +66,11 @@ function RegisterForm() {
     if (!email.trim() && !phone.trim()) {
       setError(T.errorContactRequired[lang]); return;
     }
-    if (isCanada && !region) {
+    if (promotionType === 'online' && !region) {
       setError(
-        lang === 'fr' ? 'Veuillez choisir votre région (Est ou Ouest).' :
-        lang === 'rw' ? 'Hitamo akarere kawe (Iburasirazuba cyangwa Iburengerazuba).' :
-        'Please select your Canada region (East or West).'
+        lang === 'fr' ? 'Veuillez choisir votre groupe (Est ou Ouest).' :
+        lang === 'rw' ? 'Hitamo ishami (Iburasirazuba cyangwa Iburengerazuba).' :
+        'Please select your online group (East or West).'
       );
       return;
     }
@@ -92,7 +93,7 @@ function RegisterForm() {
         language,
         country: country.trim(),
         promotionType,
-        region: isCanada && region ? region : undefined,
+        region: promotionType === 'online' && region ? region : undefined,
         province: isCanada && province ? province : undefined,
       });
       localStorage.setItem('bcc_member_id', id);
@@ -151,50 +152,8 @@ function RegisterForm() {
                 />
               </div>
 
-              {/* Canada region + province */}
-              {isCanada && (
-                <>
-                  <div className="mb-4">
-                    <label className="block font-bold mb-2">{T.canadaRegion[lang]}</label>
-                    <div className="flex gap-3">
-                      {(['east', 'west'] as CanadaRegion[]).map(r => (
-                        <button
-                          key={r}
-                          type="button"
-                          onClick={() => setRegion(r)}
-                          className="flex-1 py-3 rounded-xl font-bold text-sm border-2 transition-all"
-                          style={{
-                            borderColor: region === r ? 'var(--bcc-navy)' : '#d1d5db',
-                            background: region === r ? 'var(--bcc-navy)' : 'white',
-                            color: region === r ? 'white' : 'var(--bcc-navy)',
-                          }}
-                        >
-                          {r === 'east' ? T.eastCanada[lang] : T.westCanada[lang]}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mb-4">
-                    <label className="block font-bold mb-1" htmlFor="province">{T.province[lang]}</label>
-                    <select
-                      id="province"
-                      className="input-field"
-                      value={province}
-                      onChange={e => setProvince(e.target.value)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <option value="">{T.selectProvince[lang]}</option>
-                      {provinceOptions.map(p => (
-                        <option key={p} value={p}>{p}</option>
-                      ))}
-                    </select>
-                  </div>
-                </>
-              )}
-
-              {/* Promotion type */}
-              <div className="mb-6">
+              {/* Promotion type — FIRST so the group selector below knows what to show */}
+              <div className="mb-4">
                 <label className="block font-bold mb-2">{T.promotionSection[lang]}</label>
                 <div className="flex flex-col gap-3">
                   {([
@@ -225,6 +184,52 @@ function RegisterForm() {
                   ))}
                 </div>
               </div>
+
+              {/* Online group selector — shown for ALL online participants regardless of country */}
+              {promotionType === 'online' && (
+                <div className="mb-4">
+                  <label className="block font-bold mb-2">{T.onlineGroup[lang]}</label>
+                  <div className="flex flex-col gap-2">
+                    {([
+                      { value: 'east' as CanadaRegion, label: T.onlineGroupEast[lang] },
+                      { value: 'west' as CanadaRegion, label: T.onlineGroupWest[lang] },
+                    ]).map(r => (
+                      <button
+                        key={r.value}
+                        type="button"
+                        onClick={() => setRegion(r.value)}
+                        className="w-full py-3 px-4 rounded-xl font-bold text-sm border-2 text-left transition-all"
+                        style={{
+                          borderColor: region === r.value ? 'var(--bcc-navy)' : '#d1d5db',
+                          background: region === r.value ? 'var(--bcc-navy)' : 'white',
+                          color: region === r.value ? 'white' : 'var(--bcc-navy)',
+                        }}
+                      >
+                        {r.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Province dropdown — shown only for Canadian participants */}
+              {isCanada && (
+                <div className="mb-4">
+                  <label className="block font-bold mb-1" htmlFor="province">{T.province[lang]}</label>
+                  <select
+                    id="province"
+                    className="input-field"
+                    value={province}
+                    onChange={e => setProvince(e.target.value)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    <option value="">{T.selectProvince[lang]}</option>
+                    {provinceOptions.map(p => (
+                      <option key={p} value={p}>{p}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               {/* Exam language */}
               <div className="mb-6">

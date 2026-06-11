@@ -213,6 +213,21 @@ export const T = {
     fr: 'Région du Canada',
     rw: 'Igihugu cya Canada',
   },
+  onlineGroup: {
+    en: 'Online Group / Section',
+    fr: 'Groupe / Section en Ligne',
+    rw: 'Ishami rya Online muri ryo uri',
+  },
+  onlineGroupEast: {
+    en: '🌅 East — Ottawa · Toronto · Montréal…',
+    fr: '🌅 Est — Ottawa · Toronto · Montréal…',
+    rw: '🌅 Iburasirazuba — Ottawa · Toronto · Montréal…',
+  },
+  onlineGroupWest: {
+    en: '🌄 West — Edmonton · Vancouver · Calgary…',
+    fr: '🌄 Ouest — Edmonton · Vancouver · Calgary…',
+    rw: '🌄 Iburengerazuba — Edmonton · Vancouver · Calgary…',
+  },
   eastCanada: {
     en: 'East Canada',
     fr: 'Canada Est',
