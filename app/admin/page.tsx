@@ -1,9 +1,9 @@
 export default async function AdminLoginPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string }>;
+  searchParams: Promise<{ error?: string; setup?: string }>;
 }) {
-  const { error } = await searchParams;
+  const { error, setup } = await searchParams;
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--bcc-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
@@ -20,25 +20,47 @@ export default async function AdminLoginPage({
           <p className="text-gray-500 text-sm mt-1">Bible Communication Center</p>
         </div>
 
+        {setup === 'done' && (
+          <div className="mb-4 p-3 rounded-lg text-sm text-center" style={{ background: '#dcfce7', color: '#166534' }}>
+            ✅ Admin account created! Sign in below.
+          </div>
+        )}
+
         {error && (
           <div className="mb-4 p-3 rounded-lg text-sm text-center" style={{ background: '#fee2e2', color: '#991b1b' }}>
-            Incorrect password. Please try again.
+            Incorrect email or password. Please try again.
           </div>
         )}
 
         <form action="/api/admin/login" method="POST">
-          <label className="block font-bold mb-2" htmlFor="code">Admin Password</label>
+          <label className="block font-bold mb-1" htmlFor="email">Email</label>
           <input
-            id="code"
-            name="code"
-            type="password"
+            id="email"
+            name="email"
+            type="email"
             className="input-field mb-4"
-            placeholder="Enter admin password"
+            placeholder="you@example.com"
             autoFocus
+            required
+          />
+          <label className="block font-bold mb-1" htmlFor="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            className="input-field mb-5"
+            placeholder="Enter your password"
             required
           />
           <button type="submit" className="btn-primary">Sign In →</button>
         </form>
+
+        <p className="text-center text-sm text-gray-400 mt-6">
+          First time?{' '}
+          <a href="/admin/setup" style={{ color: 'var(--bcc-navy)', textDecoration: 'underline' }}>
+            Create your admin account →
+          </a>
+        </p>
       </div>
     </div>
   );

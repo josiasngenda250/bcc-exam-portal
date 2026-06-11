@@ -1,4 +1,6 @@
+'use client';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 interface HeaderProps {
   memberName?: string;
@@ -47,6 +49,13 @@ export function Header({ memberName, showAdmin }: HeaderProps) {
 }
 
 export function AdminHeader({ title }: { title: string }) {
+  const [adminName, setAdminName] = useState('');
+
+  useEffect(() => {
+    const match = document.cookie.match(/(?:^|;\s*)bcc_admin_name=([^;]+)/);
+    if (match) setAdminName(decodeURIComponent(match[1]));
+  }, []);
+
   return (
     <header style={{ background: 'var(--bcc-navy)' }} className="text-white">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -64,14 +73,28 @@ export function AdminHeader({ title }: { title: string }) {
             <div className="text-xs text-gray-300">{title}</div>
           </div>
         </div>
-        <form action="/api/admin/logout" method="POST">
-          <button
-            type="submit"
-            className="text-sm text-gray-300 hover:text-white border border-gray-500 rounded px-3 py-1"
+        <div className="flex items-center gap-4">
+          {adminName && (
+            <span className="text-sm text-gray-300 hidden sm:block">
+              👤 <strong className="text-white">{adminName}</strong>
+            </span>
+          )}
+          <a
+            href="/admin/admins"
+            className="text-sm text-gray-300 hover:text-white hidden sm:block"
+            style={{ textDecoration: 'underline' }}
           >
-            Sign Out
-          </button>
-        </form>
+            Admins
+          </a>
+          <form action="/api/admin/logout" method="POST">
+            <button
+              type="submit"
+              className="text-sm text-gray-300 hover:text-white border border-gray-500 rounded px-3 py-1"
+            >
+              Sign Out
+            </button>
+          </form>
+        </div>
       </div>
     </header>
   );

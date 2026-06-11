@@ -219,15 +219,19 @@ export default function AdminDashboardPage() {
         {/* Quick links */}
         <div className="flex gap-4 flex-wrap mt-2">
           <a href="/admin/graduates" className="btn-primary"
-            style={{ flex: 1, minWidth: 180, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
+            style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             Graduates Report →
           </a>
           <a href="/admin/members" className="btn-outline"
-            style={{ flex: 1, minWidth: 180, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
+            style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             All Members →
           </a>
+          <a href="/admin/admins" className="btn-outline"
+            style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
+            Manage Admins →
+          </a>
           <a href="/admin/seed" className="btn-outline"
-            style={{ flex: 1, minWidth: 180, textAlign: 'center', textDecoration: 'none', display: 'block', borderColor: '#9ca3af', color: '#6b7280' }}>
+            style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block', borderColor: '#9ca3af', color: '#6b7280' }}>
             Reload Questions →
           </a>
         </div>
