@@ -216,7 +216,7 @@ export const T = {
   onlineGroup: {
     en: 'Online Group / Section',
     fr: 'Groupe / Section en Ligne',
-    rw: 'Ishami rya Online muri ryo uri',
+    rw: 'Ubarizwa mu yihe ntara?',
   },
   onlineGroupEast: {
     en: '🌅 East — Ottawa · Toronto · Montréal…',
@@ -275,8 +275,8 @@ export const T = {
     fr: 'Votre instructeur débloquera chaque examen quand la classe sera prête. Revenez bientôt!',
     rw: 'Umwigisha wawe azajya afungura buri kizamini igihe kigeze. Ongera ugaruke vuba!',
   },
-  open:      { en: 'Open',    fr: 'Ouvert', rw: 'Igikinguye' },
-  closed:    { en: 'Closed',  fr: 'Fermé',  rw: 'Igifunze'   },
+  open:      { en: 'Open',    fr: 'Ouvert', rw: 'Kirakinguye' },
+  closed:    { en: 'Closed',  fr: 'Fermé',  rw: 'Kirafunze'  },
   bestScore: { en: 'Best score:', fr: 'Meilleur score:', rw: 'Amanota yawe menshi:' },
   passed:    { en: 'Passed',  fr: 'Réussi',  rw: 'Watsinze'    },
   failed:    { en: 'Failed',  fr: 'Échoué',  rw: 'Ntiwatsinze' },
@@ -330,6 +330,16 @@ export const T = {
     en: 'Loading exam…',
     fr: 'Chargement de l\'examen…',
     rw: 'Turimo gutegura ikizamini…',
+  },
+  unanswered: {
+    en: (n: number) => `${n} question${n !== 1 ? 's' : ''} not yet answered`,
+    fr: (n: number) => `${n} question${n !== 1 ? 's' : ''} pas encore répondue${n !== 1 ? 's' : ''}`,
+    rw: (n: number) => `Ibibazo ${n} ntibirasubizwa`,
+  },
+  switchLanguage: {
+    en: 'Language',
+    fr: 'Langue',
+    rw: 'Ururimi',
   },
 
   // ── Results page ──────────────────────────────────────────────────────────────

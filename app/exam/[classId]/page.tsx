@@ -3,7 +3,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, type Lang } from '@/lib/i18n';
+import { T, getLang, setLang, type Lang } from '@/lib/i18n';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, Question, BccClass, Language } from '@/lib/types';
 
@@ -91,7 +91,7 @@ export default function ExamPage() {
   if (loading) {
     return (
       <div className="page-container">
-        <Header />
+        <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
         <div className="content-wrap py-10 text-center text-gray-500 text-lg">{T.examLoading[uiLang]}</div>
       </div>
     );
@@ -100,7 +100,7 @@ export default function ExamPage() {
   if (!currentQ) {
     return (
       <div className="page-container">
-        <Header />
+        <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
         <div className="content-wrap py-10 text-center">
           <p className="text-red-600">This exam has no questions yet.</p>
           <Link href="/dashboard" className="underline mt-4 block">Back to Dashboard</Link>
@@ -115,7 +115,7 @@ export default function ExamPage() {
 
   return (
     <div className="page-container">
-      <Header />
+      <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
       <div className="content-wrap">
         {/* Top bar */}
         <div className="flex items-center justify-between flex-wrap gap-3 mt-4 mb-6">
@@ -253,7 +253,7 @@ export default function ExamPage() {
 
         {!allAnswered && (
           <p className="text-center text-amber-600 text-sm py-2">
-            ⚠️ {totalQ - answeredCount} question{totalQ - answeredCount !== 1 ? 's' : ''} not yet answered
+            ⚠️ {T.unanswered[uiLang](totalQ - answeredCount)}
           </p>
         )}
 

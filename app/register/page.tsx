@@ -3,7 +3,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, type Lang } from '@/lib/i18n';
+import { T, getLang, setLang, type Lang } from '@/lib/i18n';
 import type { Language, PromotionType, CanadaRegion } from '@/lib/types';
 
 const LANG_LABELS: Record<Language, string> = {
@@ -113,7 +113,7 @@ function RegisterForm() {
 
   return (
     <div className="page-container">
-      <Header />
+      <Header lang={lang} onLangChange={l => { setLang(l); setLangState(l); }} />
       <div className="content-wrap py-10">
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
           <h1 className="text-3xl font-bold mb-2">{T.newParticipant[lang]}</h1>

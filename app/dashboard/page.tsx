@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, type Lang } from '@/lib/i18n';
+import { T, getLang, setLang, type Lang } from '@/lib/i18n';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, BccClass, Attempt } from '@/lib/types';
 
@@ -131,7 +131,11 @@ export default function DashboardPage() {
 
   return (
     <div className="page-container">
-      <Header memberName={member?.firstName} />
+      <Header
+        memberName={member?.firstName}
+        lang={lang}
+        onLangChange={l => { setLang(l); setLangState(l); }}
+      />
       <div className="content-wrap">
         <div className="flex items-center justify-between flex-wrap gap-4 mb-6 mt-2">
           <div>

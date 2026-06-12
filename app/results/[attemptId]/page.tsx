@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, type Lang } from '@/lib/i18n';
+import { T, getLang, setLang, type Lang } from '@/lib/i18n';
 import type { Attempt, Question } from '@/lib/types';
 
 const CLASS_LABELS: Record<string, string> = {
@@ -38,7 +38,7 @@ export default function ResultsPage() {
   if (loading) {
     return (
       <div className="page-container">
-        <Header />
+        <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
         <div className="content-wrap py-10 text-center text-gray-500 text-lg">
           {T.loadingResults[uiLang]}
         </div>
@@ -54,7 +54,7 @@ export default function ResultsPage() {
 
   return (
     <div className="page-container">
-      <Header />
+      <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
       <div className="content-wrap">
         {/* Score card */}
         <div className="card text-center mb-6 mt-4" style={{ borderTop: `6px solid ${passed ? '#16a34a' : 'var(--bcc-red)'}` }}>

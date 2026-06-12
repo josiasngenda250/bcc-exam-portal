@@ -1,14 +1,31 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { getLang, setLang as saveLang, type Lang } from '@/lib/i18n';
 
 interface HeaderProps {
   memberName?: string;
-  onSignOut?: () => void;
   showAdmin?: boolean;
+  lang?: Lang;
+  onLangChange?: (l: Lang) => void;
 }
 
-export function Header({ memberName, showAdmin }: HeaderProps) {
+const LANG_FLAGS: Record<Lang, string> = { en: '🇬🇧', fr: '🇫🇷', rw: '🇷🇼' };
+const LANGS: Lang[] = ['en', 'fr', 'rw'];
+
+export function Header({ memberName, showAdmin, lang: propLang, onLangChange }: HeaderProps) {
+  const [activeLang, setActiveLang] = useState<Lang>('en');
+
+  useEffect(() => {
+    setActiveLang(propLang ?? getLang());
+  }, [propLang]);
+
+  function handleLangChange(l: Lang) {
+    saveLang(l);
+    setActiveLang(l);
+    onLangChange?.(l);
+  }
+
   return (
     <header style={{ background: 'var(--bcc-navy)' }} className="text-white">
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -28,12 +45,36 @@ export function Header({ memberName, showAdmin }: HeaderProps) {
             <div className="text-xs text-gray-300">Exam Portal</div>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           {memberName && (
             <span className="text-sm text-gray-300 hidden sm:block">
               Hello, <strong className="text-white">{memberName}</strong>
             </span>
           )}
+
+          {/* Language switcher — always shown */}
+          <div className="flex items-center gap-0.5 rounded-lg overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.15)' }}>
+            {LANGS.map(l => (
+              <button
+                key={l}
+                onClick={() => handleLangChange(l)}
+                title={l === 'en' ? 'English' : l === 'fr' ? 'Français' : 'Kinyarwanda'}
+                style={{
+                  background: activeLang === l ? 'rgba(255,255,255,0.2)' : 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '4px 8px',
+                  fontSize: 16,
+                  lineHeight: 1,
+                  opacity: activeLang === l ? 1 : 0.55,
+                  transition: 'all 0.15s',
+                }}
+              >
+                {LANG_FLAGS[l]}
+              </button>
+            ))}
+          </div>
+
           {showAdmin && (
             <Link
               href="/admin/dashboard"
