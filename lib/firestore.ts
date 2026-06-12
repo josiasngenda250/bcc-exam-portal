@@ -78,11 +78,11 @@ export async function findMemberByContact(contact: string): Promise<Member | nul
 }
 
 export async function createMember(data: Omit<Member, 'id' | 'createdAt'>): Promise<string> {
-  const rawPhone = data.phone.trim().replace(/\D/g, '');
+  const rawPhone = (data.phone ?? '').trim().replace(/\D/g, '');
   const payload: Record<string, unknown> = {
     firstName: data.firstName,
     lastName: data.lastName,
-    email: data.email.trim().toLowerCase(),
+    email: (data.email ?? '').trim().toLowerCase(),
     phone: rawPhone,
     language: data.language,
     country: data.country,
@@ -91,7 +91,7 @@ export async function createMember(data: Omit<Member, 'id' | 'createdAt'>): Prom
   };
   if (data.region)   payload.region   = data.region;
   if (data.province) payload.province = data.province;
-  const ref = await addDoc(collection(db, 'members'), payload);
+  const ref = await withTimeout(addDoc(collection(db, 'members'), payload), 15000);
   return ref.id;
 }
 
@@ -125,9 +125,9 @@ export async function setClassOpenForGroup(
   group: GroupId,
   open: boolean,
 ): Promise<void> {
-  await updateDoc(doc(db, 'classes', classId), {
+  await withTimeout(updateDoc(doc(db, 'classes', classId), {
     [`isOpenFor.${group}`]: open,
-  });
+  }), 15000);
 }
 
 /**
@@ -199,7 +199,7 @@ export async function getAttempt(attemptId: string): Promise<Attempt | null> {
 }
 
 export async function saveAttempt(attempt: Omit<Attempt, 'id'>): Promise<string> {
-  const ref = await addDoc(collection(db, 'attempts'), attempt);
+  const ref = await withTimeout(addDoc(collection(db, 'attempts'), attempt), 15000);
   return ref.id;
 }
 

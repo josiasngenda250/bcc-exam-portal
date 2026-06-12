@@ -99,8 +99,15 @@ function RegisterForm() {
       });
       localStorage.setItem('bcc_member_id', id);
       router.push('/dashboard');
-    } catch {
-      setError(T.errorRegister[lang]);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : '';
+      setError(
+        msg === 'FIRESTORE_TIMEOUT'
+          ? (lang === 'fr' ? 'La connexion a expiré. Vérifiez votre réseau et réessayez.'
+            : lang === 'rw' ? 'Igihe cyararenze. Reba imbonezamunara yawe hanyuma ugerageze nanone.'
+            : 'Connection timed out. Please check your network and try again.')
+          : T.errorRegister[lang]
+      );
     } finally {
       setLoading(false);
     }
