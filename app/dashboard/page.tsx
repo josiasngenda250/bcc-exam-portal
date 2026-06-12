@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { getMember, getAllClasses, getMemberAttempts } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
@@ -66,13 +67,13 @@ function ClassCard({
           </button>
         )}
         {!isOpen && best && (
-          <a
+          <Link
             href={`/results/${best.id}`}
             className="btn-outline"
             style={{ width: 'auto', minWidth: 140, textAlign: 'center', textDecoration: 'none', display: 'inline-block' }}
           >
             {T.viewResults[lang]}
-          </a>
+          </Link>
         )}
       </div>
     </div>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { getAllMembers, getAllAttempts, getAllClasses } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Member, Attempt, BccClass } from '@/lib/types';
@@ -74,9 +75,9 @@ export default function AllMembersPage() {
                       {new Date(m.createdAt).toLocaleDateString('en-CA')}
                     </td>
                     <td>
-                      <a href={`/admin/members/${m.id}`} className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+                      <Link href={`/admin/members/${m.id}`} className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
                         View
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 );

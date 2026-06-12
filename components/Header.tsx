@@ -79,13 +79,13 @@ export function AdminHeader({ title }: { title: string }) {
               👤 <strong className="text-white">{adminName}</strong>
             </span>
           )}
-          <a
+          <Link
             href="/admin/admins"
             className="text-sm text-gray-300 hover:text-white hidden sm:block"
             style={{ textDecoration: 'underline' }}
           >
             Admins
-          </a>
+          </Link>
           <form action="/api/admin/logout" method="POST" style={{ display: 'inline' }}>
             <button type="submit" className="text-sm text-gray-300 hover:text-white border border-gray-500 rounded px-3 py-1">
               Sign Out

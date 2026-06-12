@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import { getClassAttempts, getAllMembers } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Attempt, Member } from '@/lib/types';
@@ -131,9 +132,9 @@ export default function ClassRosterPage() {
                     <td>{attCount}</td>
                     <td className="text-sm text-gray-500">{new Date(a.submittedAt).toLocaleDateString('en-CA')}</td>
                     <td>
-                      <a href={`/admin/members/${a.memberId}`} className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+                      <Link href={`/admin/members/${a.memberId}`} className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
                         View
-                      </a>
+                      </Link>
                     </td>
                   </tr>
                 );
@@ -143,9 +144,9 @@ export default function ClassRosterPage() {
         </div>
 
         <div className="mt-4">
-          <a href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
             ← Back to Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>

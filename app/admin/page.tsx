@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default async function AdminLoginPage({
   searchParams,
 }: {
@@ -41,9 +43,9 @@ export default async function AdminLoginPage({
 
         <p className="text-center text-sm text-gray-400 mt-6">
           First time?{' '}
-          <a href="/admin/setup" style={{ color: 'var(--bcc-navy)', textDecoration: 'underline' }}>
+          <Link href="/admin/setup" style={{ color: 'var(--bcc-navy)', textDecoration: 'underline' }}>
             Create your admin account →
-          </a>
+          </Link>
         </p>
       </div>
     </div>

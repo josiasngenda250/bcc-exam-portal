@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import { getMember, getAllClasses, getMemberAttempts } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Member, BccClass, Attempt } from '@/lib/types';
@@ -111,7 +112,7 @@ export default function MemberDetailPage() {
                       {allAtt.map(a => {
                         const p = Math.round((a.score / a.maxScore) * 100);
                         return (
-                          <a
+                          <Link
                             key={a.id}
                             href={`/results/${a.id}`}
                             className="px-3 py-1 rounded-full text-sm font-medium no-underline"
@@ -122,7 +123,7 @@ export default function MemberDetailPage() {
                             }}
                           >
                             #{a.attemptNumber} — {a.score}/{a.maxScore} ({p}%) {a.language.toUpperCase()}
-                          </a>
+                          </Link>
                         );
                       })}
                     </div>
@@ -133,9 +134,9 @@ export default function MemberDetailPage() {
           })}
         </div>
 
-        <a href="/admin/members" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+        <Link href="/admin/members" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
           ← Back to All Members
-        </a>
+        </Link>
       </div>
     </div>
   );

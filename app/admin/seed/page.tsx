@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { AdminHeader } from '@/components/Header';
 
 export default function SeedPage() {
@@ -48,7 +49,7 @@ export default function SeedPage() {
 
           {status === 'done' && (
             <div className="mb-6 p-4 rounded-lg" style={{ background: '#dcfce7', color: '#166534' }}>
-              ✓ Questions seeded successfully! <a href="/admin/dashboard" className="underline font-bold ml-2">Go to Dashboard</a>
+              ✓ Questions seeded successfully! <Link href="/admin/dashboard" className="underline font-bold ml-2">Go to Dashboard</Link>
             </div>
           )}
 
@@ -66,9 +67,9 @@ export default function SeedPage() {
         </div>
 
         <div className="mt-4">
-          <a href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
             ← Back to Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>

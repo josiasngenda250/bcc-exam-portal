@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import Link from 'next/link';
 import { getMember, getClass, getQuestions, getMemberClassAttempts, saveAttempt, scoreAttempt } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
@@ -110,7 +111,7 @@ export default function ExamPage() {
         <Header />
         <div className="content-wrap py-10 text-center">
           <p className="text-red-600">This exam has no questions yet.</p>
-          <a href="/dashboard" className="underline mt-4 block">Back to Dashboard</a>
+          <Link href="/dashboard" className="underline mt-4 block">Back to Dashboard</Link>
         </div>
       </div>
     );

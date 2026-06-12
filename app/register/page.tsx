@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { createMember } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
@@ -261,9 +262,9 @@ function RegisterForm() {
 
           <p className="text-center text-sm text-gray-500 mt-6">
             {T.alreadyRegisteredQ[lang]}{' '}
-            <a href="/" className="underline" style={{ color: 'var(--bcc-navy)' }}>
+            <Link href="/" className="underline" style={{ color: 'var(--bcc-navy)' }}>
               {T.goBackContact[lang]}
-            </a>
+            </Link>
           </p>
         </div>
       </div>

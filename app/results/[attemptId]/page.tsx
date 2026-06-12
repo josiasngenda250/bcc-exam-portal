@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { getAttempt, getQuestions } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
@@ -121,21 +122,21 @@ export default function ResultsPage() {
         )}
 
         <div className="flex gap-3 pb-8">
-          <a
+          <Link
             href="/dashboard"
             className="btn-primary flex-1 text-center no-underline"
             style={{ display: 'block', textDecoration: 'none', textAlign: 'center' }}
           >
             {T.backToDashboard[uiLang]}
-          </a>
+          </Link>
           {attempt && (
-            <a
+            <Link
               href={`/exam/${attempt.classId}`}
               className="btn-outline flex-1 text-center no-underline"
               style={{ display: 'block', textDecoration: 'none', textAlign: 'center' }}
             >
               {T.retakeExam[uiLang]}
-            </a>
+            </Link>
           )}
         </div>
       </div>

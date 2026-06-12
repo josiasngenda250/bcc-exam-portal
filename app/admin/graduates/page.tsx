@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { getAllMembers, getAllAttempts, getAllClasses } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Member, Attempt, BccClass } from '@/lib/types';
@@ -104,9 +105,9 @@ export default function GraduatesPage() {
               ) : graduates.map(({ member: m, classResults: cr }) => (
                 <tr key={m.id}>
                   <td>
-                    <a href={`/admin/members/${m.id}`} className="font-medium underline" style={{ color: 'var(--bcc-navy)' }}>
+                    <Link href={`/admin/members/${m.id}`} className="font-medium underline" style={{ color: 'var(--bcc-navy)' }}>
                       {m.firstName} {m.lastName}
-                    </a>
+                    </Link>
                   </td>
                   <td>{m.country}</td>
                   <td>{m.language?.toUpperCase()}</td>
@@ -146,9 +147,9 @@ export default function GraduatesPage() {
               {inProgress.map(({ member: m, classResults: cr }) => (
                 <tr key={m.id}>
                   <td>
-                    <a href={`/admin/members/${m.id}`} className="font-medium underline" style={{ color: 'var(--bcc-navy)' }}>
+                    <Link href={`/admin/members/${m.id}`} className="font-medium underline" style={{ color: 'var(--bcc-navy)' }}>
                       {m.firstName} {m.lastName}
-                    </a>
+                    </Link>
                   </td>
                   <td>{m.country}</td>
                   <td>{m.language?.toUpperCase()}</td>
@@ -168,9 +169,9 @@ export default function GraduatesPage() {
         </div>
 
         <div className="mt-6">
-          <a href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
             ← Back to Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>

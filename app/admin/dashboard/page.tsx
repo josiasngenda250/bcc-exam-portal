@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { getAllClasses, getAllAttempts, getAllMembers, setClassOpenForGroup, migrateClassSchema } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import { GROUPS, getMemberGroup, isClassOpenForGroup } from '@/lib/types';
@@ -200,13 +201,13 @@ export default function AdminDashboardPage() {
                         >
                           {isToggling ? '…' : isOpen ? 'Lock' : 'Unlock'}
                         </button>
-                        <a
+                        <Link
                           href={`/admin/classes/${cls.id}?group=${group.id}`}
                           className="px-3 py-1.5 rounded-lg text-xs font-bold border-2 no-underline"
                           style={{ borderColor: colors.border, color: colors.badge, background: 'white', textDecoration: 'none' }}
                         >
                           Roster
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   );
@@ -218,22 +219,22 @@ export default function AdminDashboardPage() {
 
         {/* Quick links */}
         <div className="flex gap-4 flex-wrap mt-2">
-          <a href="/admin/graduates" className="btn-primary"
+          <Link href="/admin/graduates" className="btn-primary"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             Graduates Report →
-          </a>
-          <a href="/admin/members" className="btn-outline"
+          </Link>
+          <Link href="/admin/members" className="btn-outline"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             All Members →
-          </a>
-          <a href="/admin/admins" className="btn-outline"
+          </Link>
+          <Link href="/admin/admins" className="btn-outline"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             Manage Admins →
-          </a>
-          <a href="/admin/seed" className="btn-outline"
+          </Link>
+          <Link href="/admin/seed" className="btn-outline"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block', borderColor: '#9ca3af', color: '#6b7280' }}>
             Reload Questions →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

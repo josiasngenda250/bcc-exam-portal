@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { AdminHeader } from '@/components/Header';
 
 interface AdminUser {
@@ -159,9 +160,9 @@ export default function ManageAdminsPage() {
         </div>
 
         <div className="mt-6">
-          <a href="/admin/dashboard" className="btn-outline" style={{ display: 'inline-block', width: 'auto', textDecoration: 'none' }}>
+          <Link href="/admin/dashboard" className="btn-outline" style={{ display: 'inline-block', width: 'auto', textDecoration: 'none' }}>
             ← Back to Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>
