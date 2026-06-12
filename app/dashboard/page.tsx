@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { getMember, getAllClasses, getMemberAttempts } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
@@ -93,16 +92,16 @@ export default function DashboardPage() {
     const memberId = localStorage.getItem('bcc_member_id');
     if (!memberId) { router.push('/'); return; }
 
-    Promise.all([
-      getMember(memberId),
-      getAllClasses(),
-      getMemberAttempts(memberId).catch(() => [] as Attempt[]),
-    ]).then(([m, cls, att]) => {
-      if (!m) { localStorage.removeItem('bcc_member_id'); router.push('/'); return; }
-      setMember(m);
-      setClasses(cls);
-      setAttempts(att);
-    }).finally(() => setLoading(false));
+    fetch(`/api/member/${memberId}/dashboard`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data?.member) { localStorage.removeItem('bcc_member_id'); router.push('/'); return; }
+        setMember(data.member as Member);
+        setClasses(data.classes as BccClass[]);
+        setAttempts(data.attempts as Attempt[]);
+      })
+      .catch(() => { router.push('/'); })
+      .finally(() => setLoading(false));
   }, [router]);
 
   function handleSignOut() {

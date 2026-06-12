@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { findMemberByContact } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, setLang, type Lang } from '@/lib/i18n';
 
@@ -34,20 +33,21 @@ export default function LandingPage() {
     setLoading(true);
     setError('');
     try {
-      const member = await findMemberByContact(val);
-      if (member) {
+      const res = await fetch('/api/member/lookup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contact: val }),
+      });
+      if (!res.ok) throw new Error('lookup_failed');
+      const member = await res.json();
+      if (member?.id) {
         localStorage.setItem('bcc_member_id', member.id);
         router.push('/dashboard');
       } else {
         router.push(`/register?contact=${encodeURIComponent(val)}`);
       }
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : '';
-      if (msg === 'FIRESTORE_TIMEOUT') {
-        setError(T.errorTimeout[lang]);
-      } else {
-        setError(T.errorGeneral[lang]);
-      }
+    } catch {
+      setError(T.errorGeneral[lang]);
     } finally {
       setLoading(false);
     }

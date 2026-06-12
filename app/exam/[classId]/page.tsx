@@ -2,11 +2,10 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
-import { getMember, getClass, getQuestions, getMemberClassAttempts, saveAttempt, scoreAttempt } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
-import type { Question, BccClass, Language } from '@/lib/types';
+import type { Member, Question, BccClass, Language } from '@/lib/types';
 
 const CLASS_LABELS: Record<string, string> = {
   class_1: 'Class 1', class_2: 'Class 2', class_3a: 'Class 3A',
@@ -41,14 +40,20 @@ export default function ExamPage() {
     if (!id) { router.push('/'); return; }
     setMemberId(id);
 
-    Promise.all([getMember(id), getClass(classId), getQuestions(classId)]).then(([m, c, qs]) => {
-      if (!m) { router.push('/'); return; }
-      const memberGroup = getMemberGroup(m);
-      if (!c || !isClassOpenForGroup(c, memberGroup)) { router.push('/dashboard'); return; }
-      setCls(c);
-      setQuestions(qs);
-      setLanguage(m.language ?? 'en');
-    }).finally(() => setLoading(false));
+    fetch(`/api/exam/${classId}?memberId=${encodeURIComponent(id)}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data?.member) { router.push('/'); return; }
+        const memberGroup = getMemberGroup(data.member as Member);
+        if (!data.cls || !isClassOpenForGroup(data.cls as BccClass, memberGroup)) {
+          router.push('/dashboard'); return;
+        }
+        setCls(data.cls as BccClass);
+        setQuestions(data.questions as Question[]);
+        setLanguage((data.member as Member).language ?? 'en');
+      })
+      .catch(() => router.push('/'))
+      .finally(() => setLoading(false));
   }, [classId, router]);
 
   const currentQ = questions[currentIndex];
@@ -69,27 +74,14 @@ export default function ExamPage() {
     if (!cls || !memberId) return;
     setSubmitting(true);
     try {
-      const score = scoreAttempt(questions, answers, language);
-      const maxScore = cls.maxScore[language] ?? questions.length;
-      const prevAttempts = await getMemberClassAttempts(memberId, classId);
-      const attemptNumber = prevAttempts.length + 1;
-      const memberSnap = await getMember(memberId);
-
-      const attemptId = await saveAttempt({
-        memberId,
-        memberName: `${memberSnap?.firstName} ${memberSnap?.lastName}`,
-        memberEmail: memberSnap?.email ?? '',
-        memberPhone: memberSnap?.phone ?? '',
-        memberCountry: memberSnap?.country ?? '',
-        classId,
-        language,
-        answers,
-        score,
-        maxScore,
-        submittedAt: new Date().toISOString(),
-        attemptNumber,
+      const res = await fetch(`/api/exam/${classId}/submit`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ memberId, language, answers }),
       });
-      router.push(`/results/${attemptId}`);
+      const data = await res.json();
+      if (!res.ok || !data.id) throw new Error(data.error ?? 'submit_failed');
+      router.push(`/results/${data.id}`);
     } catch {
       setError('Failed to submit. Please try again.');
       setSubmitting(false);

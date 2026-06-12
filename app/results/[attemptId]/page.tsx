@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { getAttempt, getQuestions } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
 import type { Attempt, Question } from '@/lib/types';
@@ -25,13 +24,15 @@ export default function ResultsPage() {
 
   useEffect(() => {
     setUiLang(getLang());
-    getAttempt(attemptId).then(a => {
-      if (!a) { router.push('/dashboard'); return; }
-      setAttempt(a);
-      return getQuestions(a.classId);
-    }).then(qs => {
-      if (qs) setQuestions(qs);
-    }).finally(() => setLoading(false));
+    fetch(`/api/results/${attemptId}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!data?.attempt) { router.push('/dashboard'); return; }
+        setAttempt(data.attempt as Attempt);
+        setQuestions(data.questions as Question[]);
+      })
+      .catch(() => router.push('/dashboard'))
+      .finally(() => setLoading(false));
   }, [attemptId, router]);
 
   if (loading) {

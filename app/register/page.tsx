@@ -2,7 +2,6 @@
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { createMember } from '@/lib/firestore';
 import { Header } from '@/components/Header';
 import { T, getLang, type Lang } from '@/lib/i18n';
 import type { Language, PromotionType, CanadaRegion } from '@/lib/types';
@@ -86,28 +85,27 @@ function RegisterForm() {
     setLoading(true);
     setError('');
     try {
-      const id = await createMember({
-        firstName: firstName.trim(),
-        lastName: lastName.trim(),
-        email: email.trim().toLowerCase(),
-        phone: phone.trim(),
-        language,
-        country: country.trim(),
-        promotionType,
-        region: promotionType === 'online' && region ? region : undefined,
-        province: isCanada && province ? province : undefined,
+      const res = await fetch('/api/member/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          email: email.trim().toLowerCase(),
+          phone: phone.trim(),
+          language,
+          country: country.trim(),
+          promotionType,
+          region: promotionType === 'online' && region ? region : undefined,
+          province: isCanada && province ? province : undefined,
+        }),
       });
-      localStorage.setItem('bcc_member_id', id);
+      const data = await res.json();
+      if (!res.ok || !data.id) throw new Error(data.error ?? 'register_failed');
+      localStorage.setItem('bcc_member_id', data.id);
       router.push('/dashboard');
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : '';
-      setError(
-        msg === 'FIRESTORE_TIMEOUT'
-          ? (lang === 'fr' ? 'La connexion a expiré. Vérifiez votre réseau et réessayez.'
-            : lang === 'rw' ? 'Igihe cyararenze. Reba imbonezamunara yawe hanyuma ugerageze nanone.'
-            : 'Connection timed out. Please check your network and try again.')
-          : T.errorRegister[lang]
-      );
+    } catch {
+      setError(T.errorRegister[lang]);
     } finally {
       setLoading(false);
     }
