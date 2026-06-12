@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { getAllMembers, getAllAttempts, getAllClasses } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Member, Attempt, BccClass } from '@/lib/types';
 
@@ -13,8 +12,9 @@ export default function AllMembersPage() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    Promise.all([getAllMembers(), getAllAttempts(), getAllClasses()])
-      .then(([m, a, c]) => { setMembers(m); setAttempts(a); setClasses(c); })
+    fetch('/api/admin/data')
+      .then(r => r.json())
+      .then(({ members: m, attempts: a, classes: c }) => { setMembers(m); setAttempts(a); setClasses(c); })
       .finally(() => setLoading(false));
   }, []);
 

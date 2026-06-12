@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { getAllClasses, getAllAttempts, getAllMembers, setClassOpenForGroup, migrateClassSchema } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import { GROUPS, getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { BccClass, Attempt, Member, GroupId } from '@/lib/types';
@@ -28,7 +27,8 @@ export default function AdminDashboardPage() {
 
   async function load() {
     setLoading(true);
-    const [cls, att, mem] = await Promise.all([getAllClasses(), getAllAttempts(), getAllMembers()]);
+    const res = await fetch('/api/admin/data');
+    const { classes: cls, attempts: att, members: mem } = await res.json();
     setClasses(cls);
     setAttempts(att);
     setMembers(mem);
@@ -39,7 +39,7 @@ export default function AdminDashboardPage() {
 
   async function handleMigrate() {
     setMigrating(true);
-    await migrateClassSchema();
+    await fetch('/api/admin/migrate', { method: 'POST' });
     await load();
     setMigrating(false);
   }
@@ -47,7 +47,11 @@ export default function AdminDashboardPage() {
   async function handleToggle(classId: string, group: GroupId, currentOpen: boolean) {
     const key = `${classId}:${group}`;
     setToggling(key);
-    await setClassOpenForGroup(classId, group, !currentOpen);
+    await fetch(`/api/admin/classes/${classId}/toggle`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ group, open: !currentOpen }),
+    });
     setClasses(prev => prev.map(c => {
       if (c.id !== classId) return c;
       return {

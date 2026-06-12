@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { getClassAttempts, getAllMembers } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Attempt, Member } from '@/lib/types';
 
@@ -21,8 +20,9 @@ export default function ClassRosterPage() {
   const [filter, setFilter] = useState<'all' | 'en' | 'fr' | 'rw'>('all');
 
   useEffect(() => {
-    Promise.all([getClassAttempts(classId), getAllMembers()])
-      .then(([att, mem]) => { setAttempts(att); setMembers(mem); })
+    fetch(`/api/admin/classes/${classId}`)
+      .then(r => r.json())
+      .then(({ attempts: att, members: mem }) => { setAttempts(att); setMembers(mem); })
       .finally(() => setLoading(false));
   }, [classId]);
 

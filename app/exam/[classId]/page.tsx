@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T } from '@/lib/i18n';
+import { T, type Lang } from '@/lib/i18n';
 import { useLang } from '@/components/LangProvider';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, Question, BccClass, Language } from '@/lib/types';
@@ -33,7 +33,7 @@ export default function ExamPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [confirmSubmit, setConfirmSubmit] = useState(false);
-  const { lang: uiLang } = useLang();
+  const { lang: uiLang, setLang: setUiLang } = useLang();
 
   // ── Persist progress to localStorage ──────────────────────────────────────
   const PROGRESS_KEY = `bcc_exam_${classId}`;
@@ -68,7 +68,9 @@ export default function ExamPage() {
         setCls(data.cls as BccClass);
         setQuestions(data.questions as Question[]);
         // Prefer saved language over default; fall back to member's language
-        setLanguage(saved?.language ?? (data.member as Member).language ?? 'en');
+        const examLang = saved?.language ?? (data.member as Member).language ?? 'en';
+      setLanguage(examLang as Language);
+      setUiLang(examLang as Lang);
         if (saved?.answers && Object.keys(saved.answers).length > 0) {
           setAnswers(saved.answers);
           setCurrentIndex(saved.currentIndex ?? 0);
@@ -155,7 +157,7 @@ export default function ExamPage() {
             {(Object.entries(LANG_LABELS) as [Language, string][]).map(([lang, label]) => (
               <button
                 key={lang}
-                onClick={() => setLanguage(lang)}
+                onClick={() => { setLanguage(lang); setUiLang(lang as Lang); }}
                 className="px-3 py-2 rounded-lg text-sm font-bold border-2 transition-all"
                 style={{
                   borderColor: language === lang ? 'var(--bcc-navy)' : '#d1d5db',

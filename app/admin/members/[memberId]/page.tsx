@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { getMember, getAllClasses, getMemberAttempts } from '@/lib/firestore';
 import { AdminHeader } from '@/components/Header';
 import type { Member, BccClass, Attempt } from '@/lib/types';
 
@@ -21,8 +20,9 @@ export default function MemberDetailPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([getMember(memberId), getAllClasses(), getMemberAttempts(memberId)])
-      .then(([m, cls, att]) => { setMember(m); setClasses(cls); setAttempts(att); })
+    fetch(`/api/admin/members/${memberId}`)
+      .then(r => r.json())
+      .then(({ member: m, classes: cls, attempts: att }) => { setMember(m); setClasses(cls); setAttempts(att); })
       .finally(() => setLoading(false));
   }, [memberId]);
 
