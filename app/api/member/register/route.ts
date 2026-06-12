@@ -22,8 +22,9 @@ export async function POST(req: NextRequest) {
       promotionType: data.promotionType ?? 'online',
       createdAt: new Date().toISOString(),
     };
-    if (data.region)   payload.region   = data.region;
-    if (data.province) payload.province = data.province;
+    if (data.region)      payload.region      = data.region;
+    if (data.province)    payload.province    = data.province;
+    if (data.promotionId) payload.promotionId = data.promotionId;
 
     const ref = await adminDb.collection('members').add(payload);
     return NextResponse.json({ id: ref.id });

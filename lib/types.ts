@@ -33,7 +33,18 @@ export interface Member {
   promotionType?: PromotionType;
   region?: CanadaRegion;
   province?: string;
+  promotionId?: string;
   createdAt: string;
+}
+
+export interface Promotion {
+  id: string;
+  name: string;
+  year: number;
+  number: number;
+  isActive: boolean;
+  createdAt: string;
+  memberCount?: number;
 }
 
 export interface BccClass {

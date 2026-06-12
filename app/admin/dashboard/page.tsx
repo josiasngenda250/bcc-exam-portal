@@ -24,14 +24,20 @@ export default function AdminDashboardPage() {
   const [loading,  setLoading]  = useState(true);
   const [migrating, setMigrating] = useState(false);
   const [toggling, setToggling] = useState<string | null>(null); // "classId:groupId"
+  const [activePromotion, setActivePromotion] = useState<{ id: string; name: string } | null>(null);
 
   async function load() {
     setLoading(true);
-    const res = await fetch('/api/admin/data');
-    const { classes: cls, attempts: att, members: mem } = await res.json();
+    const [dataRes, promoRes] = await Promise.all([
+      fetch('/api/admin/data'),
+      fetch('/api/active-promotion'),
+    ]);
+    const { classes: cls, attempts: att, members: mem } = await dataRes.json();
+    const { promotion } = await promoRes.json();
     setClasses(cls);
     setAttempts(att);
     setMembers(mem);
+    setActivePromotion(promotion ?? null);
     setLoading(false);
   }
 
@@ -104,6 +110,30 @@ export default function AdminDashboardPage() {
             >
               {migrating ? 'Updating…' : 'Initialize Group Access Control →'}
             </button>
+          </div>
+        )}
+
+        {/* Active promotion indicator */}
+        {activePromotion ? (
+          <div className="card mb-5" style={{ borderLeft: '4px solid #16a34a', background: '#f0fdf4', padding: '12px 16px' }}>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-green-600">Active Promotion</span>
+                <p className="font-bold" style={{ color: 'var(--bcc-navy)' }}>{activePromotion.name}</p>
+              </div>
+              <Link href="/admin/promotions" className="text-sm underline" style={{ color: '#16a34a' }}>
+                Manage Promotions →
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <div className="card mb-5" style={{ borderLeft: '4px solid #d97706', background: '#fffbeb', padding: '12px 16px' }}>
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <p className="text-sm text-amber-700">⚠️ No active promotion — new registrations are not being tracked by cohort.</p>
+              <Link href="/admin/promotions" className="text-sm underline font-bold" style={{ color: '#d97706' }}>
+                Create Promotion →
+              </Link>
+            </div>
           </div>
         )}
 
@@ -234,6 +264,10 @@ export default function AdminDashboardPage() {
           <Link href="/admin/admins" className="btn-outline"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block' }}>
             Manage Admins →
+          </Link>
+          <Link href="/admin/promotions" className="btn-outline"
+            style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block', borderColor: '#16a34a', color: '#166534' }}>
+            Promotions →
           </Link>
           <Link href="/admin/seed" className="btn-outline"
             style={{ flex: 1, minWidth: 160, textAlign: 'center', textDecoration: 'none', display: 'block', borderColor: '#9ca3af', color: '#6b7280' }}>

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { AdminHeader } from '@/components/Header';
 import { getMemberGroup } from '@/lib/types';
-import type { Member, Attempt, BccClass, GroupId } from '@/lib/types';
+import type { Member, Attempt, BccClass, GroupId, Promotion } from '@/lib/types';
 
 type GroupFilter = 'all' | GroupId;
 
@@ -41,18 +41,25 @@ export default function AllMembersPage() {
   const [loading,  setLoading]  = useState(true);
   const [search,   setSearch]   = useState('');
   const [groupFilter, setGroupFilter] = useState<GroupFilter>('all');
+  const [promotions, setPromotions] = useState<Promotion[]>([]);
+  const [promoFilter, setPromoFilter] = useState<string>('all');
 
   useEffect(() => {
-    fetch('/api/admin/data')
-      .then(r => r.json())
-      .then(({ members: m, attempts: a, classes: c }) => { setMembers(m); setAttempts(a); setClasses(c); })
-      .finally(() => setLoading(false));
+    Promise.all([
+      fetch('/api/admin/data').then(r => r.json()),
+      fetch('/api/admin/promotions').then(r => r.json()),
+    ]).then(([data, promoData]) => {
+      setMembers(data.members); setAttempts(data.attempts); setClasses(data.classes);
+      setPromotions(promoData.promotions ?? []);
+    }).finally(() => setLoading(false));
   }, []);
 
   const filtered = members.filter(m => {
     const matchesSearch = `${m.firstName} ${m.lastName} ${m.email} ${m.phone ?? ''} ${m.province ?? ''}`.toLowerCase().includes(search.toLowerCase());
     const matchesGroup  = groupFilter === 'all' || getMemberGroup(m) === groupFilter;
-    return matchesSearch && matchesGroup;
+    const matchesPromo  = promoFilter === 'all'
+      || (promoFilter === '__none__' ? !m.promotionId : m.promotionId === promoFilter);
+    return matchesSearch && matchesGroup && matchesPromo;
   });
 
   function exportCSV() {
@@ -107,6 +114,24 @@ export default function AllMembersPage() {
         </div>
 
         {/* Filters row */}
+        <div className="flex items-center gap-3 flex-wrap mb-3">
+          <label className="text-sm font-medium text-gray-600">Promotion:</label>
+          <select
+            className="input-field"
+            value={promoFilter}
+            onChange={e => setPromoFilter(e.target.value)}
+            style={{ width: 'auto', minWidth: 200 }}
+          >
+            <option value="all">All Promotions</option>
+            {promotions.map(p => (
+              <option key={p.id} value={p.id}>
+                {p.name}{p.isActive ? ' (Active)' : ''} — {p.memberCount ?? 0} members
+              </option>
+            ))}
+            <option value="__none__">Legacy (no promotion)</option>
+          </select>
+        </div>
+
         <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
           {/* Group tabs */}
           <div className="flex gap-1 flex-wrap">
@@ -209,6 +234,15 @@ export default function AllMembersPage() {
               })}
             </tbody>
           </table>
+        </div>
+
+        <div className="flex gap-4 flex-wrap mt-4">
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+            ← Back to Dashboard
+          </Link>
+          <Link href="/admin/promotions" className="underline text-sm" style={{ color: '#16a34a' }}>
+            Manage Promotions →
+          </Link>
         </div>
       </div>
     </div>

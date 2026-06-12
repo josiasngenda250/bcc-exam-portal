@@ -39,6 +39,7 @@ function RegisterForm() {
   const [province, setProvince] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [promotionId, setPromotionId] = useState<string | null>(null);
 
   const isCanada = country.trim().toLowerCase().includes('canada');
 
@@ -52,6 +53,10 @@ function RegisterForm() {
     setLanguage(getLang() as Language);
     if (prefill.includes('@')) setEmail(prefill);
     else setPhone(prefill);
+    fetch('/api/active-promotion')
+      .then(r => r.json())
+      .then(d => { if (d.promotion?.id) setPromotionId(d.promotion.id); })
+      .catch(() => {});
   }, [prefill]);
 
   useEffect(() => { setProvince(''); }, [region]);
@@ -97,6 +102,7 @@ function RegisterForm() {
           promotionType,
           region: promotionType === 'online' && region ? region : undefined,
           province: isCanada && province ? province : undefined,
+          promotionId: promotionId ?? undefined,
         }),
       });
       const data = await res.json();

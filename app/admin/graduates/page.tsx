@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { AdminHeader } from '@/components/Header';
 import { getMemberGroup } from '@/lib/types';
-import type { Member, Attempt, BccClass, GroupId } from '@/lib/types';
+import type { Member, Attempt, BccClass, GroupId, Promotion } from '@/lib/types';
 
 const CLASS_LABELS: Record<string, string> = {
   class_1: 'C1', class_2: 'C2', class_3a: 'C3A', class_3b: 'C3B',
@@ -39,12 +39,17 @@ export default function GraduatesPage() {
   const [attempts, setAttempts] = useState<Attempt[]>([]);
   const [classes,  setClasses]  = useState<BccClass[]>([]);
   const [loading,  setLoading]  = useState(true);
+  const [promotions, setPromotions] = useState<Promotion[]>([]);
+  const [promoFilter, setPromoFilter] = useState<string>('all');
 
   useEffect(() => {
-    fetch('/api/admin/data')
-      .then(r => r.json())
-      .then(({ members: m, attempts: a, classes: c }) => { setMembers(m); setAttempts(a); setClasses(c); })
-      .finally(() => setLoading(false));
+    Promise.all([
+      fetch('/api/admin/data').then(r => r.json()),
+      fetch('/api/admin/promotions').then(r => r.json()),
+    ]).then(([data, promoData]) => {
+      setMembers(data.members); setAttempts(data.attempts); setClasses(data.classes);
+      setPromotions(promoData.promotions ?? []);
+    }).finally(() => setLoading(false));
   }, []);
 
   function getBest(memberId: string, classId: string): Attempt | null {
@@ -58,14 +63,19 @@ export default function GraduatesPage() {
     return !!b && Math.round((b.score / b.maxScore) * 100) >= 60;
   }
 
-  const membersWithProgress = members.map(m => ({
+  const visibleMembers = members.filter(m =>
+    promoFilter === 'all'
+      || (promoFilter === '__none__' ? !m.promotionId : m.promotionId === promoFilter)
+  );
+
+  const membersWithProgress = visibleMembers.map(m => ({
     member: m,
     classResults: classes.map(c => ({ classId: c.id, best: getBest(m.id, c.id), passed: hasPassed(m.id, c.id) })),
   })).filter(x => x.classResults.some(r => r.best));
 
   const graduates = membersWithProgress.filter(x => x.classResults.every(r => r.passed));
   const inProgress = membersWithProgress.filter(x => !x.classResults.every(r => r.passed));
-  const notStarted = members.filter(m => !membersWithProgress.find(x => x.member.id === m.id));
+  const notStarted = visibleMembers.filter(m => !membersWithProgress.find(x => x.member.id === m.id));
 
   const countGradByGroup = (g: GroupId) => graduates.filter(x => getMemberGroup(x.member) === g).length;
   const countProgByGroup = (g: GroupId) => inProgress.filter(x => getMemberGroup(x.member) === g).length;
@@ -143,6 +153,25 @@ export default function GraduatesPage() {
     <div className="page-container">
       <AdminHeader title="Graduates Report" />
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '24px 16px' }}>
+
+        {/* Promotion filter */}
+        <div className="flex items-center gap-3 flex-wrap mb-5">
+          <label className="text-sm font-medium text-gray-600">Promotion:</label>
+          <select
+            className="input-field"
+            value={promoFilter}
+            onChange={e => setPromoFilter(e.target.value)}
+            style={{ width: 'auto', minWidth: 220 }}
+          >
+            <option value="all">All Promotions</option>
+            {promotions.map(p => (
+              <option key={p.id} value={p.id}>
+                {p.name}{p.isActive ? ' (Active)' : ''} — {p.memberCount ?? 0} members
+              </option>
+            ))}
+            <option value="__none__">Legacy (no promotion)</option>
+          </select>
+        </div>
 
         {/* Overall stats */}
         <div className="flex gap-3 flex-wrap mb-4">
@@ -271,9 +300,14 @@ export default function GraduatesPage() {
           </table>
         </div>
 
-        <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
-          ← Back to Dashboard
-        </Link>
+        <div className="flex gap-4 flex-wrap">
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+            ← Back to Dashboard
+          </Link>
+          <Link href="/admin/promotions" className="underline text-sm" style={{ color: '#16a34a' }}>
+            Manage Promotions →
+          </Link>
+        </div>
       </div>
     </div>
   );

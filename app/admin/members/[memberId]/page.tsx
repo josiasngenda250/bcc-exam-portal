@@ -134,9 +134,14 @@ export default function MemberDetailPage() {
           })}
         </div>
 
-        <Link href="/admin/members" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
-          ← Back to All Members
-        </Link>
+        <div className="flex gap-4 flex-wrap">
+          <Link href="/admin/members" className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+            ← Back to All Members
+          </Link>
+          <Link href="/admin/dashboard" className="underline text-sm" style={{ color: '#6b7280' }}>
+            ← Back to Dashboard
+          </Link>
+        </div>
       </div>
     </div>
   );
