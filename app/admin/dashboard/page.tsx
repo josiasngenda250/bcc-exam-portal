@@ -274,6 +274,25 @@ export default function AdminDashboardPage() {
             Reload Questions →
           </Link>
         </div>
+
+        {/* Danger zone */}
+        <div className="mt-4 pt-4" style={{ borderTop: '1px solid #fee2e2' }}>
+          <Link
+            href="/admin/reset"
+            style={{
+              display: 'inline-block',
+              padding: '10px 20px',
+              borderRadius: '10px',
+              border: '2px solid #dc2626',
+              color: '#dc2626',
+              fontWeight: 'bold',
+              fontSize: 14,
+              textDecoration: 'none',
+            }}
+          >
+            ⚠️ Reset Database (clear all test data)
+          </Link>
+        </div>
       </div>
     </div>
   );
