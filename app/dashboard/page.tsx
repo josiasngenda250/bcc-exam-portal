@@ -20,6 +20,16 @@ function getBestAttempt(attempts: Attempt[], classId: string): Attempt | null {
   return cls.reduce((best, a) => (a.score > best.score ? a : best), cls[0]);
 }
 
+function getExamProgress(classId: string): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    const raw = localStorage.getItem(`bcc_exam_${classId}`);
+    if (!raw) return false;
+    const saved = JSON.parse(raw);
+    return Object.keys(saved.answers ?? {}).length > 0;
+  } catch { return false; }
+}
+
 function ClassCard({
   cls, attempts, lang, isOpen, onTake,
 }: {
@@ -29,18 +39,31 @@ function ClassCard({
   const count = attempts.filter(a => a.classId === cls.id).length;
   const pct = best ? Math.round((best.score / best.maxScore) * 100) : 0;
   const passed = best ? pct >= 60 : false;
+  const inProgress = isOpen && !best && getExamProgress(cls.id);
 
   if (!isOpen && !best) return null;
 
+  const borderColor = isOpen
+    ? (inProgress ? '#d97706' : 'var(--bcc-red)')
+    : '#9ca3af';
+
   return (
-    <div className="card mb-4" style={{ borderLeft: `5px solid ${isOpen ? 'var(--bcc-red)' : '#9ca3af'}` }}>
+    <div className="card mb-4" style={{ borderLeft: `5px solid ${borderColor}` }}>
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div className="flex-1">
           <div className="flex items-center gap-2 mb-1 flex-wrap">
             <h2 className="text-xl font-bold" style={{ color: 'var(--bcc-navy)' }}>
               {CLASS_LABELS[cls.id] ?? cls.title}
             </h2>
-            {isOpen && <span className="badge-open">{T.open[lang]}</span>}
+            {isOpen && !inProgress && <span className="badge-open">{T.open[lang]}</span>}
+            {isOpen && inProgress && (
+              <span style={{
+                background: '#fef3c7', color: '#92400e', border: '1px solid #f59e0b',
+                borderRadius: 6, padding: '2px 10px', fontSize: 12, fontWeight: 700,
+              }}>
+                ⏳ {T.inProgress[lang]}
+              </span>
+            )}
             {!isOpen && best && <span className="badge-closed">{T.closed[lang]}</span>}
           </div>
           {best && (
@@ -57,13 +80,18 @@ function ClassCard({
               </p>
             </div>
           )}
-          {!best && isOpen && (
+          {!best && isOpen && !inProgress && (
             <p className="text-gray-500 text-sm mt-1">{T.notStarted[lang]}</p>
+          )}
+          {!best && isOpen && inProgress && (
+            <p className="text-sm mt-1" style={{ color: '#d97706' }}>
+              {T.inProgress[lang]} — {T.continueExam[lang].toLowerCase()}
+            </p>
           )}
         </div>
         {isOpen && (
           <button onClick={onTake} className="btn-primary" style={{ width: 'auto', minWidth: 140 }}>
-            {best ? T.retakeExam[lang] : T.takeExam[lang]} →
+            {best ? T.retakeExam[lang] : inProgress ? T.continueExam[lang] : T.takeExam[lang]} →
           </button>
         )}
         {!isOpen && best && (
