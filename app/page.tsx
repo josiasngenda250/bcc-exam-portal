@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Header } from '@/components/Header';
-import { T, setLang, type Lang } from '@/lib/i18n';
+import { T, type Lang } from '@/lib/i18n';
+import { useLang } from '@/components/LangProvider';
 
 type Step = 'lang' | 'choose' | 'returning';
 
@@ -15,14 +16,13 @@ const LANGUAGES: { code: Lang; native: string; flag: string }[] = [
 export default function LandingPage() {
   const router = useRouter();
   const [step, setStep] = useState<Step>('lang');
-  const [lang, setActiveLang] = useState<Lang>('en');
+  const { lang, setLang } = useLang();
   const [contact, setContact] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   function chooseLang(code: Lang) {
     setLang(code);
-    setActiveLang(code);
     setStep('choose');
   }
 

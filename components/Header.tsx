@@ -1,30 +1,19 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { T, getLang, setLang as saveLang, type Lang } from '@/lib/i18n';
+import { T, type Lang } from '@/lib/i18n';
+import { useLang } from '@/components/LangProvider';
 
 interface HeaderProps {
   memberName?: string;
   showAdmin?: boolean;
-  lang?: Lang;
-  onLangChange?: (l: Lang) => void;
 }
 
 const LANG_FLAGS: Record<Lang, string> = { en: '🇬🇧', fr: '🇫🇷', rw: '🇷🇼' };
 const LANGS: Lang[] = ['en', 'fr', 'rw'];
 
-export function Header({ memberName, showAdmin, lang: propLang, onLangChange }: HeaderProps) {
-  const [activeLang, setActiveLang] = useState<Lang>('en');
-
-  useEffect(() => {
-    setActiveLang(propLang ?? getLang());
-  }, [propLang]);
-
-  function handleLangChange(l: Lang) {
-    saveLang(l);
-    setActiveLang(l);
-    onLangChange?.(l);
-  }
+export function Header({ memberName, showAdmin }: HeaderProps) {
+  const { lang: activeLang, setLang: handleLangChange } = useLang();
 
   return (
     <header style={{ background: 'var(--bcc-navy)' }} className="text-white">

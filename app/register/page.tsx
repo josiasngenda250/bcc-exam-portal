@@ -3,7 +3,8 @@ import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, setLang, type Lang } from '@/lib/i18n';
+import { T, getLang } from '@/lib/i18n';
+import { useLang } from '@/components/LangProvider';
 import type { Language, PromotionType, CanadaRegion } from '@/lib/types';
 
 const LANG_LABELS: Record<Language, string> = {
@@ -26,7 +27,7 @@ function RegisterForm() {
   const searchParams = useSearchParams();
   const prefill = searchParams.get('contact') ?? '';
 
-  const [lang, setLangState] = useState<Lang>('en');
+  const { lang } = useLang();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -48,9 +49,7 @@ function RegisterForm() {
     : [...EAST_PROVINCES, ...WEST_PROVINCES, ...TERRITORIES];
 
   useEffect(() => {
-    const uiLang = getLang();
-    setLangState(uiLang);
-    setLanguage(uiLang as Language);
+    setLanguage(getLang() as Language);
     if (prefill.includes('@')) setEmail(prefill);
     else setPhone(prefill);
   }, [prefill]);
@@ -113,7 +112,7 @@ function RegisterForm() {
 
   return (
     <div className="page-container">
-      <Header lang={lang} onLangChange={l => { setLang(l); setLangState(l); }} />
+      <Header />
       <div className="content-wrap py-10">
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
           <h1 className="text-3xl font-bold mb-2">{T.newParticipant[lang]}</h1>

@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, setLang, type Lang } from '@/lib/i18n';
+import { T, type Lang } from '@/lib/i18n';
+import { useLang } from '@/components/LangProvider';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, BccClass, Attempt } from '@/lib/types';
 
@@ -85,10 +86,9 @@ export default function DashboardPage() {
   const [classes, setClasses] = useState<BccClass[]>([]);
   const [attempts, setAttempts] = useState<Attempt[]>([]);
   const [loading, setLoading] = useState(true);
-  const [lang, setLangState] = useState<Lang>('en');
+  const { lang } = useLang();
 
   useEffect(() => {
-    setLangState(getLang());
     const memberId = localStorage.getItem('bcc_member_id');
     if (!memberId) { router.push('/'); return; }
 
@@ -131,11 +131,7 @@ export default function DashboardPage() {
 
   return (
     <div className="page-container">
-      <Header
-        memberName={member?.firstName}
-        lang={lang}
-        onLangChange={l => { setLang(l); setLangState(l); }}
-      />
+      <Header memberName={member?.firstName} />
       <div className="content-wrap">
         <div className="flex items-center justify-between flex-wrap gap-4 mb-6 mt-2">
           <div>

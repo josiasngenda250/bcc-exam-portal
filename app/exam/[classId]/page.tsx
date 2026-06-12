@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
-import { T, getLang, setLang, type Lang } from '@/lib/i18n';
+import { T } from '@/lib/i18n';
+import { useLang } from '@/components/LangProvider';
 import { getMemberGroup, isClassOpenForGroup } from '@/lib/types';
 import type { Member, Question, BccClass, Language } from '@/lib/types';
 
@@ -32,7 +33,7 @@ export default function ExamPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [confirmSubmit, setConfirmSubmit] = useState(false);
-  const [uiLang, setUiLang] = useState<Lang>('en');
+  const { lang: uiLang } = useLang();
 
   // ── Persist progress to localStorage ──────────────────────────────────────
   const PROGRESS_KEY = `bcc_exam_${classId}`;
@@ -45,7 +46,6 @@ export default function ExamPage() {
 
   // ── Load exam data + restore saved progress ─────────────────────────────
   useEffect(() => {
-    setUiLang(getLang());
     const id = localStorage.getItem('bcc_member_id');
     if (!id) { router.push('/'); return; }
     setMemberId(id);
@@ -114,7 +114,7 @@ export default function ExamPage() {
   if (loading) {
     return (
       <div className="page-container">
-        <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
+        <Header />
         <div className="content-wrap py-10 text-center text-gray-500 text-lg">{T.examLoading[uiLang]}</div>
       </div>
     );
@@ -123,7 +123,7 @@ export default function ExamPage() {
   if (!currentQ) {
     return (
       <div className="page-container">
-        <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
+        <Header />
         <div className="content-wrap py-10 text-center">
           <p className="text-red-600">This exam has no questions yet.</p>
           <Link href="/dashboard" className="underline mt-4 block">Back to Dashboard</Link>
@@ -138,7 +138,7 @@ export default function ExamPage() {
 
   return (
     <div className="page-container">
-      <Header lang={uiLang} onLangChange={l => { setLang(l); setUiLang(l); }} />
+      <Header />
       <div className="content-wrap">
         {/* Top bar */}
         <div className="flex items-center justify-between flex-wrap gap-3 mt-4 mb-6">
