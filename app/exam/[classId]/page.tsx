@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
@@ -34,11 +34,28 @@ export default function ExamPage() {
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [uiLang, setUiLang] = useState<Lang>('en');
 
+  // ── Persist progress to localStorage ──────────────────────────────────────
+  const PROGRESS_KEY = `bcc_exam_${classId}`;
+
+  useEffect(() => {
+    if (loading) return; // don't save until loaded
+    if (Object.keys(answers).length === 0) return; // nothing to save yet
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify({ answers, language, currentIndex }));
+  }, [answers, language, currentIndex, loading, PROGRESS_KEY]);
+
+  // ── Load exam data + restore saved progress ─────────────────────────────
   useEffect(() => {
     setUiLang(getLang());
     const id = localStorage.getItem('bcc_member_id');
     if (!id) { router.push('/'); return; }
     setMemberId(id);
+
+    // Read any saved progress before the fetch
+    let saved: { answers: Record<string, number>; language: Language; currentIndex: number } | null = null;
+    try {
+      const raw = localStorage.getItem(PROGRESS_KEY);
+      if (raw) saved = JSON.parse(raw);
+    } catch { /* ignore */ }
 
     fetch(`/api/exam/${classId}?memberId=${encodeURIComponent(id)}`)
       .then(r => r.ok ? r.json() : null)
@@ -50,11 +67,16 @@ export default function ExamPage() {
         }
         setCls(data.cls as BccClass);
         setQuestions(data.questions as Question[]);
-        setLanguage((data.member as Member).language ?? 'en');
+        // Prefer saved language over default; fall back to member's language
+        setLanguage(saved?.language ?? (data.member as Member).language ?? 'en');
+        if (saved?.answers && Object.keys(saved.answers).length > 0) {
+          setAnswers(saved.answers);
+          setCurrentIndex(saved.currentIndex ?? 0);
+        }
       })
       .catch(() => router.push('/'))
       .finally(() => setLoading(false));
-  }, [classId, router]);
+  }, [classId, router]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentQ = questions[currentIndex];
   const totalQ = questions.length;
@@ -81,6 +103,7 @@ export default function ExamPage() {
       });
       const data = await res.json();
       if (!res.ok || !data.id) throw new Error(data.error ?? 'submit_failed');
+      localStorage.removeItem(PROGRESS_KEY); // clear saved progress on success
       router.push(`/results/${data.id}`);
     } catch {
       setError('Failed to submit. Please try again.');

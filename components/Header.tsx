@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { getLang, setLang as saveLang, type Lang } from '@/lib/i18n';
+import { T, getLang, setLang as saveLang, type Lang } from '@/lib/i18n';
 
 interface HeaderProps {
   memberName?: string;
@@ -48,7 +48,7 @@ export function Header({ memberName, showAdmin, lang: propLang, onLangChange }: 
         <div className="flex items-center gap-3">
           {memberName && (
             <span className="text-sm text-gray-300 hidden sm:block">
-              Hello, <strong className="text-white">{memberName}</strong>
+              {T.hello[activeLang]}, <strong className="text-white">{memberName}</strong>
             </span>
           )}
 
