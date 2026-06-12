@@ -16,12 +16,16 @@ export async function GET(
   const { classId } = await params;
 
   const [attemptDocs, memberDocs] = await Promise.all([
-    adminDb.collection('attempts').where('classId', '==', classId).orderBy('submittedAt', 'desc').get(),
+    adminDb.collection('attempts').where('classId', '==', classId).get(),
     adminDb.collection('members').get(),
   ]);
 
+  const attempts = attemptDocs.docs
+    .map(d => ({ id: d.id, ...d.data() } as Record<string, unknown> & { id: string }))
+    .sort((a, b) => ((b.submittedAt as string) ?? '') < ((a.submittedAt as string) ?? '') ? -1 : 1);
+
   return NextResponse.json({
-    attempts: attemptDocs.docs.map(d => ({ id: d.id, ...d.data() })),
-    members:  memberDocs.docs.map(d => ({ id: d.id, ...d.data() })),
+    attempts,
+    members: memberDocs.docs.map(d => ({ id: d.id, ...d.data() })),
   });
 }

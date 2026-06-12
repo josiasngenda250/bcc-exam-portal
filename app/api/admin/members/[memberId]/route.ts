@@ -18,7 +18,7 @@ export async function GET(
   const [memberDoc, classDocs, attemptDocs] = await Promise.all([
     adminDb.collection('members').doc(memberId).get(),
     adminDb.collection('classes').get(),
-    adminDb.collection('attempts').where('memberId', '==', memberId).orderBy('submittedAt', 'desc').get(),
+    adminDb.collection('attempts').where('memberId', '==', memberId).get(),
   ]);
 
   if (!memberDoc.exists) return NextResponse.json({ error: 'Not found' }, { status: 404 });
@@ -27,9 +27,13 @@ export async function GET(
     .map(d => ({ id: d.id, ...d.data() } as Record<string, unknown> & { id: string }))
     .sort((a, b) => ((a.order as number) ?? 0) - ((b.order as number) ?? 0));
 
+  const attempts = attemptDocs.docs
+    .map(d => ({ id: d.id, ...d.data() } as Record<string, unknown> & { id: string }))
+    .sort((a, b) => ((b.submittedAt as string) ?? '') < ((a.submittedAt as string) ?? '') ? -1 : 1);
+
   return NextResponse.json({
-    member:   { id: memberDoc.id, ...memberDoc.data() },
+    member: { id: memberDoc.id, ...memberDoc.data() },
     classes,
-    attempts: attemptDocs.docs.map(d => ({ id: d.id, ...d.data() })),
+    attempts,
   });
 }
