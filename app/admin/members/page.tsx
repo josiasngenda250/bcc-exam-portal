@@ -1,9 +1,9 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { AdminHeader } from '@/components/Header';
 import { getMemberGroup } from '@/lib/types';
-import type { Member, Attempt, BccClass, GroupId, Promotion } from '@/lib/types';
+import type { Member, Attempt, BccClass, GroupId, PromotionType, CanadaRegion, Promotion } from '@/lib/types';
 
 type GroupFilter = 'all' | GroupId;
 
@@ -19,14 +19,6 @@ const GROUP_COLORS: Record<GroupId, string> = {
   online_west: '#9333ea',
 };
 
-function getGroupLabel(m: Member): string {
-  return GROUP_LABELS[getMemberGroup(m)];
-}
-
-function getGroupColor(m: Member): string {
-  return GROUP_COLORS[getMemberGroup(m)];
-}
-
 const FILTER_TABS: { id: GroupFilter; label: string }[] = [
   { id: 'all',          label: 'All' },
   { id: 'in_person',   label: '🏛️ In-Person' },
@@ -34,28 +26,161 @@ const FILTER_TABS: { id: GroupFilter; label: string }[] = [
   { id: 'online_west', label: '🌐 West Canada' },
 ];
 
+// Derive GroupId from the two editable fields
+function groupFromFields(type: PromotionType, region: CanadaRegion | ''): GroupId {
+  if (type === 'in_person') return 'in_person';
+  if (region === 'west')    return 'online_west';
+  return 'online_east';
+}
+
+// Inline group picker shown inside the table cell
+function GroupPicker({
+  memberId,
+  current,
+  onSave,
+  onCancel,
+}: {
+  memberId: string;
+  current:  GroupId;
+  onSave:   (memberId: string, type: PromotionType, region: CanadaRegion | '') => Promise<void>;
+  onCancel: () => void;
+}) {
+  const [selected, setSelected] = useState<GroupId>(current);
+  const [saving,   setSaving]   = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    function handle(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) onCancel();
+    }
+    document.addEventListener('mousedown', handle);
+    return () => document.removeEventListener('mousedown', handle);
+  }, [onCancel]);
+
+  async function save() {
+    if (selected === current) { onCancel(); return; }
+    setSaving(true);
+    const type: PromotionType    = selected === 'in_person' ? 'in_person' : 'online';
+    const region: CanadaRegion | '' = selected === 'online_west' ? 'west' : selected === 'online_east' ? 'east' : '';
+    await onSave(memberId, type, region);
+    setSaving(false);
+  }
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: 'absolute',
+        zIndex: 50,
+        top: '100%',
+        left: 0,
+        background: 'white',
+        border: '2px solid var(--bcc-navy)',
+        borderRadius: 12,
+        padding: '10px 12px',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+        minWidth: 230,
+        marginTop: 4,
+      }}
+    >
+      <p className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: 'var(--bcc-navy)' }}>
+        Change Group
+      </p>
+      <div className="flex flex-col gap-1.5 mb-3">
+        {(Object.entries(GROUP_LABELS) as [GroupId, string][]).map(([g, label]) => (
+          <button
+            key={g}
+            onClick={() => setSelected(g)}
+            className="w-full text-left px-3 py-1.5 rounded-lg text-sm font-medium border-2 transition-all"
+            style={{
+              borderColor: selected === g ? GROUP_COLORS[g] : '#e5e7eb',
+              background:  selected === g ? GROUP_COLORS[g] + '18' : 'white',
+              color:       selected === g ? GROUP_COLORS[g] : '#374151',
+              fontWeight:  selected === g ? 'bold' : 'normal',
+            }}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      <div className="flex gap-2">
+        <button
+          onClick={onCancel}
+          className="flex-1 py-1.5 rounded-lg text-xs font-bold border-2"
+          style={{ borderColor: '#e5e7eb', color: '#6b7280', background: 'white' }}
+        >
+          Cancel
+        </button>
+        <button
+          onClick={save}
+          disabled={saving}
+          className="flex-1 py-1.5 rounded-lg text-xs font-bold border-2 text-white"
+          style={{ borderColor: 'var(--bcc-navy)', background: 'var(--bcc-navy)' }}
+        >
+          {saving ? 'Saving…' : selected === current ? 'No change' : 'Save →'}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function AllMembersPage() {
-  const [members,  setMembers]  = useState<Member[]>([]);
-  const [attempts, setAttempts] = useState<Attempt[]>([]);
-  const [classes,  setClasses]  = useState<BccClass[]>([]);
-  const [loading,  setLoading]  = useState(true);
-  const [search,   setSearch]   = useState('');
-  const [groupFilter, setGroupFilter] = useState<GroupFilter>('all');
+  const [members,    setMembers]    = useState<Member[]>([]);
+  const [attempts,   setAttempts]   = useState<Attempt[]>([]);
+  const [classes,    setClasses]    = useState<BccClass[]>([]);
+  const [loading,    setLoading]    = useState(true);
+  const [search,     setSearch]     = useState('');
+  const [groupFilter,setGroupFilter]= useState<GroupFilter>('all');
   const [promotions, setPromotions] = useState<Promotion[]>([]);
-  const [promoFilter, setPromoFilter] = useState<string>('all');
+  const [promoFilter,setPromoFilter]= useState<string>('all');
+  const [editingId,  setEditingId]  = useState<string | null>(null);
+  const [savedId,    setSavedId]    = useState<string | null>(null); // flashes green ✓
 
   useEffect(() => {
     Promise.all([
       fetch('/api/admin/data').then(r => r.json()),
       fetch('/api/admin/promotions').then(r => r.json()),
     ]).then(([data, promoData]) => {
-      setMembers(data.members); setAttempts(data.attempts); setClasses(data.classes);
+      setMembers(data.members);
+      setAttempts(data.attempts);
+      setClasses(data.classes);
       setPromotions(promoData.promotions ?? []);
     }).finally(() => setLoading(false));
   }, []);
 
+  const handleGroupSave = useCallback(async (
+    memberId: string,
+    type: PromotionType,
+    region: CanadaRegion | '',
+  ) => {
+    const res = await fetch(`/api/admin/members/${memberId}/update`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        promotionType: type,
+        region: type === 'online' ? (region || null) : null,
+      }),
+    });
+    if (res.ok) {
+      // Update local state immediately — no reload needed
+      setMembers(prev => prev.map(m => {
+        if (m.id !== memberId) return m;
+        return {
+          ...m,
+          promotionType: type,
+          region: (type === 'online' && region) ? region as CanadaRegion : undefined,
+        };
+      }));
+      setSavedId(memberId);
+      setTimeout(() => setSavedId(null), 2000);
+    }
+    setEditingId(null);
+  }, []);
+
   const filtered = members.filter(m => {
-    const matchesSearch = `${m.firstName} ${m.lastName} ${m.email} ${m.phone ?? ''} ${m.province ?? ''}`.toLowerCase().includes(search.toLowerCase());
+    const matchesSearch = `${m.firstName} ${m.lastName} ${m.email} ${m.phone ?? ''} ${m.province ?? ''}`
+      .toLowerCase().includes(search.toLowerCase());
     const matchesGroup  = groupFilter === 'all' || getMemberGroup(m) === groupFilter;
     const matchesPromo  = promoFilter === 'all'
       || (promoFilter === '__none__' ? !m.promotionId : m.promotionId === promoFilter);
@@ -66,7 +191,7 @@ export default function AllMembersPage() {
     const header = ['Name', 'Email', 'Phone', 'Group', 'Province', 'Country', 'Language', 'Classes Done', 'Registered'].join(',');
     const lines = filtered.map(m => {
       const mAttempts = attempts.filter(a => a.memberId === m.id);
-      const classIds = [...new Set(mAttempts.map(a => a.classId))];
+      const classIds  = [...new Set(mAttempts.map(a => a.classId))];
       return [
         `"${m.firstName} ${m.lastName}"`,
         m.email,
@@ -80,8 +205,8 @@ export default function AllMembersPage() {
       ].join(',');
     });
     const blob = new Blob([[header, ...lines].join('\n')], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a'); a.href = url; a.download = 'bcc-members.csv'; a.click();
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a'); a.href = url; a.download = 'bcc-members.csv'; a.click();
   }
 
   if (loading) return (
@@ -101,10 +226,10 @@ export default function AllMembersPage() {
         {/* Summary stats */}
         <div className="flex gap-3 flex-wrap mb-5">
           {[
-            { label: 'Total',        value: members.length,              color: 'var(--bcc-navy)' },
-            { label: 'In-Person',    value: countByGroup('in_person'),   color: '#1e3a5f'         },
-            { label: 'East Canada',  value: countByGroup('online_east'), color: '#16a34a'         },
-            { label: 'West Canada',  value: countByGroup('online_west'), color: '#9333ea'         },
+            { label: 'Total',       value: members.length,              color: 'var(--bcc-navy)' },
+            { label: 'In-Person',   value: countByGroup('in_person'),   color: '#1e3a5f'         },
+            { label: 'East Canada', value: countByGroup('online_east'), color: '#16a34a'         },
+            { label: 'West Canada', value: countByGroup('online_west'), color: '#9333ea'         },
           ].map(s => (
             <div key={s.label} className="card flex-1 text-center py-3" style={{ minWidth: 110 }}>
               <div className="text-3xl font-bold" style={{ color: s.color, fontFamily: 'Georgia, serif' }}>{s.value}</div>
@@ -113,7 +238,7 @@ export default function AllMembersPage() {
           ))}
         </div>
 
-        {/* Filters row */}
+        {/* Promotion filter */}
         <div className="flex items-center gap-3 flex-wrap mb-3">
           <label className="text-sm font-medium text-gray-600">Promotion:</label>
           <select
@@ -132,8 +257,8 @@ export default function AllMembersPage() {
           </select>
         </div>
 
+        {/* Group tabs + search */}
         <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
-          {/* Group tabs */}
           <div className="flex gap-1 flex-wrap">
             {FILTER_TABS.map(tab => (
               <button
@@ -174,8 +299,11 @@ export default function AllMembersPage() {
           </div>
         </div>
 
-        <p className="text-sm text-gray-500 mb-3">
+        <p className="text-sm text-gray-500 mb-1">
           Showing {filtered.length} of {members.length} member{members.length !== 1 ? 's' : ''}
+        </p>
+        <p className="text-xs text-gray-400 mb-3">
+          💡 Click any group badge to change a member&apos;s group instantly.
         </p>
 
         <div className="card overflow-x-auto">
@@ -185,7 +313,7 @@ export default function AllMembersPage() {
                 <th>Name</th>
                 <th>Phone</th>
                 <th>Email</th>
-                <th>Group</th>
+                <th>Group <span className="font-normal text-gray-400">(click to edit)</span></th>
                 <th>Province</th>
                 <th>Language</th>
                 <th>Classes Done</th>
@@ -197,27 +325,57 @@ export default function AllMembersPage() {
               {filtered.length === 0 ? (
                 <tr><td colSpan={9} className="text-center text-gray-400 py-8">No members found</td></tr>
               ) : filtered.map(m => {
+                const g         = getMemberGroup(m);
+                const color     = GROUP_COLORS[g];
                 const mAttempts = attempts.filter(a => a.memberId === m.id);
-                const classIds = [...new Set(mAttempts.map(a => a.classId))];
+                const classIds  = [...new Set(mAttempts.map(a => a.classId))];
+                const isEditing = editingId === m.id;
+                const justSaved = savedId   === m.id;
+
                 return (
                   <tr key={m.id}>
                     <td className="font-medium" style={{ whiteSpace: 'nowrap' }}>
                       {m.firstName} {m.lastName}
                     </td>
                     <td className="text-sm" style={{ whiteSpace: 'nowrap' }}>
-                      {m.phone ? (
-                        <a href={`tel:${m.phone}`} style={{ color: 'var(--bcc-navy)' }}>{m.phone}</a>
-                      ) : <span className="text-gray-300">—</span>}
+                      {m.phone
+                        ? <a href={`tel:${m.phone}`} style={{ color: 'var(--bcc-navy)' }}>{m.phone}</a>
+                        : <span className="text-gray-300">—</span>}
                     </td>
                     <td className="text-sm text-gray-600" style={{ whiteSpace: 'nowrap' }}>{m.email}</td>
-                    <td style={{ whiteSpace: 'nowrap' }}>
-                      <span
-                        className="text-xs font-bold px-2 py-0.5 rounded-full"
-                        style={{ background: getGroupColor(m) + '18', color: getGroupColor(m) }}
-                      >
-                        {getGroupLabel(m)}
-                      </span>
+
+                    {/* ── Inline editable group cell ── */}
+                    <td style={{ position: 'relative', whiteSpace: 'nowrap' }}>
+                      {justSaved ? (
+                        <span className="text-xs font-bold px-2 py-0.5 rounded-full"
+                          style={{ background: '#dcfce7', color: '#166534' }}>
+                          ✓ Saved
+                        </span>
+                      ) : (
+                        <button
+                          onClick={() => setEditingId(isEditing ? null : m.id)}
+                          title="Click to change group"
+                          className="text-xs font-bold px-2 py-0.5 rounded-full border transition-all"
+                          style={{
+                            background:  color + '18',
+                            color,
+                            borderColor: isEditing ? color : 'transparent',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          {GROUP_LABELS[g]} ✎
+                        </button>
+                      )}
+                      {isEditing && (
+                        <GroupPicker
+                          memberId={m.id}
+                          current={groupFromFields(m.promotionType ?? 'online', m.region ?? '')}
+                          onSave={handleGroupSave}
+                          onCancel={() => setEditingId(null)}
+                        />
+                      )}
                     </td>
+
                     <td className="text-sm text-gray-600">{m.province ?? '—'}</td>
                     <td>{m.language?.toUpperCase()}</td>
                     <td>{classIds.length}/{classes.length}</td>
@@ -225,7 +383,8 @@ export default function AllMembersPage() {
                       {new Date(m.createdAt).toLocaleDateString('en-CA')}
                     </td>
                     <td>
-                      <Link href={`/admin/members/${m.id}`} className="underline text-sm" style={{ color: 'var(--bcc-navy)' }}>
+                      <Link href={`/admin/members/${m.id}`} className="underline text-sm"
+                        style={{ color: 'var(--bcc-navy)' }}>
                         View
                       </Link>
                     </td>
